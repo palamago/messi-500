@@ -1,0 +1,58 @@
+$icon-font-path: '../fonts/';
+
+// bower:scss
+@import "bower_components/bootstrap-sass/assets/stylesheets/_bootstrap.scss";
+// endbower
+
+body {
+  margin: 0;
+  padding: 0;
+  background-position: center;
+  background-size: cover;
+  width: 100%;
+  height: 100%;
+  display: block;
+  overflow: hidden;
+  background-color: black;
+  /*background-image:url('../images/bg3.jpg');*/
+}
+
+#loader-container{
+  position: absolute;
+  display: block;
+  width: 100%;
+  height: 100%;
+  text-align: center;
+}
+
+.selectedMatch{
+  fill:#fff;
+}
+
+.info-tooltip{
+  display: block;
+  position: absolute;
+  text-align: center;
+  opacity: 0;
+  background-color: #fff;
+  border: 1px dashed #ccc;
+  p{
+    margin: 0;
+  }
+}
+
+.lineh,.linev{
+  stroke: #ccc;
+  stroke-width: 1;
+  stroke-dasharray:3,3;
+}
+
+text.competition{
+  fill:#fff;
+}
+
+path {
+    fill: none;
+    stroke: #ccc;
+    stroke-width: 1px;
+}
