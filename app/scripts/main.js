@@ -18,6 +18,8 @@ var MessiViz;
 
     MessiViz.svg;
 
+    MessiViz.groups = {};
+
     MessiViz.init = function(){
 
     	d3.csv('data/messi-500-matches.csv',
@@ -46,10 +48,7 @@ var MessiViz;
     		}
     	});
 
-    	console.log(MessiViz.MATCHES);
-
-    	//MessiViz.renderMainChart();
-    	MessiViz.renderD3Chart();
+    	MessiViz.renderD3Chart(MessiViz.MATCHES);
 
     	MessiViz.renderD3Totals();
 
@@ -59,221 +58,265 @@ var MessiViz;
 
     };
 
-    MessiViz.renderD3Chart = function(){
+    MessiViz.renderD3Chart = function(DATA){
 
     	//MessiViz.MATCHES = MessiViz.MATCHES.slice(0,100);
 
     	//SVG
-    	var margin = {top: 0, right: 0, bottom: 0, left: 0},
-		    width = $(window).width() - margin.left - margin.right,
-		    height = $(window).height() - margin.top - margin.bottom;
+    	if(!MessiViz.svg){
 
-		MessiViz.svg = d3.select("body").append("svg")
-		    .attr("width", width + margin.left + margin.right)
-		    .attr("height", height + margin.top + margin.bottom)
-		  	.append("g")
-		    .attr("transform", "translate(" + margin.left + "," + margin.top + ")");
+	    	MessiViz.margin = {top: 0, right: 0, bottom: 0, left: 0},
+			MessiViz.width = $(window).width() - MessiViz.margin.left - MessiViz.margin.right,
+			MessiViz.height = $(window).height() - MessiViz.margin.top - MessiViz.margin.bottom;
+			MessiViz.chartSize = 100;
 
-		var chartSize = 100;
+			MessiViz.svg = d3.select("body").append("svg")
+			    .attr("width", MessiViz.width + MessiViz.margin.left + MessiViz.margin.right)
+			    .attr("height", MessiViz.height + MessiViz.margin.top + MessiViz.margin.bottom)
+			  	.append("g")
+			    .attr("transform", "translate(" + MessiViz.margin.left + "," + MessiViz.margin.top + ")");
+    		
+			//selection lines
+			MessiViz.lineh = MessiViz.svg.append("line")
+							.classed('lineh',true)
+	                   		.attr("x1", 0)
+	                        .attr("y1", 0)
+	                        .attr("x2", MessiViz.width)
+	                        .attr("y2", 0);
 
-		//selection lines
-		MessiViz.lineh = MessiViz.svg.append("line")
-						.classed('lineh',true)
-                   		.attr("x1", 0)
-                        .attr("y1", 0)
-                        .attr("x2", width)
-                        .attr("y2", 0);
+			MessiViz.linev = MessiViz.svg.append("line")
+							.classed('linev',true)
+	                   		.attr("x1", 0)
+	                        .attr("y1", 0)
+	                        .attr("x2", 0)
+	                        .attr("y2", MessiViz.height);
 
-		MessiViz.linev = MessiViz.svg.append("line")
-						.classed('linev',true)
-                   		.attr("x1", 0)
-                        .attr("y1", 0)
-                        .attr("x2", 0)
-                        .attr("y2", height);
+	        MessiViz.tooltip = d3.select('body')
+	        				.append("div")
+							.classed('info-tooltip',true)
+	                   		.style("top", 0)
+	                        .style("left", 0)
+	                        .style("width", MessiViz.chartSize*1.5+'px')
+	                        .style("height", MessiViz.chartSize*1.5+'px')
+	                        .style("display", "block");
 
-        MessiViz.tooltip = d3.select('body')
-        				.append("div")
-						.classed('info-tooltip',true)
-                   		.style("top", 0)
-                        .style("left", 0)
-                        .style("width", chartSize*1.5+'px')
-                        .style("height", chartSize*1.5+'px')
-                        .style("display", "block");
+			MessiViz.tooltipx = d3.scale.linear()
+				.domain([0, DATA.length])
+			    .range([MessiViz.chartSize,MessiViz.width-MessiViz.chartSize*2.5]);
 
-		MessiViz.tooltipx = d3.scale.linear()
-			.domain([0, MessiViz.MATCHES.length])
-		    .range([chartSize,width-chartSize*2.5]);
+			MessiViz.tooltipy = d3.scale.linear()
+				.domain([0, DATA.length])
+			    .range([0,MessiViz.height - MessiViz.chartSize*2.5]);
 
-		MessiViz.tooltipy = d3.scale.linear()
-			.domain([0, MessiViz.MATCHES.length])
-		    .range([0,height - chartSize*2.5]);
+			MessiViz.color = d3.scale.ordinal()
+			    .domain(MessiViz.competitions)
+			    .range(d3.scale.category10().range());
+			
+    	}
 
-		// Goals
-		var g = MessiViz.svg.append("g").classed('goals',true);
-		var maxGoals = d3.max(MessiViz.MATCHES, function(d) { return d.goals; });
-		
-		/*var color = d3.scale.threshold()
-		    .domain(d3.range(0, maxGoals, 1))
-		    .range(["#FFAAAA", "#D46A6A", "#AA3939", "#801515", "#550000"]);*/
+    	MessiViz.renderGoals(DATA);
+    	MessiViz.renderAssists(DATA);
+    	MessiViz.renderMinutes(DATA);
 
-		MessiViz.color = d3.scale.ordinal()
-		    .domain(MessiViz.competitions)
-		    .range(d3.scale.category10().range());
+    };
+
+    MessiViz.renderGoals = function (DATA){
+
+    	if(!MessiViz.groups.goals){
+    		MessiViz.groups.goals = MessiViz.svg.append("g").classed('goals',true);
+    		MessiViz.maxGoals = d3.max(DATA, function(d) { return d.goals; });
+    	}
 
 		var y = d3.scale.ordinal()
-			.domain([0, MessiViz.MATCHES.length])
-		    .rangeBands([0, height-chartSize]);
+			.domain([0, DATA.length])
+		    .rangeBands([0, MessiViz.height-MessiViz.chartSize]);
 
 		var x = d3.scale.linear()
 			.domain(d3.range(0, 6, 1))
-		    .range([0,chartSize]);
+		    .range([0,MessiViz.chartSize]);
 
-		  y.domain(MessiViz.MATCHES.map(function(d,i) { return i; }));
-		  x.domain([0, maxGoals]);
+		y.domain(DATA.map(function(d,i) { return i; }));
+		x.domain([0, MessiViz.maxGoals]);
 
-		  g.selectAll(".bar.bar-goal")
-	    	.data(MessiViz.MATCHES)
-	    	.enter().append("rect")
+		var bars = MessiViz.groups.goals.selectAll(".bar.bar-goal")
+	    	.data(DATA)
+
+	   	bars.exit().remove();
+
+	   	bars.enter()
+	    	.append("rect")
 			.attr("class", function(d,i){
-				return 'match'+i + ' ' +d.competition;
+				return 'match'+d.id + ' ' +d.competition;
 			})
 			.classed("bar",true)
 			.classed("bar-goal",true)
+			.attr("fill", function(d,i) { return MessiViz.color(d.competition); })
 			.attr("x", function(d,i) { return 0; })
-			.attr("width", function(d) { return 0; })
+			.attr("width", function(d) { return 0; });
+			
+		bars.transition()
 			.attr("y", function(d,i) { return y(i); })
 			.attr("height", y.rangeBand())
-			.attr("fill", function(d,i) { return MessiViz.color(d.competition); })
 			.transition()
-			.delay(function (d, i) { return i*10; })
+			.delay(function (d, i) { return i*5; })
 			.attr("width", function(d) { return x(d.goals); });	
 
-		  g.selectAll(".bar.bar-goal-fill")
-	    	.data(MessiViz.MATCHES)
-	    	.enter().append("rect")
+		var bars = MessiViz.groups.goals.selectAll(".bar.bar-goal-fill")
+	    	.data(DATA)
+
+	   	bars.exit().remove();
+
+	   	bars.enter()
+	    	.append("rect")
 			.classed("bar",true)
 			.classed("bar-goal-fill",true)
-			.attr("x", function(d,i) { return 0; })
-			.attr("width", function(d) { return x(maxGoals); })
-			.attr("y", function(d,i) { return y(i); })
-			.attr("height", y.rangeBand())
 			.attr("fill", "transparent")
-			.on('mouseover',function(d,i){
-				MessiViz.hover(d,i);
+			.attr("x", function(d,i) { return 0; })
+			.attr("width", function(d) { return x(MessiViz.maxGoals); })
+			.on('mouseover',function(d){
+				MessiViz.hover(d);
 			})
-			.on('mouseout',function(d,i){
-				MessiViz.unhover(d,i);
+			.on('mouseout',function(d){
+				MessiViz.unhover(d);
 			});	
+			
+		bars.attr("y", function(d,i) { return y(i); })
+			.attr("height", y.rangeBand());
 
-		// Assists
-		var g = MessiViz.svg.append("g").classed('assists',true);
-		var maxAssists = d3.max(MessiViz.MATCHES, function(d) { return d.assists; });
+    };
 
-		/*var color = d3.scale.threshold()
-		    .domain(d3.range(0, maxAssists, 1))
-		    .range(["#FFAAAA", "#D46A6A", "#AA3939", "#801515", "#550000"]);*/
+    MessiViz.renderAssists = function (DATA){
+
+    	if(!MessiViz.groups.assists){
+    		MessiViz.groups.assists = MessiViz.svg.append("g").classed('assists',true);
+			MessiViz.maxAssists = d3.max(DATA, function(d) { return d.assists; });
+    	}
 
 		var y = d3.scale.ordinal()
-			.domain([0, MessiViz.MATCHES.length])
-		    .rangeBands([0, height-chartSize]);
+			.domain([0, DATA.length])
+		    .rangeBands([0, MessiViz.height-MessiViz.chartSize]);
 
 		var x = d3.scale.linear()
-			.domain(d3.range(0, maxAssists, 1))
-		    .range([0,chartSize]);
+			.domain(d3.range(0, MessiViz.maxAssists, 1))
+		    .range([0,MessiViz.chartSize]);
 
-		  y.domain(MessiViz.MATCHES.map(function(d,i) { return i; }));
-		  x.domain([0, maxAssists]);
 
-		  g.selectAll(".bar.bar-assist")
-	    	.data(MessiViz.MATCHES)
-	    	.enter().append("rect")
+		y.domain(DATA.map(function(d,i) { return i; }));
+		x.domain([0, MessiViz.maxAssists]);
+
+		var bars = MessiViz.groups.assists.selectAll(".bar.bar-assist")
+	    	.data(DATA)
+
+	   	bars.exit().remove();
+
+	   	bars.enter()
+			.append("rect")
 			.attr("class", function(d,i){
-				return 'match'+i + ' ' +d.competition;
+				return 'match'+d.id + ' ' +d.competition;
 			})
 			.classed("bar",true)
 			.classed("bar-assist",true)
-			.attr("x", function(d,i) { return width; })
+			.attr("x", function(d,i) { return MessiViz.width; })
 			.attr("width", function(d) { return 0; })
+			.attr("fill", function(d,i) { return MessiViz.color(d.competition); });
+		
+		bars.transition()
 			.attr("y", function(d,i) { return y(i); })
 			.attr("height", y.rangeBand())
-			.attr("fill", function(d,i) { return MessiViz.color(d.competition); })
-			.transition()
 			.delay(function (d, i) { return i*10; })
 			.attr("width", function(d) { return x(d.assists); })
-			.attr("x", function(d,i) { return width - x(d.assists); })
-			;	
+			.attr("x", function(d,i) { return MessiViz.width - x(d.assists); });	
 
-		  g.selectAll(".bar.bar-assist-fill")
-	    	.data(MessiViz.MATCHES)
-	    	.enter().append("rect")
+
+
+		var bars = MessiViz.groups.goals.selectAll(".bar.bar-assist-fill")
+	    	.data(DATA)
+
+	   	bars.exit().remove();
+
+	   	bars.enter()
+	    	.append("rect")
 			.classed("bar",true)
 			.classed("bar-assist-fill",true)
-			.attr("x", function(d,i) { return width - x(maxAssists); })
-			.attr("width", function(d) { return x(maxAssists); })
-			.attr("y", function(d,i) { return y(i); })
-			.attr("height", y.rangeBand())
 			.attr("fill", "transparent")
-			.on('mouseover',function(d,i){
-				MessiViz.hover(d,i);
+			.attr("x", function(d,i) { return MessiViz.width - x(MessiViz.maxAssists); })
+			.attr("width", function(d) { return x(MessiViz.maxAssists); })
+			.on('mouseover',function(d){
+				MessiViz.hover(d);
 			})
-			.on('mouseout',function(d,i){
-				MessiViz.unhover(d,i);
+			.on('mouseout',function(d){
+				MessiViz.unhover(d);
 			});	
+			
+		bars.attr("y", function(d,i) { return y(i); })
+			.attr("height", y.rangeBand());
 
-		// Minutes
-		var g = MessiViz.svg.append("g").classed('minutes',true);
-		var maxMinutes = 120;
+    };
 
-		/*var color = d3.scale.threshold()
-		    .domain([0,46,91,121])
-		    .range(["#FFAAAA", "#D46A6A", "#AA3939", "#801515"]);*/
+    MessiViz.renderMinutes = function (DATA){
+
+    	if(!MessiViz.groups.minutes){
+    		MessiViz.groups.minutes = MessiViz.svg.append("g").classed('minutes',true);
+			MessiViz.maxMinutes = d3.max(DATA, function(d) { return parseInt(d.minutes); });
+    	}
+
 
 		var x = d3.scale.ordinal()
-			.domain([0, MessiViz.MATCHES.length])
-		    .rangeBands([chartSize, width-chartSize]);
+			.domain([0, DATA.length])
+		    .rangeBands([MessiViz.chartSize, MessiViz.width-MessiViz.chartSize]);
 
 		var y = d3.scale.linear()
-			.domain(d3.range(0, maxMinutes, 1))
-		    .range([0,chartSize]);
+			.domain(d3.range(0, MessiViz.maxMinutes, 1))
+		    .range([0,MessiViz.chartSize]);
 
-		  x.domain(MessiViz.MATCHES.map(function(d,i) { return i; }));
-		  y.domain([0, maxMinutes]);
+		  x.domain(DATA.map(function(d,i) { return i; }));
+		  y.domain([0, MessiViz.maxMinutes]);
 
-		var barsMinute = g.selectAll(".bar.bar-minute")
-	    	.data(MessiViz.MATCHES)
-	    	.enter().append("rect")
+		var bars = MessiViz.groups.minutes.selectAll(".bar.bar-minute")
+	    	.data(DATA)
+
+	   	bars.exit().remove();
+
+	   	bars.enter()
+			.append("rect")
 			.attr("class", function(d,i){
-				return 'match'+i + ' ' +d.competition;
+				return 'match'+d.id + ' ' +d.competition;
 			})
 			.classed("bar",true)
 			.classed("bar-minute",true)
-			.attr("x", function(d,i) { return x(i); })
-			.attr("width", x.rangeBand )
-			.attr("y", function(d,i) { return height })
+			.attr("y", function(d,i) { return MessiViz.height })
 			.attr("height",function(d) { return  0 })
-			.attr("fill", function(d,i) { return MessiViz.color(d.competition); })
-			.transition()
+			.attr("fill", function(d,i) { return MessiViz.color(d.competition); });
+			
+		bars.transition()
+			.attr("x", function(d,i) { return x(i); })
+			.attr("width", x.rangeBand())
 			.delay(function (d, i) { return i*10; })
-	        .attr("y", function (d, i) { return height-y(d.minutes); })
+	        .attr("y", function (d, i) { return MessiViz.height-y(d.minutes); })
 	        .attr("height", function (d) { return y(d.minutes); });
-			;
+		
 
-		  g.selectAll(".bar.bar-minute-fill")
-	    	.data(MessiViz.MATCHES)
-	    	.enter().append("rect")
+		var bars = MessiViz.groups.minutes.selectAll(".bar.bar-minute-fill")
+	    	.data(DATA)
+
+	   	bars.exit().remove();
+
+	   	bars.enter()
+	    	.append("rect")
 			.classed("bar",true)
 			.classed("bar-minute-fill",true)
-			.attr("x", function(d,i) { return x(i); })
-			.attr("width", x.rangeBand )
-			.attr("y", function(d,i) { return height - y(maxMinutes); })
-			.attr("height",function(d) { return  y(maxMinutes) })
 			.attr("fill", "transparent")
-			.on('mouseover',function(d,i){
-				MessiViz.hover(d,i);
+			.attr("y", function(d,i) { return MessiViz.height - y(MessiViz.maxMinutes); })
+			.attr("height", function(d) { return  y(MessiViz.maxMinutes) })
+			.on('mouseover',function(d){
+				MessiViz.hover(d);
 			})
-			.on('mouseout',function(d,i){
-				MessiViz.unhover(d,i);
-			});
+			.on('mouseout',function(d){
+				MessiViz.unhover(d);
+			});	
+			
+		bars.attr("width", x.rangeBand())
+			.attr("x", function(d,i) { return x(i); });
 
     };
 
@@ -288,7 +331,11 @@ var MessiViz;
 			.classed("competition",true)
 			.attr('y',function(d,i){return 0;})
 			.attr('x',function(d,i){return 300;})
-			.on('mouseover',function(competition){
+			.on('click',function(d){
+				MessiViz.filter('competition',d);
+			})
+
+			/*.on('mouseover',function(competition){
 				MessiViz.linev.transition().attr('x1',0).attr('x2',0);
 		    	MessiViz.lineh.transition().attr('y1',0).attr('y2',0);
 				MessiViz.tooltip
@@ -362,24 +409,24 @@ var MessiViz;
     			MessiViz.svg.selectAll("path.path-"+competition)
 		            .transition(2000)
 		            .attr('opacity',0);
-			})
+			})*/
 			.transition()
 			.delay(function (d, i) { return i*10; })
 	        .attr("y", function (d, i) { return i*20; });
 
     };
 
-    MessiViz.hover = function(data,match){
-    	MessiViz.SELECTED = match;
-    	d3.selectAll('rect.match'+match).classed('selectedMatch', true);
-    	var x = d3.select('rect.bar-minute.match'+match).attr('x');
+    MessiViz.hover = function(data){
+    	MessiViz.SELECTED = data.id;
+    	d3.selectAll('rect.match'+data.id).classed('selectedMatch', true);
+    	var x = d3.select('rect.bar-minute.match'+data.id).attr('x');
     	MessiViz.linev.transition().attr('x1',x).attr('x2',x);
-    	var y = d3.select('rect.bar-goal.match'+match).attr('y');
+    	var y = d3.select('rect.bar-goal.match'+data.id).attr('y');
     	MessiViz.lineh.transition().attr('y1',y).attr('y2',y);
     	MessiViz.tooltip
     		.html(function(){
-    			return '<p>'+data.home+'</p>' + 
-    				'<p>'+data.away+'</p>' +
+    			return '<p>'+data.home+' <strong>'+data.home_goals+'</strong></p>' + 
+    				'<p>'+data.away+' <strong>'+data.away_goals+'</strong></p>' +
     				'<p>'+data.date+'</p>' +
     				'<p style="color:'+MessiViz.color(data.competition)+'"><strong>'+data.competition+'</strong></p>' +
     				'<p> Goals:'+data.goals+'</p>' +
@@ -389,8 +436,8 @@ var MessiViz;
     		})
     		.transition()
     		.style('opacity','1')
-    		.style('left',MessiViz.tooltipx(match)+'px')
-    		.style('top',MessiViz.tooltipy(match)+'px');
+    		.style('left',MessiViz.tooltipx(data.id)+'px')
+    		.style('top',MessiViz.tooltipy(data.id)+'px');
     };
 
     MessiViz.unhover = function(data,match){
@@ -436,6 +483,16 @@ var MessiViz;
 		MessiViz.hover(d3.select('rect.match'+MessiViz.SELECTED).datum(),MessiViz.SELECTED);
 	};
 
+	MessiViz.filter = function(field,value){
+		var DATA = MessiViz.MATCHES.filter(function(d){
+			return d[field] == value;
+		});
+		MessiViz.renderD3Chart(DATA);
+	};
+
+	MessiViz.clear = function(){
+		MessiViz.renderD3Chart(MessiViz.MATCHES);
+	};
 
     MessiViz.renderMainChart = function(){
 
