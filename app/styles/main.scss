@@ -13,7 +13,7 @@ body {
   display: block;
   overflow: hidden;
   background-color: black;
-  background-image:url('../images/bg.png');
+  /*background-image:url('../images/bg.png');*/
   /*http://www.deviantart.com/art/Lionel-Messi-Wallpaper-202167215*/
 }
 
@@ -23,6 +23,21 @@ body {
   width: 100%;
   height: 100%;
   text-align: center;
+  background-color: #000;
+  color: #DDD;
+  z-index: 1000;
+}
+
+#svg-container{
+  position: absolute;
+  display: block;
+  width: 100%;
+  height: 100%;
+  z-index: 0;
+}
+
+#data-container{
+  width: 100%;
 }
 
 .selectedMatch{
@@ -57,11 +72,19 @@ path {
     stroke-width: 1px;
 }
 
-.totals-number{
-  fill:#ccc;
+.totals-label{
+  fill:#111;
+  font-size: 200px;
+}
+
+h4.main-total{
   font-size: 100px;
 }
-.totals-label{
-  fill:#222;
-  font-size: 200px;
+
+.modal-backdrop {
+  background:transparent;
+}
+
+.modal-content{
+  background-color: rgba(0,0,0,0.8);
 }

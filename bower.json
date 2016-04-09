@@ -5,7 +5,8 @@
     "bootstrap-sass": "~3.3.5",
     "modernizr": "~2.8.1",
     "c3": "^0.4.10",
-    "lodash": "^4.8.2"
+    "lodash": "^4.8.2",
+    "jquery-countTo": "^1.2.0"
   },
   "overrides": {
     "bootstrap-sass": {
