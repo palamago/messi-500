@@ -1,5 +1,5 @@
-var MessiViz;
 
+var MessiViz;
 ;(function(global, document, $, d3, c3){
 
 	"use strict";
@@ -82,6 +82,7 @@ var MessiViz;
     MessiViz.renderD3Chart = function(DATA){
 
     	//MessiViz.MATCHES = MessiViz.MATCHES.slice(0,100);
+    	MessiViz.SELECTED_MATCHES = DATA;
 
     	//SVG
     	if(!MessiViz.svg){
@@ -119,7 +120,6 @@ var MessiViz;
 
 			MessiViz.$loader.fadeOut(2000);
     	}
-
 
     	MessiViz.renderGoals(DATA);
     	MessiViz.renderAssists(DATA);
@@ -163,7 +163,7 @@ var MessiViz;
 
     		MessiViz.groups.goals
     			.append('text')
-	    		.text(function(d){return 'GOALS';})
+	    		.text(function(d){return 'GOLES';})
 				.classed("totals-label",true)
 				.attr('y',function(d,i){return 0;})
 				.attr('x',function(d,i){return MessiViz.height/2 - MessiViz.chartSize/2;})
@@ -201,7 +201,7 @@ var MessiViz;
 			.classed("bar",true)
 			.classed("bar-goal",true)
 			.transition()
-			.delay(function (d, i) { return i*5; })
+			.delay(function (d, i) { return i*5+2000; })
 			.attr("fill", function(d,i) { return MessiViz.color(d.competition); })
 			.attr("y", function(d,i) { return y(i); })
 			.attr("height", y.rangeBand())
@@ -249,8 +249,8 @@ var MessiViz;
 
     		MessiViz.groups.assists
     			.append('text')
-	    		.text(function(d){return 'ASSISTS';})
-				.classed("totals-label",true)
+	    		.text(function(d){return 'ASISTENCIAS';})
+				.classed("totals-label-assists",true)
 				.attr('y',function(d,i){return MessiViz.width;})
 				.attr('x',function(d,i){return -MessiViz.height/2 + MessiViz.chartSize/2;})
 				.attr('text-anchor','middle')
@@ -285,7 +285,7 @@ var MessiViz;
 			})
 			.classed("bar",true)
 			.classed("bar-assist",true).transition()
-			.delay(function (d, i) { return i*5; })
+			.delay(function (d, i) { return i*5+2000; })
 			.attr("fill", function(d,i) { return MessiViz.color(d.competition); })
 			.attr("y", function(d,i) { return y(i); })
 			.attr("height", y.rangeBand())
@@ -342,7 +342,7 @@ var MessiViz;
 
     	    MessiViz.groups.minutes
     			.append('text')
-	    		.text(function(d){return 'MINUTES';})
+	    		.text(function(d){return 'MINUTOS';})
 				.classed("totals-label",true)
 				.attr('y',function(d,i){return MessiViz.height;})
 				.attr('x',function(d,i){return MessiViz.width/2;})
@@ -379,7 +379,7 @@ var MessiViz;
 			.classed("bar",true)
 			.classed("bar-minute",true)
 			.transition()
-			.delay(function (d, i) { return i*5; })
+			.delay(function (d, i) { return i*5+2000; })
 			.attr("fill", function(d,i) { return MessiViz.color(d.competition); })
 			.attr("x", function(d,i) { return x(i); })
 			.attr("width", x.rangeBand())
@@ -513,6 +513,7 @@ var MessiViz;
 
     	MessiViz.SELECTED = data.id;
     	d3.selectAll('rect.match'+data.id).classed('selectedMatch', true);
+    	d3.selectAll('circle.match'+data.id).classed('selectedGoal', true);
     	var x = d3.select('rect.bar-minute.match'+data.id).attr('x');
     	MessiViz.linev.transition().style('opacity',1).attr('x1',Math.round(x)+Math.round(MessiViz.barGap.x/2)).attr('x2',Math.round(x)+Math.round(MessiViz.barGap.x/2));
     	var y = d3.select('rect.bar-goal.match'+data.id).attr('y');
@@ -536,6 +537,7 @@ var MessiViz;
 
     MessiViz.unhover = function(data,match){
     	d3.selectAll('rect.bar').classed('selectedMatch',false);
+    	d3.selectAll('circle.goal').classed('selectedGoal',false);
     };
 
     MessiViz.hideTooltip = function(data,match){
@@ -592,12 +594,109 @@ var MessiViz;
 
 		$('#carousel-messi').carousel({
 		  interval: false
-		});
+		})
+		.off('keydown.bs.carousel');
 
 		$('.container').mouseenter(function(){
 			MessiViz.hideTooltip();
 		});
 
+		$('#carousel-messi').on('slid.bs.carousel', function (event) {
+		  	var id = $(event.relatedTarget).attr('id');
+		  	if(id=='item-home'){
+		  		MessiViz.hideForceLayout()
+		  	} else {
+		  		MessiViz.renderForceLayout();
+		  	}
+
+		});
+
+    };
+
+    MessiViz.renderForceLayout = function(){
+
+
+		var nodes = MessiViz.GOALS_SELECTED.map(function(d) { d.radius = 8; return d;});
+
+		nodes.unshift({radius:0,fixed:true});
+		
+		var force = d3.layout.force()
+		    .gravity(0.08)
+		    .charge(function(d, i) { return d.fixed ? 0 : -10; })
+		    .nodes(nodes)
+		    .size([MessiViz.width, MessiViz.height]);
+
+    	if(!MessiViz.groups.forceLayout){
+    		MessiViz.groups.forceLayout = MessiViz.svg.append("g").classed('force-layout',true);
+    	}
+		force.start();
+
+		var circles = MessiViz.groups.forceLayout.selectAll("circle.goal")
+    		.data(nodes.slice(1));
+		
+		circles.exit().remove();
+
+		circles.enter()
+		  	.append("svg:circle")
+		    .attr("r", function(d){ return d.radius })
+			.attr("cx", 0)
+			.attr("cy", 0);
+		    
+		circles
+			//.style("fill", function(d, i) { return MessiViz.color(d.competition); })
+			.attr("class",function(d){return "match"+d.match_id;})
+		  	.classed("goal",true)
+
+		force.on("tick", function(e) {
+		  nodes[0].x = MessiViz.width / 2;
+    	  nodes[0].y = MessiViz.height / 2;	
+		  var q = d3.geom.quadtree(nodes),
+		      i = 0,
+		      n = nodes.length;
+
+		  while (++i < n) {
+		    q.visit(collide(nodes[i]));
+		  }
+
+		  MessiViz.groups.forceLayout.selectAll("circle.goal")
+		      .attr("cx", function(d) { return d.x; })
+		      .attr("cy", function(d) { return d.y; });
+		});
+
+		force.resume();
+
+		function collide(node) {
+		  var r = node.radius + 20,
+		      nx1 = node.x - r,
+		      nx2 = node.x + r,
+		      ny1 = node.y - r,
+		      ny2 = node.y + r;
+		  return function(quad, x1, y1, x2, y2) {
+		    if (quad.point && (quad.point !== node)) {
+		      var x = node.x - quad.point.x,
+		          y = node.y - quad.point.y,
+		          l = Math.sqrt(x * x + y * y),
+		          r = node.radius + quad.point.radius;
+		      if (l < r) {
+		        l = (l - r) / l * .5;
+		        node.x -= x *= l;
+		        node.y -= y *= l;
+		        quad.point.x += x;
+		        quad.point.y += y;
+		      }
+		    }
+		    return x1 > nx2
+		        || x2 < nx1
+		        || y1 > ny2
+		        || y2 < ny1;
+		  };
+		}
+
+    };
+
+    MessiViz.hideForceLayout = function(){
+    	MessiViz.groups.forceLayout.selectAll("circle.goal")
+    		.transition().attr('r',0).remove();
     };
 
 	MessiViz.updateTotals = function(DATA){
@@ -605,19 +704,20 @@ var MessiViz;
 		var goals=0,
 			assists=0,
 			minutes=0,
-			matches=DATA.length,
-			goalsDetails=[];
+			matches=DATA.length;
+
+		MessiViz.GOALS_SELECTED = [];
 
 		DATA.forEach(function(data){
 			goals+=parseInt(data.goals);
 			assists+=parseInt(data.assists);
 			minutes+=parseInt(data.minutes);
 			if(data.details.length){
-				goalsDetails = _.concat(goalsDetails,data.details);
+				MessiViz.GOALS_SELECTED = _.concat(MessiViz.GOALS_SELECTED,data.details.map(function(d){d.match_id=data.id;return d;}));
 			}
 		});
 
-		MessiViz.updateGoals(goalsDetails);
+		MessiViz.updateGoals();
 
 		MessiViz.totals.$goals.countTo({
 			from: parseInt(MessiViz.totals.$goals.html()), 
@@ -645,17 +745,17 @@ var MessiViz;
 
 	};
 
-	MessiViz.updateGoals = function(data){
+	MessiViz.updateGoals = function(){
 		var goalsHow = d3.nest()
 			.key(function(d) { return d.how; })
-			.map(data);
+			.map(MessiViz.GOALS_SELECTED);
 
 		var goalsMinutes = d3.nest()
 			.key(function(d) { 
 				var m = parseInt(d.minute);
 				return m;
 			})
-			.map(data);
+			.map(MessiViz.GOALS_SELECTED);
 
 		MessiViz.totals.$goalsLeft.countTo({
 			from: parseInt(MessiViz.totals.$goalsLeft.html()), 
@@ -687,6 +787,9 @@ var MessiViz;
 			speed: 1000
 		});
 
+		if(MessiViz.groups.forceLayout){
+			MessiViz.renderForceLayout();
+		}
 
 	};
 

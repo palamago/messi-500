@@ -4,6 +4,8 @@ $icon-font-path: '../fonts/';
 @import "bower_components/bootstrap-sass/assets/stylesheets/_bootstrap.scss";
 // endbower
 
+@import url(https://fonts.googleapis.com/css?family=Shadows+Into+Light+Two);
+
 body {
   margin: 0;
   padding: 0;
@@ -44,6 +46,10 @@ body {
   fill:#fff;
 }
 
+.selectedGoal{
+  fill:#fff !important;
+}
+
 .info-tooltip{
   display: block;
   position: absolute;
@@ -77,8 +83,15 @@ path {
   font-size: 200px;
 }
 
+.totals-label-assists{
+  fill:#111;
+  font-size: 120px;
+}
+
 h4.main-total{
   font-size: 100px;
+  font-family: 'Shadows Into Light Two', cursive;
+  color: #eee;
 }
 
 .modal-backdrop {
@@ -87,4 +100,13 @@ h4.main-total{
 
 .modal-content{
   background-color: rgba(0,0,0,0.8);
+}
+
+.carousel-inner{
+  overflow-x: hidden;
+  overflow-y: scroll;
+}
+
+circle.goal{
+  fill:#111;
 }
