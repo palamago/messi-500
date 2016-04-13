@@ -35,10 +35,9 @@
     <div class="container">
         <div class="row masthead">
           <div class="col-md-10 col-md-offset-1">
-              <h1 class="text-muted">Messi-500</h1>
-              <button type="button" class="btn btn-primary btn-lg pull-right" data-toggle="modal" data-target="#filtersModal">
+              <h1 class="text-muted text-center">Messi y sus goles <button type="button" class="btn btn-primary btn-lg pull-right" data-toggle="modal" data-target="#filtersModal">
                 Filters
-              </button>
+              </button></h1>
           </div>
         </div>
       <div class="row">
@@ -57,7 +56,7 @@
               <div id="item-home" class="item active">
                 <div class="row">
                   <div class="col-sm-12">
-                    <p class="text-center">MESSI, 500</p>
+                    <p class="text-center">PORTADA</p>
                   </div>
                 </div>
               </div>
@@ -84,24 +83,37 @@
               <div id="item-goals" class="item">
                 <div class="row">
                   <div class="col-sm-6">
-                    <h4 id="totals-goals-left" class="text-center main-total">0</h4>
+                    <h4 id="totals-goals-left" class="text-center main-total" data-how="Left foot">0</h4>
                     <p class="text-center">Pie izquierdo</p>
                   </div>
                   <div class="col-sm-6">
-                    <h4 id="totals-goals-right" class="text-center main-total">0</h4>
+                    <h4 id="totals-goals-right" class="text-center main-total" data-how="Right foot">0</h4>
                     <p class="text-center">Pie derecho</p>
                   </div>
                   <div class="col-sm-4">
-                    <h4 id="totals-goals-head" class="text-center main-total">0</h4>
+                    <h4 id="totals-goals-head" class="text-center main-total" data-how="Head">0</h4>
                     <p class="text-center">Cabeza</p>
                   </div>
                   <div class="col-sm-4 col-sm-offset-4">
-                    <h4 id="totals-goals-hand" class="text-center main-total">0</h4>
+                    <h4 id="totals-goals-hand" class="text-center main-total" data-how="Hand">0</h4>
                     <p class="text-center">Mano</p>
                   </div>
                   <div class="col-sm-6 col-sm-offset-6">
-                    <h4 id="totals-goals-chest" class="text-center main-total">0</h4>
+                    <h4 id="totals-goals-chest" class="text-center main-total" data-how="Chest">0</h4>
                     <p class="text-center">Pecho</p>
+                  </div>
+                </div>
+              </div>
+
+              <div id="item-teams" class="item">
+                <div class="row">
+                  <div class="col-sm-6">
+                    <h4 id="totals-goals-barcelona" class="text-center main-total" data-team="FC Barcelona">0</h4>
+                    <p class="text-center">Barcelona FC</p>
+                  </div>
+                  <div class="col-sm-6">
+                    <h4 id="totals-goals-argentina" class="text-center main-total" data-team="Argentina">0</h4>
+                    <p class="text-center">Argentina</p>
                   </div>
                 </div>
               </div>
