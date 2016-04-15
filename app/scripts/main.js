@@ -547,6 +547,7 @@ var MessiViz;
 
     MessiViz.hover = function(data){
 
+    	console.log(data);
     	MessiViz.SELECTED = data.id;
     	d3.selectAll('rect.match'+data.id).classed('selectedMatch', true);
     	d3.selectAll('circle.match'+data.id).classed('selectedGoal', true);
@@ -575,7 +576,7 @@ var MessiViz;
     			if(data.goals==0){
     				text+=' Messi no marcó goles';
     			} else if(data.goals==1){
-    				text+=' Messi marcó <strong>'+un+'</strong> gol en el minuto '+data.details[0].minute;
+    				text+=' Messi marcó <strong>un</strong> gol en el minuto '+data.details[0].minute;
     			} else {
     				text+=' Messi marcó <strong>'+data.goals+'</strong> goles';
     			}
@@ -857,37 +858,55 @@ var MessiViz;
 		MessiViz.totals.$goals.countTo({
 			from: parseInt(MessiViz.totals.$goals.html()), 
 			to: goals,
-			speed: 1000
+			speed: 1000,
+			formatter: function (value, options) {
+      			return value.toFixed(options.decimals);
+    		}
 		});
 
 		MessiViz.totals.$assists.countTo({
 			from: parseInt(MessiViz.totals.$assists.html()), 
 			to: assists,
-			speed: 1000
+			speed: 1000,
+			formatter: function (value, options) {
+      			return value.toFixed(options.decimals);
+    		}
 		});
 
 		MessiViz.totals.$minutes.countTo({
 			from: parseInt(MessiViz.totals.$minutes.html()), 
 			to: minutes,
-			speed: 1000
+			speed: 1000,
+			formatter: function (value, options) {
+      			return value.toFixed(options.decimals);
+    		}
 		});
 
 		MessiViz.totals.$matches.countTo({
 			from: parseInt(MessiViz.totals.$matches.html()), 
 			to: matches,
-			speed: 1000
+			speed: 1000,
+			formatter: function (value, options) {
+      			return value.toFixed(options.decimals);
+    		}
 		});
 
 		MessiViz.totals.$goalsArg.countTo({
 			from: parseInt(MessiViz.totals.$goalsArg.html()), 
 			to: arg_goals,
-			speed: 1000
+			speed: 1000,
+			formatter: function (value, options) {
+      			return value.toFixed(options.decimals);
+    		}
 		});
 
 		MessiViz.totals.$goalsBar.countTo({
 			from: parseInt(MessiViz.totals.$goalsBar.html()), 
 			to: bar_goals,
-			speed: 1000
+			speed: 1000,
+			formatter: function (value, options) {
+      			return value.toFixed(options.decimals);
+    		}
 		});
 
 	};
@@ -907,31 +926,46 @@ var MessiViz;
 		MessiViz.totals.$goalsLeft.countTo({
 			from: parseInt(MessiViz.totals.$goalsLeft.html()), 
 			to: (goalsHow["Left foot"])?goalsHow["Left foot"].length:0,
-			speed: 1000
+			speed: 1000,
+			formatter: function (value, options) {
+      			return value.toFixed(options.decimals);
+    		}
 		});
 
 		MessiViz.totals.$goalsRight.countTo({
 			from: parseInt(MessiViz.totals.$goalsRight.html()), 
 			to: (goalsHow["Right foot"])?goalsHow["Right foot"].length:0,
-			speed: 1000
+			speed: 1000,
+			formatter: function (value, options) {
+      			return value.toFixed(options.decimals);
+    		}
 		});
 
 		MessiViz.totals.$goalsHead.countTo({
 			from: parseInt(MessiViz.totals.$goalsHead.html()), 
 			to: (goalsHow["Head"])?goalsHow["Head"].length:0,
-			speed: 1000
+			speed: 1000,
+			formatter: function (value, options) {
+      			return value.toFixed(options.decimals);
+    		}
 		});
 
 		MessiViz.totals.$goalsChest.countTo({
 			from: parseInt(MessiViz.totals.$goalsChest.html()), 
 			to: (goalsHow["Chest"])?goalsHow["Chest"].length:0,
-			speed: 1000
+			speed: 1000,
+			formatter: function (value, options) {
+      			return value.toFixed(options.decimals);
+    		}
 		});
 
 		MessiViz.totals.$goalsHand.countTo({
 			from: parseInt(MessiViz.totals.$goalsHand.html()), 
 			to: (goalsHow["Hand"])?goalsHow["Hand"].length:0,
-			speed: 1000
+			speed: 1000,
+			formatter: function (value, options) {
+      			return value.toFixed(options.decimals);
+    		}
 		});
 
 		if(MessiViz.groups.forceLayout){
