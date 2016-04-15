@@ -51,12 +51,14 @@ body {
 }
 
 .info-tooltip{
+  vertical-align: center;
   display: block;
   position: absolute;
-  text-align: center;
   opacity: 0;
-  background-color: #fff;
-  border: 1px dashed #ccc;
+  color: white;
+  background-color: rgba(0,0,0,0.8);
+  padding: 10px;
+  font-size: 1.2em;
   p{
     margin: 0;
   }
@@ -88,6 +90,15 @@ path {
   font-size: 120px;
 }
 
+.totals-goals-header{
+  font-family: 'Shadows Into Light Two', cursive;
+  color: #fff; 
+}
+
+h1.active-filter{
+  color: #777;
+}
+
 h4.main-total{
   font-size: 100px;
   font-family: 'Shadows Into Light Two', cursive;
@@ -105,4 +116,17 @@ h4.main-total{
 .carousel-inner{
   overflow-x: hidden;
   overflow-y: scroll;
+}
+
+.filter-link{
+  font-family: 'Shadows Into Light Two', cursive; 
+  color: white !important;
+}
+
+.filter-link:hover{
+  color: white;
+}
+
+.btn-group{
+  vertical-align: top;
 }

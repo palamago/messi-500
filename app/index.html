@@ -35,9 +35,32 @@
     <div class="container">
         <div class="row masthead">
           <div class="col-md-10 col-md-offset-1">
-              <h1 class="text-muted text-center">Messi y sus goles <button type="button" class="btn btn-primary btn-lg pull-right" data-toggle="modal" data-target="#filtersModal">
-                Filters
-              </button></h1>
+              <h1 class="text-center">Messi: <span class="main-total totals-goals totals-goals-header">0</span> goles 
+              <div class="btn-group">
+                <a class="filter-link" href="javascript:;" class="dropdown-toggle" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                  <span id="active-filter"></span><span id="icon-filter" class="glyphicon glyphicon-filter"></span><span class="caret"></span>
+                </a>
+                <ul class="dropdown-menu">
+                  <li><a id="clear-filter" href="#">Todos</a></li>
+                  <li role="separator" class="divider"></li>
+                  <li><a href="#" class="btn-filter" data-field="competition" data-filter="WCP">en Copa del Mundo FIFA</a></li>
+                  <li><a href="#" class="btn-filter" data-field="competition" data-filter="WCQ">en eliminatorias de la Copa del Mundo</a></li>
+                  <li><a href="#" class="btn-filter" data-field="competition" data-filter="CPA">en Copa América</a></li>
+                  <li><a href="#" class="btn-filter" data-field="competition" data-filter="FRN">en amistosos internacionales</a></li>
+                  <li role="separator" class="divider"></li>
+                  <li><a href="#" class="btn-filter" data-field="competition" data-filter="PRM">en La Liga española</a></li>
+                  <li><a href="#" class="btn-filter" data-field="competition" data-filter="CUP">en Copa del Rey</a></li>
+                  <li><a href="#" class="btn-filter" data-field="competition" data-filter="EUR">en UEFA Champions League</a></li>
+                  <li><a href="#" class="btn-filter" data-field="competition" data-filter="WCT">en Mundial de Clubes</a></li>
+                  <li><a href="#" class="btn-filter" data-field="competition" data-filter="IUP">en Super Copa de Europa</a></li>
+                  <li><a href="#" class="btn-filter" data-field="competition" data-filter="SUP">en Super Copa de España</a></li>
+                  <li role="separator" class="divider"></li>
+                  <li><a href="#" class="btn-filter" data-field="team" data-filter="Argentina">con Argentina</a></li>
+                  <li><a href="#" class="btn-filter" data-field="team" data-filter="FC Barcelona">con FC Barcelona</a></li>
+                </ul>
+              </div>
+              <!--span data-toggle="modal" data-target="#filtersModal">Filter</span-->
+              </h1>
           </div>
         </div>
       <div class="row">
@@ -56,7 +79,6 @@
               <div id="item-home" class="item active">
                 <div class="row">
                   <div class="col-sm-12">
-                    <p class="text-center">PORTADA</p>
                   </div>
                 </div>
               </div>
@@ -74,7 +96,7 @@
                 </div>
                 <div class="row">
                   <div class="col-sm-4 col-sm-offset-4">
-                    <h4 id="totals-goals" class="text-center main-total">0</h4>
+                    <h4 class="text-center main-total totals-goals">0</h4>
                     <p class="text-center">GOLES</p>
                   </div>
                 </div>

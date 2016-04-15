@@ -16,6 +16,19 @@ var MessiViz;
 
     MessiViz.competitions = ["PRM", "CUP", "EUR", "FRN", "WCQ", "WCP", "SUP", "IUP", "CPA", "WCT"];
     
+    MessiViz.competitionName = {
+		"PRM":"La Liga española",
+		"CUP":"Copa del Rey de España",
+		"EUR":"UEFA Champions League",
+		"FRN":"Amistoso internacional",
+		"WCQ":"Eliminatorias para la copa del mundo",
+		"WCP":"Copa del mundo",
+		"SUP":"Super Copa de España",
+		"IUP":"Super Copa de Europa UEFA",
+		"CPA":"Copa América",
+		"WCT":"Mundial de clubes"
+    };
+
     MessiViz.hows = ["Left foot", "Right foot", "Head", "Hand", "Chest"];
     
     MessiViz.teams = ["Argentina", "FC Barcelona"];
@@ -36,7 +49,7 @@ var MessiViz;
 
     MessiViz.groups = {};
     MessiViz.totals = {
-    	$goals: 	$('#totals-goals'),
+    	$goals: 	$('.totals-goals'),
     	$assists: $('#totals-assists'),
     	$minutes: $('#totals-minutes'),
     	$matches: $('#totals-matches'),
@@ -47,6 +60,8 @@ var MessiViz;
     	$goalsChest: $('#totals-goals-chest'),
     	$goalsArg: $('#totals-goals-argentina'),
     	$goalsBar: $('#totals-goals-barcelona'),
+    	$activeFilter: $('#active-filter'),
+    	$iconFilter: $('#icon-filter')
     };
 
     MessiViz.barGap = {
@@ -96,7 +111,9 @@ var MessiViz;
     MessiViz.renderD3Chart = function(DATA,delay){
 
     	//MessiViz.MATCHES = MessiViz.MATCHES.slice(0,100);
-    	MessiViz.SELECTED_MATCHES = DATA;
+    	MessiViz.SELECTED_MATCHES = DATA.map(function(d,i){
+    		d.index = i;
+    	});
 
     	//SVG
     	if(!MessiViz.svg){
@@ -106,7 +123,7 @@ var MessiViz;
 			MessiViz.height = $(window).height() - MessiViz.margin.top - MessiViz.margin.bottom;
 			MessiViz.chartSize = 100;
 
-			$('.carousel-inner').height(MessiViz.height-$('.masthead').height()-MessiViz.chartSize);
+			$('.carousel-inner,.item').height(MessiViz.height-$('.masthead').height()-MessiViz.chartSize);
 
 			MessiViz.svg = d3.select("#svg-container").append("svg")
 			    .attr("width", MessiViz.width + MessiViz.margin.left + MessiViz.margin.right)
@@ -119,22 +136,21 @@ var MessiViz;
 							.classed('info-tooltip',true)
 	                   		.style("top", 0)
 	                        .style("left", 0)
-	                        .style("width", MessiViz.chartSize*1.5+'px')
-	                        .style("height", MessiViz.chartSize*1.5+'px')
+	                        .style("width", MessiViz.width/4+'px')
+	                        .style("height", MessiViz.height/4+'px')
 	                        .style("display", "block");
-
-			
-			MessiViz.tooltipx = d3.scale.linear()
-				.domain([0, DATA.length])
-			    .range([MessiViz.chartSize,MessiViz.width-MessiViz.chartSize*2.5]);
-
-			MessiViz.tooltipy = d3.scale.linear()
-				.domain([0, DATA.length])
-			    .range([0,MessiViz.height - MessiViz.chartSize*2.5]);
 
 			MessiViz.$loader.fadeOut(2000);
 
     	}
+
+		MessiViz.tooltipx = d3.scale.linear()
+			.domain([0, MessiViz.SELECTED_MATCHES.length])
+		    .range([MessiViz.chartSize,MessiViz.width-MessiViz.width/4-MessiViz.chartSize]);
+
+		MessiViz.tooltipy = d3.scale.linear()
+			.domain([0, MessiViz.SELECTED_MATCHES.length])
+		    .range([0,MessiViz.height - MessiViz.height/4-MessiViz.chartSize]);
 
     	delay = (delay)?delay:0; 
 
@@ -540,19 +556,57 @@ var MessiViz;
     	MessiViz.lineh.transition().style('opacity',1).attr('y1',Math.round(y)+Math.round(MessiViz.barGap.y/2)).attr('y2',Math.round(y)+Math.round(MessiViz.barGap.y/2));
     	MessiViz.tooltip
     		.html(function(){
-    			return '<p>'+data.home+' <strong>'+data.home_goals+'</strong></p>' + 
-    				'<p>'+data.away+' <strong>'+data.away_goals+'</strong></p>' +
-    				'<p>'+data.date+'</p>' +
-    				'<p style="color:'+MessiViz.color(data.competition)+'"><strong>'+data.competition+'</strong></p>' +
-    				'<p> Goals:'+data.goals+'</p>' +
-    				'<p> Assists:'+data.assists+'</p>' +
-    				'<p> Minutes:'+data.minutes+'</p>'
-    				;
+    			var winner = (data.home_goals>data.away_goals)?'home':'away';
+    			var looser = (data.home_goals<data.away_goals)?'home':'away';
+    			var text =  '<p>'+
+    						'El día <strong>'+data.date+'</strong>, '+
+    						'<strong>'+data.home+'</strong> recibió a <strong>'+data.away+'</strong> '+
+    						'por <strong>'+MessiViz.competitionName[data.competition]+'</strong>.';
+
+    			if(winner==looser){
+    				text += ' Fue empate ';
+    			} else if(looser=='home'){
+    				text += ' Fue victoria para los visitantes ';
+    			} else {
+    				text += ' Los locales se impusieron ';
+    			}
+    			text += '<strong>'+data.home_goals+'-'+data.away_goals+'</strong>.';
+
+    			if(data.goals==0){
+    				text+=' Messi no marcó goles';
+    			} else if(data.goals==1){
+    				text+=' Messi marcó <strong>'+un+'</strong> gol en el minuto '+data.details[0].minute;
+    			} else {
+    				text+=' Messi marcó <strong>'+data.goals+'</strong> goles';
+    			}
+
+    			if(data.assists==0){
+    				text+=', no hizo asistencias';
+    			} else if(data.assists==1){
+    				text+=', realizó <strong>una</strong> asistencia';
+    			} else {
+    				text+=', sumó <strong>'+data.assists+'</strong> asistencias';
+    			}
+
+    			if(data.minutes>=90){
+    				text+=', jugando el partido completo';
+    				if(data.minutes==120){
+    					text+=' mas el alargue';
+    				}
+    				text+='.';
+    			} else if(data.minutes<45){
+    				text+=', jugando apenas <strong>'+data.minutes+'</strong> minutos.';
+    			} else {
+    				text+=', participando <strong>'+data.minutes+'</strong> minutos.';
+    			}
+
+    			return text+'</p>';
+
     		})
     		.transition()
     		.style('opacity','1')
-    		.style('left',MessiViz.tooltipx(data.id)+'px')
-    		.style('top',MessiViz.tooltipy(data.id)+'px');
+    		.style('left',MessiViz.tooltipx(data.index)+'px')
+    		.style('top',MessiViz.tooltipy(data.index)+'px');
     };
 
     MessiViz.unhover = function(data,match){
@@ -597,14 +651,17 @@ var MessiViz;
 
 		$('.btn-filter').on('click',function(){
 			var $filter = $(this);
-			$filter.siblings().removeClass('active').removeAttr('disabled');
-			$filter.attr("disabled","disabled").addClass('active');
+			MessiViz.totals.$activeFilter.html($filter.html());
+			MessiViz.totals.$iconFilter.fadeOut();
+			$filter.parent().addClass('disabled').siblings().removeClass('disabled');
 			MessiViz.hideTooltip();
 			MessiViz.filter($filter.data('field'),$filter.data('filter'));
 		});
 
 		$('#clear-filter').on('click',function(){
-			$('.btn-filter').removeClass('active').removeAttr('disabled');
+			MessiViz.totals.$activeFilter.html('');
+			MessiViz.totals.$iconFilter.fadeIn();
+			$('.btn-filter').parent().removeClass('disabled');
 			MessiViz.clear();
 		});
 
@@ -645,7 +702,6 @@ var MessiViz;
     };
 
     MessiViz.renderForceLayout = function(){
-
 
 		var nodes = MessiViz.GOALS_SELECTED.map(function(d) { d.radius = 8; return d;});
 
@@ -770,6 +826,8 @@ var MessiViz;
 			minutes=0,
 			arg=0,
 			bar=0,
+			arg_goals=0,
+			bar_goals=0,
 			matches=DATA.length;
 
 		MessiViz.GOALS_SELECTED = [];
@@ -780,8 +838,14 @@ var MessiViz;
 			minutes+=parseInt(data.minutes);
 			if(data.team=="Argentina"){
 				arg++;
+				if(data.goals>0){
+					arg_goals += parseInt(data.goals);
+				}
 			} else {
 				bar++;
+				if(data.goals>0){
+					bar_goals += parseInt(data.goals);
+				}
 			}
 			if(data.details.length){
 				MessiViz.GOALS_SELECTED = _.concat(MessiViz.GOALS_SELECTED,data.details.map(function(d){d.match_id=data.id;d.team=data.team;return d;}));
@@ -816,13 +880,13 @@ var MessiViz;
 
 		MessiViz.totals.$goalsArg.countTo({
 			from: parseInt(MessiViz.totals.$goalsArg.html()), 
-			to: arg,
+			to: arg_goals,
 			speed: 1000
 		});
 
 		MessiViz.totals.$goalsBar.countTo({
 			from: parseInt(MessiViz.totals.$goalsBar.html()), 
-			to: bar,
+			to: bar_goals,
 			speed: 1000
 		});
 
