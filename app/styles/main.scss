@@ -5,6 +5,7 @@ $icon-font-path: '../fonts/';
 // endbower
 
 @import url(https://fonts.googleapis.com/css?family=Shadows+Into+Light+Two);
+@import url(https://fonts.googleapis.com/css?family=Oswald:400,700,300);
 
 body {
   margin: 0;
@@ -17,6 +18,8 @@ body {
   background-color: black;
   /*background-image:url('../images/bg.png');*/
   /*http://www.deviantart.com/art/Lionel-Messi-Wallpaper-202167215*/
+  font-family: 'Oswald', sans-serif;
+  font-weight: normal;
 }
 
 #loader-container{
@@ -58,9 +61,13 @@ body {
   color: white;
   background-color: rgba(0,0,0,0.8);
   padding: 10px;
-  font-size: 1.2em;
+  font-size: 1.4em;
+  font-weight: 300;
   p{
     margin: 0;
+  }
+  strong{
+    font-weight: bold;
   }
 }
 
@@ -84,18 +91,24 @@ text.competition{
   font-size: 120px;
 }
 
-.totals-goals-header{
-  font-family: 'Shadows Into Light Two', cursive;
-  color: #fff; 
+h1{
+  font-family: 'Oswald', sans-serif;
+  font-weight: 300;
+  color: #fff;
+  background-color:#333;
+  margin: 0;
+  padding:5px;
 }
 
-h1.active-filter{
-  color: #777;
+.totals-goals-header{
+  font-weight: bold;
+  color: #fff; 
 }
 
 h4.main-total{
   font-size: 100px;
-  font-family: 'Shadows Into Light Two', cursive;
+  font-family: 'Oswald', sans-serif;
+  font-weight: 700;
   color: #eee;
 }
 
@@ -113,8 +126,8 @@ h4.main-total{
 }
 
 .filter-link{
-  font-family: 'Shadows Into Light Two', cursive; 
   color: white !important;
+  font-weight: bold;
 }
 
 .filter-link:hover{
@@ -146,4 +159,7 @@ h4.main-total{
 }
 #messi-container{
   text-align: center;
+}
+.totals-labels{
+  font-size: 20px;
 }

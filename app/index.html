@@ -33,29 +33,29 @@
 
     <div class="container">
         <div class="row masthead">
-          <div class="col-md-10 col-md-offset-1">
-              <h1 class="text-center">Messi: <span class="main-total totals-goals totals-goals-header">0</span> goles
+          <div class="col-md-12">
+              <h1 class="text-center">Messi: <span class="main-total totals-goals totals-goals-header">0</span> goles en&nbsp;
               <div class="btn-group">
                 <a class="filter-link" href="javascript:;" class="dropdown-toggle" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
-                  <span id="active-filter"></span><span id="icon-filter" class="glyphicon glyphicon-filter"></span><span class="caret"></span>
+                  <span id="active-filter">total</span><span class="caret"></span>
                 </a>
                 <ul class="dropdown-menu">
-                  <li><a id="clear-filter" href="#">Todos</a></li>
+                  <li><a id="clear-filter" href="#">total</a></li>
                   <li role="separator" class="divider"></li>
-                  <li><a href="#" class="btn-filter" data-field="competition" data-filter="WCP">en Copa del Mundo FIFA</a></li>
-                  <li><a href="#" class="btn-filter" data-field="competition" data-filter="WCQ">en eliminatorias de la Copa del Mundo</a></li>
-                  <li><a href="#" class="btn-filter" data-field="competition" data-filter="CPA">en Copa América</a></li>
-                  <li><a href="#" class="btn-filter" data-field="competition" data-filter="FRN">en amistosos internacionales</a></li>
+                  <li><a href="#" class="btn-filter" data-field="competition" data-filter="WCP">Copa del Mundo FIFA</a></li>
+                  <li><a href="#" class="btn-filter" data-field="competition" data-filter="WCQ">eliminatorias de la Copa del Mundo</a></li>
+                  <li><a href="#" class="btn-filter" data-field="competition" data-filter="CPA">Copa América</a></li>
+                  <li><a href="#" class="btn-filter" data-field="competition" data-filter="FRN">amistosos internacionales</a></li>
                   <li role="separator" class="divider"></li>
-                  <li><a href="#" class="btn-filter" data-field="competition" data-filter="PRM">en La Liga española</a></li>
-                  <li><a href="#" class="btn-filter" data-field="competition" data-filter="CUP">en Copa del Rey</a></li>
-                  <li><a href="#" class="btn-filter" data-field="competition" data-filter="EUR">en UEFA Champions League</a></li>
-                  <li><a href="#" class="btn-filter" data-field="competition" data-filter="WCT">en Mundial de Clubes</a></li>
-                  <li><a href="#" class="btn-filter" data-field="competition" data-filter="IUP">en Super Copa de Europa</a></li>
-                  <li><a href="#" class="btn-filter" data-field="competition" data-filter="SUP">en Super Copa de España</a></li>
+                  <li><a href="#" class="btn-filter" data-field="competition" data-filter="PRM">La Liga española</a></li>
+                  <li><a href="#" class="btn-filter" data-field="competition" data-filter="CUP">Copa del Rey</a></li>
+                  <li><a href="#" class="btn-filter" data-field="competition" data-filter="EUR">UEFA Champions League</a></li>
+                  <li><a href="#" class="btn-filter" data-field="competition" data-filter="WCT">Mundial de Clubes</a></li>
+                  <li><a href="#" class="btn-filter" data-field="competition" data-filter="IUP">Super Copa de Europa</a></li>
+                  <li><a href="#" class="btn-filter" data-field="competition" data-filter="SUP">Super Copa de España</a></li>
                   <li role="separator" class="divider"></li>
-                  <li><a href="#" class="btn-filter" data-field="team" data-filter="Argentina">con Argentina</a></li>
-                  <li><a href="#" class="btn-filter" data-field="team" data-filter="FC Barcelona">con FC Barcelona</a></li>
+                  <li><a href="#" class="btn-filter" data-field="team" data-filter="Argentina">Argentina</a></li>
+                  <li><a href="#" class="btn-filter" data-field="team" data-filter="FC Barcelona">FC Barcelona</a></li>
                 </ul>
               </div>
               <!--span data-toggle="modal" data-target="#filtersModal">Filter</span-->
@@ -86,18 +86,18 @@
                 <div class="row">
                   <div class="col-sm-6">
                     <h4 id="totals-matches" class="text-center main-total">0</h4>
-                    <p class="text-center">PARTIDOS</p>
-                    <p class="text-center"><small id="totals-minutes">0</small> mins.</p>
+                    <p class="totals-labels text-center">PARTIDOS</p>
+                    <p class="totals-labels text-center"><small id="totals-minutes">0</small> mins.</p>
                   </div>
                   <div class="col-sm-6">
                     <h4 id="totals-assists" class="text-center main-total">0</h4>
-                    <p class="text-center">ASISTENCIAS</p>
+                    <p class="totals-labels text-center">ASISTENCIAS</p>
                   </div>
                 </div>
                 <div class="row">
                   <div class="col-sm-4 col-sm-offset-4">
                     <h4 class="text-center main-total totals-goals">0</h4>
-                    <p class="text-center">GOLES</p>
+                    <p class="totals-labels text-center">GOLES</p>
                   </div>
                 </div>
               </div>
@@ -106,23 +106,23 @@
                 <div class="row">
                   <div class="col-sm-6">
                     <h4 id="totals-goals-left" class="text-center main-total" data-how="Left foot">0</h4>
-                    <p class="text-center">Pie izquierdo</p>
+                    <p class="totals-labels text-center">Pie izquierdo</p>
                   </div>
                   <div class="col-sm-6">
                     <h4 id="totals-goals-right" class="text-center main-total" data-how="Right foot">0</h4>
-                    <p class="text-center">Pie derecho</p>
+                    <p class="totals-labels text-center">Pie derecho</p>
                   </div>
                   <div class="col-sm-4">
                     <h4 id="totals-goals-head" class="text-center main-total" data-how="Head">0</h4>
-                    <p class="text-center">Cabeza</p>
+                    <p class="totals-labels text-center">Cabeza</p>
                   </div>
                   <div class="col-sm-4 col-sm-offset-4">
                     <h4 id="totals-goals-hand" class="text-center main-total" data-how="Hand">0</h4>
-                    <p class="text-center">Mano</p>
+                    <p class="totals-labels text-center">Mano</p>
                   </div>
                   <div class="col-sm-6 col-sm-offset-6">
                     <h4 id="totals-goals-chest" class="text-center main-total" data-how="Chest">0</h4>
-                    <p class="text-center">Pecho</p>
+                    <p class="totals-labels text-center">Pecho</p>
                   </div>
                 </div>
               </div>
@@ -131,11 +131,11 @@
                 <div class="row">
                   <div class="col-sm-6">
                     <h4 id="totals-goals-barcelona" class="text-center main-total" data-team="FC Barcelona">0</h4>
-                    <p class="text-center">Barcelona FC</p>
+                    <p class="totals-labels text-center">Barcelona FC</p>
                   </div>
                   <div class="col-sm-6">
                     <h4 id="totals-goals-argentina" class="text-center main-total" data-team="Argentina">0</h4>
-                    <p class="text-center">Argentina</p>
+                    <p class="totals-labels text-center">Argentina</p>
                   </div>
                 </div>
               </div>

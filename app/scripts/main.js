@@ -687,7 +687,7 @@ var MessiViz;
 		});
 
 		$('#clear-filter').on('click',function(){
-			MessiViz.totals.$activeFilter.html('');
+			MessiViz.totals.$activeFilter.html('total');
 			MessiViz.totals.$iconFilter.fadeIn();
 			$('.btn-filter').parent().removeClass('disabled');
 			MessiViz.clear();
