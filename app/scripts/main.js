@@ -71,10 +71,10 @@ var MessiViz;
 
     MessiViz.init = function(){
 
-    	d3.csv('data/messi-500-matches.csv',
+    	d3.csv('./data/messi-500-matches.csv',
     		function(data) {
     			MessiViz.MATCHES = data;
-    			d3.csv('data/messi-500-goals.csv',
+    			d3.csv('./data/messi-500-goals.csv',
 		    		function(data) {
 				  		MessiViz.GOALS = data;
 						MessiViz.dataLoaded();
