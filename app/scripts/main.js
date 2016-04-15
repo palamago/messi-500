@@ -1,6 +1,6 @@
 
 var MessiViz;
-;(function(global, document, $, d3, c3){
+;(function(global, document, $, d3){
 
 	"use strict";
 
@@ -972,51 +972,4 @@ var MessiViz;
 		MessiViz.renderD3Chart(MessiViz.MATCHES);
 	};
 
-    MessiViz.renderMainChart = function(){
-
-		var chartGoals = c3.generate({
-			bindto: '#chart',
-	        data: {
-	            json: MessiViz.MATCHES,
-	            keys: {
-	                value: ['goals', 'assists','minutes'],
-	            },
-	            type: 'bar',
-	            types: {
-		            minutes: 'line'
-		        },
-	            axes: {
-		            sample1: 'y',
-		            minutes: 'y2'
-		        }
-	        },
-	        bar: {
-		        width: {
-		            ratio: 1 // this makes bar width 50% of length between ticks
-		        }
-		        // or
-		        //width: 100 // this makes bar width 100px
-		    },
-	        axis: {
-	        	rotated: true,
-	            x: {
-	            	show:false
-	            },
-	            y: {
-	            	show:false
-	            },
-	            y2: {
-	            	show:false
-	            }
-
-	        },
-			legend: {
-		        show: true
-		    }
-	    });
-
-		
-
-    }
-
-})(window, document,jQuery, d3, c3);
+})(window, document,jQuery, d3);
