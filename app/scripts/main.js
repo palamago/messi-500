@@ -10,6 +10,8 @@ var MessiViz;
 
     MessiViz.GOALS;
 
+    MessiViz.team = "ARG";
+
     MessiViz.SELECTED = null;
 
     MessiViz.$loader = $('#loader-container');
@@ -61,7 +63,8 @@ var MessiViz;
     	$goalsArg: $('#totals-goals-argentina'),
     	$goalsBar: $('#totals-goals-barcelona'),
     	$activeFilter: $('#active-filter'),
-    	$iconFilter: $('#icon-filter')
+    	$iconFilter: $('#icon-filter'),
+    	$messiContainer: $('#messi-container'),
     };
 
     MessiViz.barGap = {
@@ -81,6 +84,30 @@ var MessiViz;
 					}
 				);
     		});
+
+    	d3.xml("./images/messi-01.svg", "image/svg+xml", function(error, xml) {
+		  if (error) throw error;
+		  MessiViz.totals.$messiContainer.html(xml.documentElement);
+		  	$('#messi-container svg path').each(function(i,e){
+		  		var path = $(e);
+		  		if(path.attr('fill')=="#49869D"){
+		  			path.addClass("color1");
+		  		} else if(path.attr('fill')=="#FFFFFF"){
+		  			path.addClass("color2");
+		  		}
+		  	});
+		  setInterval(function(){
+		  	if(MessiViz.team=="ARG"){
+		  		MessiViz.team="BAR";
+		  		d3.selectAll('#messi-container svg path.color1').transition().duration(2000).attr('fill','#003173');
+		  		d3.selectAll('#messi-container svg path.color2').transition().duration(2000).attr('fill','#831F3B');
+		  	}else{
+		  		MessiViz.team="ARG";
+		  		d3.selectAll('#messi-container svg path.color1').transition().duration(2000).attr('fill','#49869D');
+		  		d3.selectAll('#messi-container svg path.color2').transition().duration(2000).attr('fill','#FFFFFF');
+		  	}
+		  },5000);
+		});
 
     };
 
@@ -680,7 +707,7 @@ var MessiViz;
 			MessiViz.clearBars();
 		});
 
-		$('svg').mouseenter(function(){
+		$('svg-container').mouseenter(function(){
 			MessiViz.showBars();
 		});
 

@@ -74,12 +74,6 @@ text.competition{
   fill:#fff;
 }
 
-path {
-    fill: none;
-    stroke: #ccc;
-    stroke-width: 1px;
-}
-
 .totals-label{
   fill:#111;
   font-size: 200px;
@@ -135,16 +129,21 @@ h4.main-total{
 /* No media query since this is the default in Bootstrap */
 
 /* Small devices (tablets, 768px and up) */
-@media (min-width: @screen-sm-min) { 
+@media (min-width: 768px) { 
   .carousel-inner{
     overflow-y: scroll;
   }
 }
 
 /* Medium devices (desktops, 992px and up) */
-@media (min-width: @screen-md-min) {
+@media (min-width: 992px) {
 
 }
 
 /* Large devices (large desktops, 1200px and up) */
-@media (min-width: @screen-lg-min) { ... }
+@media (min-width: 1200px) {
+
+}
+#messi-container{
+  text-align: center;
+}
