@@ -169,7 +169,9 @@ h4.main-total{
 
 /* Large devices (large desktops, 1200px and up) */
 @media (min-width: 1200px) {
-
+  .carousel-inner{
+    overflow-y: hidden;
+  }
 }
 #messi-container{
   text-align: center;
