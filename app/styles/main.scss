@@ -152,27 +152,6 @@ h4.main-total{
   vertical-align: top;
 }
 
-/* Extra small devices (phones, less than 768px) */
-/* No media query since this is the default in Bootstrap */
-
-/* Small devices (tablets, 768px and up) */
-@media (min-width: 768px) { 
-  .carousel-inner{
-    overflow-y: scroll;
-  }
-}
-
-/* Medium devices (desktops, 992px and up) */
-@media (min-width: 992px) {
-
-}
-
-/* Large devices (large desktops, 1200px and up) */
-@media (min-width: 1200px) {
-  .carousel-inner{
-    overflow-y: hidden;
-  }
-}
 #messi-container{
   text-align: center;
   margin-top: 100px;
