@@ -150,7 +150,13 @@ h4.main-total{
 
 #messi-container{
   text-align: center;
-  margin-top: 100px;
+  margin-top: 50px;
+  width: 100%;
+  svg{
+    margin: 0 auto;
+    width: 80%;
+    height: 100%;
+  }
 }
 .totals-labels{
   font-size: 20px;

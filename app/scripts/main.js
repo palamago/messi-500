@@ -92,7 +92,7 @@ var MessiViz;
 				);
     		});
 
-    	d3.xml("./images/messi-01.svg", "image/svg+xml", function(error, xml) {
+    	d3.xml("./images/messi-01-01.svg", "image/svg+xml", function(error, xml) {
 		  if (error) throw error;
 		  MessiViz.totals.$messiContainer.html(xml.documentElement);
 		  	$('#messi-container svg path').each(function(i,e){
