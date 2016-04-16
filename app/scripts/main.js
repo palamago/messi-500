@@ -92,7 +92,7 @@ var MessiViz;
 				);
     		});
 
-    	d3.xml("./images/messi-01-01.svg", "image/svg+xml", function(error, xml) {
+    	d3.xml("./images/messi-01-01-01.svg", "image/svg+xml", function(error, xml) {
 		  if (error) throw error;
 		  MessiViz.totals.$messiContainer.html(xml.documentElement);
 		  	$('#messi-container svg path').each(function(i,e){
@@ -108,10 +108,12 @@ var MessiViz;
 		  		MessiViz.team="BAR";
 		  		d3.selectAll('#messi-container svg path.color1').transition().duration(2000).attr('fill','#00529F');
 		  		d3.selectAll('#messi-container svg path.color2').transition().duration(2000).attr('fill','#A2214B');
+		  		d3.selectAll('#messi-container svg path.color3').transition().duration(2000).attr('fill','#F2C114');
 		  	}else{
 		  		MessiViz.team="ARG";
 		  		d3.selectAll('#messi-container svg path.color1').transition().duration(2000).attr('fill','#75AADB');
 		  		d3.selectAll('#messi-container svg path.color2').transition().duration(2000).attr('fill','#FFFFFF');
+		  		d3.selectAll('#messi-container svg path.color3').transition().duration(2000).attr('fill','#232323');
 		  	}
 		  },5000);
 		});
