@@ -106,11 +106,11 @@ var MessiViz;
 		  setInterval(function(){
 		  	if(MessiViz.team=="ARG"){
 		  		MessiViz.team="BAR";
-		  		d3.selectAll('#messi-container svg path.color1').transition().duration(2000).attr('fill','#003173');
-		  		d3.selectAll('#messi-container svg path.color2').transition().duration(2000).attr('fill','#831F3B');
+		  		d3.selectAll('#messi-container svg path.color1').transition().duration(2000).attr('fill','#00529F');
+		  		d3.selectAll('#messi-container svg path.color2').transition().duration(2000).attr('fill','#A2214B');
 		  	}else{
 		  		MessiViz.team="ARG";
-		  		d3.selectAll('#messi-container svg path.color1').transition().duration(2000).attr('fill','#49869D');
+		  		d3.selectAll('#messi-container svg path.color1').transition().duration(2000).attr('fill','#75AADB');
 		  		d3.selectAll('#messi-container svg path.color2').transition().duration(2000).attr('fill','#FFFFFF');
 		  	}
 		  },5000);

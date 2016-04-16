@@ -126,12 +126,8 @@ h4.main-total{
   color: #eee;
 }
 
-.modal-backdrop {
-  background:transparent;
-}
-
 .modal-content{
-  background-color: rgba(0,0,0,0.8);
+  background-color: rgb(0,0,0);
 }
 
 .carousel-inner{
@@ -169,4 +165,15 @@ h4.main-total{
   .matrix-back{
     stroke: #000;
   }
+}
+
+#credits{
+  position: absolute;
+  bottom: 10px;
+  left: 10px;
+  font-size: 30px;
+}
+
+#creditsModal{
+    color:#fff;
 }
