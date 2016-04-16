@@ -31,6 +31,20 @@ body {
   background-color: #000;
   color: #DDD;
   z-index: 1000;
+  &.loading{
+    background-image: url('../images/cube.gif');
+    background-repeat: no-repeat;
+    background-position: center center;
+    .btn{
+      display: none;
+    }
+    h4{
+      display: block;
+    }
+  }
+  h4{
+    display: none;
+  }
 }
 
 #svg-container{
@@ -159,7 +173,19 @@ h4.main-total{
 }
 #messi-container{
   text-align: center;
+  margin-top: 100px;
 }
 .totals-labels{
   font-size: 20px;
+}
+#item-minutes{
+  div{
+    height: 100%;
+  }
+  .matrix-goals{
+    font-size: 25px;
+  }
+  .matrix-back{
+    stroke: #000;
+  }
 }
