@@ -160,7 +160,7 @@ var MessiViz;
 			MessiViz.chartSize = 100;
 
 			var h = MessiViz.height-$('.masthead').height();
-			if(!MessiViz.isBreakpoint('sm')||!MessiViz.isBreakpoint('xs')){
+			if(MessiViz.isBreakpoint('md')||MessiViz.isBreakpoint('lg')){
 				h -= MessiViz.chartSize;
 			}
 			$('.carousel-inner,.item').height(h);
