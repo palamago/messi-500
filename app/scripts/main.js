@@ -27,12 +27,12 @@ var MessiViz;
     MessiViz.competitionName = {
 		"PRM":"La Liga española",
 		"CUP":"Copa del Rey de España",
-		"EUR":"UEFA Champions League",
+		"EUR":"Champions League",
 		"FRN":"Amistoso internacional",
 		"WCQ":"Eliminatorias para la copa del mundo",
 		"WCP":"Copa del mundo",
-		"SUP":"Super Copa de España",
-		"IUP":"Super Copa de Europa UEFA",
+		"SUP":"Supercopa de España",
+		"IUP":"Supercopa de Europa UEFA",
 		"CPA":"Copa América",
 		"WCT":"Mundial de clubes"
     };
