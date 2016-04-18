@@ -518,6 +518,10 @@ var MessiViz;
 		var h = MessiViz.totals.$svgMinutes.parent().innerHeight();
 		var w = MessiViz.totals.$svgMinutes.parent().innerWidth()
 
+		if(MessiViz.isBreakpoint('sm')||MessiViz.isBreakpoint('xs')){
+			h -= $('#matrix-title-container').height();
+		}
+
     	if(!MessiViz.groups.matrix){
     		MessiViz.matrixMargin = {top: 10, right: 0, bottom: 10, left: 0},
     		MessiViz.matrixSvg = d3.select("#svg-minutes-container").append("svg")

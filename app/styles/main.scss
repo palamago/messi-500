@@ -196,6 +196,7 @@ h4.main-total{
 
 #creditsModal{
     color:#fff;
+    font-size: 20px;
 }
 
 .high{
@@ -229,9 +230,14 @@ hr{
   .totals-labels{
     color: #BBB;
   }
+  #creditsModal .text-right{
+    text-align: left;
+  }
 }
 
 /* Extra Small Devices, Phones */ 
 @media only screen and (max-width : 480px) {
-
+  h4.main-total{
+    font-size: 70px;
+  }
 }
