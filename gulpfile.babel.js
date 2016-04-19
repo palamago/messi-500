@@ -81,6 +81,11 @@ gulp.task('data', () => {
     .pipe(gulp.dest('dist/data'));
 });
 
+gulp.task('i18n', () => {
+  return gulp.src('app/i18n/**/*')
+    .pipe(gulp.dest('dist/i18n'));
+});
+
 gulp.task('fonts', () => {
   return gulp.src(require('main-bower-files')('**/*.{eot,svg,ttf,woff,woff2}', function (err) {})
     .concat('app/fonts/**/*'))
@@ -169,7 +174,7 @@ gulp.task('wiredep', () => {
     .pipe(gulp.dest('app'));
 });
 
-gulp.task('build', [ 'html', 'images', 'fonts', 'extras', 'data'], () => {
+gulp.task('build', [ 'html', 'images', 'fonts', 'extras', 'data', 'i18n'], () => {
   return gulp.src('dist/**/*').pipe($.size({title: 'build', gzip: true}));
 });
 
