@@ -170,8 +170,12 @@ h4.main-total{
 }
 .totals-labels{
   font-size: 20px;
+  color: #777;
 }
 #item-minutes{
+  h2{
+    color: #777;  
+  }
   #svg-minutes-container{
     width: 100%;
   }

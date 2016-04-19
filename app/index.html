@@ -33,46 +33,47 @@
       <div class="container">
           <div class="row">
             <div class="col-sm-10 col-sm-offset-1">
-              <h2>Messi: 500 goles</h2>
+              <h2 data-i18n="help-title"></h2>
+              <a class="btn btn-lg btn-link change-lang pull-right" data-lang="en">Click here for english version</a>
+              <a class="btn btn-lg btn-link change-lang hide pull-right" data-lang="es">Click aquí para versión en español</a>
             </div>
           </div>
           <hr/>
           <div class="row">
             <div class="col-sm-10 col-sm-offset-1">
-              <p><strong class="high">¿Qué es esto? </strong>Es una pieza interactiva que permite explorar los 500 goles de Messi de una manera visual. También vas a poder ver el detalle de minutos jugados y asistencias.</p>
+              <p><strong data-i18n="help-what" class="high"></strong><span data-i18n="help-what-text"></span></p>
             </div>
           </div>
           <hr/>
           <div class="row hidden-md hidden-lg">
             <div class="col-sm-10 col-sm-offset-1">
-              <p><strong class="high">¿Qué voy a ver? </strong>Como estás ingresando desde un dispositivo con pantalla pequeña verás visualizaciones de datos relacionadas a los 500 goles de Messi. Cuando puedas, entrá desde una pantalla más grande, está mejor. ;)</p>
+              <p><strong data-i18n="help-see" class="high"></strong><span data-i18n="help-see-text-small"></span></p>
             </div>
           </div>
           <div class="row visible-md visible-lg">
             <div class="col-sm-10 col-sm-offset-1">
-              <p><strong class="high">¿Qué voy a ver? </strong>Una presentación interactiva de datos.</p>
-              <p>Hay dos grandes áreas de la visualización:</p>
-              <p><strong class="high"><i class="glyphicon glyphicon-screenshot"></i> CENTRO </strong>Lo que ocurre en el centro de la pantalla es relativo a sus goles. Podés cambiar las visualizaciones haciendo click en las flechas.</p> 
-              <p><strong class="high"><i class="glyphicon glyphicon-fullscreen"></i> BORDES </strong>Sobre los bordes izquierdo, derecho e inferior hay otra sección que nos muestra lo relativo a sus partidos: goles, asistencias y minutos jugados. Al pasar el mouse por encima vas a poder ver un comentario de cada partido.</p>
+              <p><strong data-i18n="help-see" class="high">¿Qué voy a ver? </strong><span data-i18n="help-see-text"></span></p>
+              <p><strong class="high"><i class="glyphicon glyphicon-screenshot"></i> <span data-i18n="help-see-center"></span> </strong><span data-i18n="help-see-center-text"></span></p> 
+              <p><strong class="high"><i class="glyphicon glyphicon-fullscreen"></i> <span data-i18n="help-see-border"></span> </strong><span data-i18n="help-see-border-text"></span></p>
             </div>
           </div>
           <hr/>
           <div class="row">
             <div class="col-sm-10 col-sm-offset-1">
-              <p><strong class="high">FILTROS</strong> Revisá el título, desde allí podrás elegir la competición o el equipo, para filtrar los datos en la visualización.</p>
+              <p><strong data-i18n="help-filter" class="high"></strong> <span data-i18n="help-filter-text"></span></p>
             </div>
           </div>
           <hr/>
           <div class="row">
             <div class="col-sm-10 col-sm-offset-1">
-              <p><strong class="high">DATO</strong> Leo se demoró mas de 10 años para convertir 500 goles, creo que podemos esperar un poco mientras carga...</p>
+              <p><strong class="high" data-i18n="help-wait"></strong> <span data-i18n="help-wait-text"></span></p>
             </div>
           </div>
           <hr/>
           <div class="row">
             <div class="col-sm-10 col-sm-offset-1">
               <h4>Cargando...</h4>
-              <p class="text-center"><a id="enter" class="btn btn-lg btn-default">Ya podés ingresar ;)</a></p>
+              <p class="text-center"><a id="enter" class="btn btn-lg btn-default" data-i18n="help-go"></a></p>
             </div>
           </div>
           <hr/>
@@ -89,7 +90,7 @@
     <div class="container">
         <div class="row masthead">
           <div class="col-md-12">
-              <h1 class="text-center">Messi: <span class="main-total totals-goals totals-goals-header">0</span> goles en&nbsp;
+              <h1 class="text-center">Messi: <span class="main-total totals-goals totals-goals-header">0</span> <span data-i18n="vis-title"></span>
                 <div class="btn-group">
                   <a class="filter-link" href="javascript:;" class="dropdown-toggle" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
                     <span id="active-filter">total</span><span class="caret"></span>
@@ -97,17 +98,17 @@
                   <ul class="dropdown-menu dropdown-menu-right">
                     <li><a id="clear-filter" href="#">total</a></li>
                     <li role="separator" class="divider"></li>
-                    <li><a href="#" class="btn-filter" data-field="competition" data-filter="WCP">Copa del Mundo FIFA</a></li>
-                    <li><a href="#" class="btn-filter" data-field="competition" data-filter="WCQ">eliminatorias de la Copa del Mundo</a></li>
-                    <li><a href="#" class="btn-filter" data-field="competition" data-filter="CPA">Copa América</a></li>
-                    <li><a href="#" class="btn-filter" data-field="competition" data-filter="FRN">amistosos internacionales</a></li>
+                    <li><a href="#" class="btn-filter" data-field="competition" data-filter="WCP" data-i18n="WCP"></a></li>
+                    <li><a href="#" class="btn-filter" data-field="competition" data-filter="WCQ" data-i18n="WCQ"></a></li>
+                    <li><a href="#" class="btn-filter" data-field="competition" data-filter="CPA" data-i18n="CPA"></a></li>
+                    <li><a href="#" class="btn-filter" data-field="competition" data-filter="FRN" data-i18n="FRN"></a></li>
                     <li role="separator" class="divider"></li>
-                    <li><a href="#" class="btn-filter" data-field="competition" data-filter="PRM">La Liga española</a></li>
-                    <li><a href="#" class="btn-filter" data-field="competition" data-filter="CUP">Copa del Rey</a></li>
-                    <li><a href="#" class="btn-filter" data-field="competition" data-filter="EUR">Champions League</a></li>
-                    <li><a href="#" class="btn-filter" data-field="competition" data-filter="WCT">Mundial de Clubes</a></li>
-                    <li><a href="#" class="btn-filter" data-field="competition" data-filter="IUP">Supercopa de Europa</a></li>
-                    <li><a href="#" class="btn-filter" data-field="competition" data-filter="SUP">Supercopa de España</a></li>
+                    <li><a href="#" class="btn-filter" data-field="competition" data-filter="PRM" data-i18n="PRM"></a></li>
+                    <li><a href="#" class="btn-filter" data-field="competition" data-filter="CUP" data-i18n="CUP"></a></li>
+                    <li><a href="#" class="btn-filter" data-field="competition" data-filter="EUR" data-i18n="EUR"></a></li>
+                    <li><a href="#" class="btn-filter" data-field="competition" data-filter="WCT" data-i18n="WCT"></a></li>
+                    <li><a href="#" class="btn-filter" data-field="competition" data-filter="IUP" data-i18n="IUP"></a></li>
+                    <li><a href="#" class="btn-filter" data-field="competition" data-filter="SUP" data-i18n="SUP"></a></li>
                     <li role="separator" class="divider"></li>
                     <li><a href="#" class="btn-filter" data-field="team" data-filter="Argentina">Argentina</a></li>
                     <li><a href="#" class="btn-filter" data-field="team" data-filter="FC Barcelona">FC Barcelona</a></li>
@@ -133,7 +134,7 @@
                 <div class="row">
                   <div class="col-sm-12">
                     <div id="messi-container"></div>
-                    <h2 class="text-center hidden-md">Usa las flechas para interactuar</h2>
+                    <h2 class="text-center hidden-md" data-i18n="vis-tip"></h2>
                   </div>
                 </div>
               </div>
@@ -141,18 +142,18 @@
                 <div class="row">
                   <div class="col-sm-6 col-xs-6">
                     <h4 id="totals-matches" class="text-center main-total">0</h4>
-                    <p class="totals-labels text-center">PARTIDOS</p>
+                    <p class="totals-labels text-center" data-i18n="vis-games"></p>
                     <p class="totals-labels text-center"><small id="totals-minutes">0</small> mins.</p>
                   </div>
                   <div class="col-sm-6 col-xs-6">
                     <h4 id="totals-assists" class="text-center main-total">0</h4>
-                    <p class="totals-labels text-center">ASISTENCIAS</p>
+                    <p class="totals-labels text-center" data-i18n="vis-assists"></p>
                   </div>
                 </div>
                 <div class="row">
                   <div class="col-sm-4 col-sm-offset-4">
                     <h4 class="text-center main-total totals-goals">0</h4>
-                    <p class="totals-labels text-center">GOLES</p>
+                    <p class="totals-labels text-center" data-i18n="vis-goals"></p>
                   </div>
                 </div>
               </div>
@@ -161,23 +162,23 @@
                 <div class="row">
                   <div class="col-sm-6 col-xs-6">
                     <h4 id="totals-goals-left" class="text-center main-total" data-how="Left foot">0</h4>
-                    <p class="totals-labels text-center">Pie izquierdo</p>
+                    <p class="totals-labels text-center" data-i18n="vis-left-foot"></p>
                   </div>
                   <div class="col-sm-6 col-xs-6">
                     <h4 id="totals-goals-right" class="text-center main-total" data-how="Right foot">0</h4>
-                    <p class="totals-labels text-center">Pie derecho</p>
+                    <p class="totals-labels text-center" data-i18n="vis-right-foot"></p>
                   </div>
                   <div class="col-sm-4 col-xs-6">
                     <h4 id="totals-goals-head" class="text-center main-total" data-how="Head">0</h4>
-                    <p class="totals-labels text-center">Cabeza</p>
+                    <p class="totals-labels text-center" data-i18n="vis-head"></p>
                   </div>
                   <div class="col-sm-4 col-sm-offset-4 col-xs-6">
                     <h4 id="totals-goals-hand" class="text-center main-total" data-how="Hand">0</h4>
-                    <p class="totals-labels text-center">Mano</p>
+                    <p class="totals-labels text-center" data-i18n="vis-head"></p>
                   </div>
                   <div class="col-sm-6 col-sm-offset-6 col-xs-6">
                     <h4 id="totals-goals-chest" class="text-center main-total" data-how="Chest">0</h4>
-                    <p class="totals-labels text-center">Pecho</p>
+                    <p class="totals-labels text-center" data-i18n="vis-chest"></p>
                   </div>
                 </div>
               </div>
@@ -200,10 +201,12 @@
               <div id="item-minutes" class="item">
                 <div class="row fullh">
                   <div id="matrix-title-container" class="col-sm-3 col-xs-10 col-xs-offset-1">
-                    <h2 class="text-right">Goles por minuto de partido.</h2>
+                    <h2 class="text-right" data-i18n="vis-per-game"></h2>
+                    <h2 class="text-right hidden-xs hidden-sm"><small data-i18n="vis-per-game-text"></small></h2>
                   </div>
                   <div class="col-md-6 col-sm-8 col-xs-11 fullh">
                     <div id="svg-minutes-container"></div>
+                    <h2 class="text-right hidden-lg hidden-md"><small data-i18n="vis-per-game-text"></small></h2>
                   </div>
                 </div>
               </div>
@@ -240,10 +243,12 @@
 
     <!-- build:js scripts/vendor.js -->
     <!-- bower:js -->
-    <script src="/bower_components/d3/d3.js"></script>
-    <script src="/bower_components/lodash/lodash.js"></script>
     <script src="/bower_components/jquery/dist/jquery.js"></script>
+    <script src="/bower_components/lodash/lodash.js"></script>
     <script src="/bower_components/jquery-countTo/jquery.countTo.js"></script>
+    <script src="/bower_components/jquery.i18n/src/jquery.i18n.js"></script>
+    <script src="/bower_components/jquery.i18n/src/jquery.i18n.messagestore.js"></script>
+    <script src="/bower_components/d3/d3.js"></script>
     <!-- endbower -->
     <!-- endbuild -->
     
@@ -268,7 +273,7 @@
 
     <script type="text/javascript">
       window.onload = function() {
-        MessiViz.init();
+        MessiViz.setLang('es');
       }
     </script>
 
@@ -278,36 +283,30 @@
         <div class="modal-content">
           <div class="modal-header">
             <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
-            <h4 class="modal-title" id="myModalLabel">CRÉDITOS</h4>
+            <h4 class="modal-title" id="myModalLabel" data-i18n="credits-title"></h4>
           </div>
           <div class="modal-body">
             <div class="row">
-              <div class="col-sm-4 text-right">
-                DATOS
-              </div>
+              <div class="col-sm-4 text-right" data-i18n="credits-data"></div>
               <div class="col-sm-8">
-                  <p>Los datos fueron recolectados por <a target="_blank" href="https://twitter.com/messistats">@messiStats</a> en su estupendo sitio de estadísticas <a href="http://messi.starplayerstats.com/en" target="_blank">Star Player Stats</a>.</p>
+                  <p class="i18n-html" data-i18n-html="credits-data-text"></p>
               </div>
             </div>
             <div class="row">
-              <div class="col-sm-4 text-right">
-                ILUSTRACIÓN
-              </div>
+              <div class="col-sm-4 text-right" data-i18n="credits-illustration"></div>
               <div class="col-sm-8">
-                  <p>Lauri de <a target="_blank" href="http://totemdc.com">Totem DC</a> hizo el vectorizado de Messi.</p>
+                  <p class="i18n-html" data-i18n-html="credits-illustration-text"></p>
               </div>
             </div>
             <div class="row">
-              <div class="col-sm-4 text-right">
-                DESARROLLO
-              </div>
+              <div class="col-sm-4 text-right" data-i18n="credits-development"></div>
               <div class="col-sm-8">
-                  <p>El código lo escribió <a target="_blank" href="http://twitter.com/palamago">@palamago</a> usando Twitter bootstrap, d3.js, jQuery.</p>
+                <p class="i18n-html" data-i18n-html="credits-development-text"></p>
               </div>
             </div>
           </div>
           <div class="modal-footer">
-            <button type="button" class="btn btn-default" data-dismiss="modal">Cerrar</button>
+            <button type="button" class="btn btn-default" data-dismiss="modal" data-i18n="credits-close"></button>
           </div>
         </div>
       </div>

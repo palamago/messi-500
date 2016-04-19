@@ -1,4 +1,10 @@
-
+$.i18n.debug = true;
+$.extend( $.i18n.parser.emitter, {
+    // Handle LINK keywords
+    link: function ( nodes ) {
+        return '<a target="_blank" href="' + nodes[1] + '">' + nodes[0] + '</a>';
+    }
+} );
 var MessiViz;
 ;(function(global, document, $, d3){
 
@@ -20,6 +26,24 @@ var MessiViz;
 
 	MessiViz.isBreakpoint = function(alias) {
 	    return $('.device-' + alias).is(':visible');
+	};
+
+	MessiViz.setLang = function(lang) {
+		var i18n = $.i18n();
+
+		i18n.locale = lang;
+		console.log(lang);
+		i18n.load( 'i18n/' + i18n.locale + '.json', i18n.locale )
+			.done(
+				function() {
+					$('body').i18n();
+					$('.i18n-html').each(function(){
+						var container = $(this);
+						container.html($.i18n(container.data('i18n-html')));
+					});
+					MessiViz.init();
+				});
+
 	};
 
     MessiViz.competitions = ["PRM", "CUP", "EUR", "FRN", "WCQ", "WCP", "SUP", "IUP", "CPA", "WCT"];
@@ -243,7 +267,8 @@ var MessiViz;
 
     		MessiViz.groups.goals
     			.append('text')
-	    		.text(function(d){return 'GOLES';})
+	    		.text(function(d){return $.i18n( 'vis-goals' );})
+	    		.attr('data-i18n',"vis-goals")
 				.classed("totals-label",true)
 				.attr('y',function(d,i){return 0;})
 				.attr('x',function(d,i){return MessiViz.height/2 - MessiViz.chartSize/2;})
@@ -330,7 +355,8 @@ var MessiViz;
 
     		MessiViz.groups.assists
     			.append('text')
-	    		.text(function(d){return 'ASISTENCIAS';})
+	    		.text(function(d){return $.i18n( 'vis-assists' );})
+	    		.attr('data-i18n',"vis-assists")
 				.classed("totals-label-assists",true)
 				.attr('y',function(d,i){return MessiViz.width;})
 				.attr('x',function(d,i){return -MessiViz.height/2 + MessiViz.chartSize/2;})
@@ -424,7 +450,8 @@ var MessiViz;
 
     	    MessiViz.groups.minutes
     			.append('text')
-	    		.text(function(d){return 'MINUTOS';})
+	    		.text(function(d){return $.i18n( 'vis-minutes' );})
+	    		.attr('data-i18n',"vis-minutes")
 				.classed("totals-label",true)
 				.attr('y',function(d,i){return MessiViz.height;})
 				.attr('x',function(d,i){return MessiViz.width/2;})
@@ -590,7 +617,7 @@ var MessiViz;
 		matrixItems.attr("class", function(d,i){
 				return 'minute'+d.key;
 			})
-			.text(function(d){return (d.key==90)?"90'+":d.key+"'";})
+			.text(function(d){return (d.key==90||d.key==45)?d.key+"'+":d.key+"'";})
 			.classed("matrix-minute",true)
 			.attr("fill", '#333');
 
@@ -602,53 +629,54 @@ var MessiViz;
     	d3.selectAll('rect.match'+data.id).classed('selectedMatch', true);
     	d3.selectAll('circle.match'+data.id).classed('selectedGoal', true);
     	var x = d3.select('rect.bar-minute.match'+data.id).attr('x');
-    	MessiViz.linev.transition().style('opacity',1).attr('x1',Math.round(x)+Math.round(MessiViz.barGap.x/2)).attr('x2',Math.round(x)+Math.round(MessiViz.barGap.x/2));
     	var y = d3.select('rect.bar-goal.match'+data.id).attr('y');
+    	MessiViz.linev.transition().style('opacity',1)
+    		.attr('x1',Math.round(x)+Math.round(MessiViz.barGap.x/2))
+    		.attr('y1',Math.round(y)+Math.round(MessiViz.barGap.y/2))
+    		.attr('x2',Math.round(x)+Math.round(MessiViz.barGap.x/2));
     	MessiViz.lineh.transition().style('opacity',1).attr('y1',Math.round(y)+Math.round(MessiViz.barGap.y/2)).attr('y2',Math.round(y)+Math.round(MessiViz.barGap.y/2));
     	MessiViz.tooltip
     		.html(function(){
     			var winner = (data.home_goals>data.away_goals)?'home':'away';
     			var looser = (data.home_goals<data.away_goals)?'home':'away';
     			var text =  '<p>'+
-    						'El día <strong>'+data.date+'</strong>, '+
-    						'<strong>'+data.home+'</strong> recibió a <strong>'+data.away+'</strong> '+
-    						'por <strong>'+MessiViz.competitionName[data.competition]+'</strong>.';
+    						$.i18n('game-date',data.date,data.home,data.away,$.i18n(data.competition));
 
     			if(winner==looser){
-    				text += ' Fue empate ';
+    				text += $.i18n('game-tie');
     			} else if(looser=='home'){
-    				text += ' Fue victoria para los visitantes ';
+    				text += $.i18n('game-away');
     			} else {
-    				text += ' Los locales se impusieron ';
+    				text += $.i18n('game-home');
     			}
-    			text += '<strong>'+data.home_goals+'-'+data.away_goals+'</strong>.';
+    			text += $.i18n('game-result',data.home_goals,data.away_goals);
 
     			if(data.goals==0){
-    				text+=' Messi no marcó goles';
+    				text+= $.i18n('game-no-goals');
     			} else if(data.goals==1){
-    				text+=' Messi marcó <strong>un</strong> gol en el minuto '+data.details[0].minute;
+    				text+= $.i18n('game-one-goals',data.details[0].minute);
     			} else {
-    				text+=' Messi marcó <strong>'+data.goals+'</strong> goles';
+    				text+= $.i18n('game-n-goals',data.goals);
     			}
 
     			if(data.assists==0){
-    				text+=', no hizo asistencias';
+    				text+= $.i18n('game-no-assists');
     			} else if(data.assists==1){
-    				text+=', realizó <strong>una</strong> asistencia';
+    				text+= $.i18n('game-one-assists');
     			} else {
-    				text+=', sumó <strong>'+data.assists+'</strong> asistencias';
+    				text+= $.i18n('game-n-assists',data.assists);
     			}
 
     			if(data.minutes>=90){
-    				text+=', jugando el partido completo';
+    				text+= $.i18n('game-90');
     				if(data.minutes==120){
-    					text+=' mas el alargue';
+    					text+= $.i18n('game-120');
     				}
     				text+='.';
     			} else if(data.minutes<45){
-    				text+=', jugando apenas <strong>'+data.minutes+'</strong> minutos.';
+    				text+= $.i18n('game-less',data.minutes);
     			} else {
-    				text+=', participando <strong>'+data.minutes+'</strong> minutos.';
+    				text+= $.i18n('game-more',data.minutes);
     			}
 
     			return text+'</p>';
@@ -744,6 +772,11 @@ var MessiViz;
 			window.scrollTo(0,0);
 			$('body').removeClass('help');
 			MessiViz.$loader.fadeOut();
+		});
+
+		$('.change-lang').on('click',function(){
+			$('.change-lang').toggleClass('hide');
+			MessiViz.setLang($(this).data('lang'));
 		});
 
     };
