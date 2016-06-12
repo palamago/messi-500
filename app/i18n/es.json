@@ -28,6 +28,7 @@
     "vis-chest": "Pecho",
     "vis-per-game": "Goles por minuto de partido",
     "vis-per-game-text": "El minuto 45+ y el 90+ incluyen los goles de tiempo adicional. El minuto 90+ además incluye los goles en tiempo suplementario. Solo uno. El que convirtió con el pecho.",
+    "per-game":" por partido.",
 
     "credits-title": "CRÉDITOS",
     "credits-close": "Cerrar",
@@ -55,18 +56,18 @@
     "game-home":" Los locales se impusieron ",
     "game-result":"<strong>$1-$2</strong>.",
     
-    "game-no-goals":" Messi no marcó goles",
-    "game-one-goals":" Messi marcó <strong>un</strong> gol en el minuto <strong>$1</strong>",
-    "game-n-goals":" Messi marcó <strong>$1</strong> goles",
+    "game-no-goals":" <span style='color:$1;'>Messi no marcó goles</span>",
+    "game-one-goals":" <span style='color:$1;'>Messi marcó <strong>un</strong> gol en el minuto <strong>$2</strong></span>",
+    "game-n-goals":" <span style='color:$1;'>Messi marcó <strong>$2</strong> goles</span>",
 
-    "game-no-assists":", no hizo asistencias",
-    "game-one-assists":", realizó <strong>una</strong> asistencia",
-    "game-n-assists":", sumó <strong>$1</strong> asistencias",
+    "game-no-assists":", <span style='color:$1;'>no hizo asistencias</span>",
+    "game-one-assists":", <span style='color:$1;'>realizó <strong>una</strong> asistencia</span>",
+    "game-n-assists":", <span style='color:$1;'>sumó <strong>$2</strong> asistencias</span>",
 
-    "game-90":", jugando el partido completo",
-    "game-120":" más el alargue",
+    "game-90":", <span style='color:$1;'>jugando el partido completo</span>",
+    "game-120":" <span style='color:$1;'>más el alargue</span>",
 
-    "game-less":", jugando apenas <strong>$1</strong> minutos.",
-    "game-more":", participando <strong>$1</strong> minutos."
+    "game-less":", <span style='color:$1;'>jugando apenas <strong>$2</strong> minutos.</span>",
+    "game-more":", <span style='color:$1;'>participando <strong>$2</strong> minutos.</span>"
 
 }

@@ -28,6 +28,7 @@
     "vis-chest": "Chest",
     "vis-per-game": "Goals per match's minute",
     "vis-per-game-text": "Minute 45+ and 90+ include goals during injury time. Minute 90+ also include extra-time goals. Just one. The one with his chest.",
+    "per-game":" per match.",
 
     "credits-title": "CREDITS",
     "credits-close": "Close",
@@ -55,18 +56,18 @@
     "game-home":" Locals won ",
     "game-result":"<strong>$1-$2</strong>.",
     
-    "game-no-goals":" Messi didn't score",
-    "game-one-goals":" Messi scored <strong>one</strong> goal at minute <strong>$1</strong>",
-    "game-n-goals":" Messi scored <strong>$1</strong> goals",
+    "game-no-goals":" <span style='color:$1;'>Messi didn't score</span>",
+    "game-one-goals":" <span style='color:$1;'>Messi scored <strong>one</strong> goal at minute <strong>$2</strong></span>",
+    "game-n-goals":" <span style='color:$1;'>Messi scored <strong>$2</strong> goals</span>",
 
-    "game-no-assists":", no-assists",
-    "game-one-assists":", did <strong>one</strong> assist",
-    "game-n-assists":", made <strong>$1</strong> assists",
+    "game-no-assists":", <span style='color:$1;'>no-assists</span>",
+    "game-one-assists":", <span style='color:$1;'>did <strong>one</strong> assist</span>",
+    "game-n-assists":", <span style='color:$1;'>made <strong>$2</strong> assists</span>",
 
-    "game-90":", playing the entire game",
-    "game-120":" plus extra-time",
+    "game-90":", <span style='color:$1;'>playing the entire game</span>",
+    "game-120":" <span style='color:$1;'>plus extra-time</span>",
 
-    "game-less":", playing just <strong>$1</strong> minutes.",
-    "game-more":", in the field for <strong>$1</strong> minutes."
+    "game-less":", <span style='color:$1;'>playing just <strong>$2</strong> minutes.</span>",
+    "game-more":", <span style='color:$1;'>in the field for <strong>$2</strong> minutes.</span>"
 
 }

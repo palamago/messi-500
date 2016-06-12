@@ -32,7 +32,6 @@ var MessiViz;
 		var i18n = $.i18n();
 
 		i18n.locale = lang;
-		console.log(lang);
 		i18n.load( 'i18n/' + i18n.locale + '.json', i18n.locale )
 			.done(
 				function() {
@@ -88,6 +87,8 @@ var MessiViz;
     	$goals: 	$('.totals-goals'),
     	$assists: $('#totals-assists'),
     	$minutes: $('#totals-minutes'),
+    	$goalsPerMatch: $('#goals-per-match'),
+    	$assistsPerMatch: $('#assists-per-match'),
     	$matches: $('#totals-matches'),
     	$goalsLeft: $('#totals-goals-left'),
     	$goalsRight: $('#totals-goals-right'),
@@ -652,31 +653,31 @@ var MessiViz;
     			text += $.i18n('game-result',data.home_goals,data.away_goals);
 
     			if(data.goals==0){
-    				text+= $.i18n('game-no-goals');
+    				text+= $.i18n('game-no-goals', MessiViz.color("GOAL"));
     			} else if(data.goals==1){
-    				text+= $.i18n('game-one-goals',data.details[0].minute);
+    				text+= $.i18n('game-one-goals', MessiViz.color("GOAL"), data.details[0].minute);
     			} else {
-    				text+= $.i18n('game-n-goals',data.goals);
+    				text+= $.i18n('game-n-goals', MessiViz.color("GOAL"), data.goals);
     			}
 
     			if(data.assists==0){
-    				text+= $.i18n('game-no-assists');
+    				text+= $.i18n('game-no-assists', MessiViz.color("ASSIST"));
     			} else if(data.assists==1){
-    				text+= $.i18n('game-one-assists');
+    				text+= $.i18n('game-one-assists', MessiViz.color("ASSIST"));
     			} else {
-    				text+= $.i18n('game-n-assists',data.assists);
+    				text+= $.i18n('game-n-assists', MessiViz.color("ASSIST") ,data.assists);
     			}
 
     			if(data.minutes>=90){
-    				text+= $.i18n('game-90');
+    				text+= $.i18n('game-90', MessiViz.color("MINUTE"));
     				if(data.minutes==120){
-    					text+= $.i18n('game-120');
+    					text+= $.i18n('game-120', MessiViz.color("MINUTE"));
     				}
     				text+='.';
     			} else if(data.minutes<45){
-    				text+= $.i18n('game-less',data.minutes);
+    				text+= $.i18n('game-less', MessiViz.color("MINUTE"),data.minutes);
     			} else {
-    				text+= $.i18n('game-more',data.minutes);
+    				text+= $.i18n('game-more', MessiViz.color("MINUTE"),data.minutes);
     			}
 
     			return text+'</p>';
@@ -775,14 +776,14 @@ var MessiViz;
 		});
 
 		$('.change-lang').on('click',function(){
-			$('.change-lang').toggleClass('hide');
 			MessiViz.setLang($(this).data('lang'));
+			$('.change-lang').removeClass('hide');
+			$(this).addClass('hide');
 		});
 
     };
 
     MessiViz.updateBySlide = function(){
-    	console.log(MessiViz.selectedSlide);
 		switch(MessiViz.selectedSlide){
 	  		case 'item-home':
 	  			MessiViz.hideForceLayout()
@@ -923,7 +924,9 @@ var MessiViz;
     };
 
     MessiViz.showBars = function(){
-    	d3.selectAll('rect.bar-unit').attr("fill", function(d,i) { return MessiViz.color(d.competition); });
+    	d3.selectAll('rect.bar-goal').attr("fill", function(d,i) { return MessiViz.color("GOAL"); });
+    	d3.selectAll('rect.bar-assist').attr("fill", function(d,i) { return MessiViz.color("ASSIST"); });
+    	d3.selectAll('rect.bar-minute').attr("fill", function(d,i) { return MessiViz.color("MINUTE"); });
     	d3.selectAll('text.totals-label,text.totals-label-assists').style('opacity',1);
     };
 
@@ -977,6 +980,24 @@ var MessiViz;
 			speed: 1000,
 			formatter: function (value, options) {
       			return value.toFixed(options.decimals);
+    		}
+		});
+
+		MessiViz.totals.$goalsPerMatch.countTo({
+			from: parseInt(MessiViz.totals.$goalsPerMatch.html()), 
+			to: goals/matches,
+			speed: 1000,
+			formatter: function (value, options) {
+      			return value.toFixed(2);
+    		}
+		});
+
+		MessiViz.totals.$assistsPerMatch.countTo({
+			from: parseInt(MessiViz.totals.$assistsPerMatch.html()), 
+			to: assists/matches,
+			speed: 1000,
+			formatter: function (value, options) {
+      			return value.toFixed(2);
     		}
 		});
 
