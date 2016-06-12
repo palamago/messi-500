@@ -106,12 +106,12 @@ text.competition{
 }
 
 .totals-label{
-  fill:#111;
+  fill:#444;
   font-size: 200px;
 }
 
 .totals-label-assists{
-  fill:#111;
+  fill:#444;
   font-size: 120px;
 }
 
@@ -143,6 +143,10 @@ h4.main-total{
 .carousel-inner{
   overflow-x: hidden;
   overflow-y: hidden;
+}
+
+.carousel-control.left,.carousel-control.right {
+  background-image: none;
 }
 
 .filter-link{

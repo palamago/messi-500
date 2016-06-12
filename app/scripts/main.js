@@ -757,10 +757,12 @@ var MessiViz;
 		$('.container').mouseenter(function(){
 			MessiViz.hideTooltip();
 			MessiViz.clearBars();
+			MessiViz.updateBySlide();
 		});
 
 		$('svg.main-svg').mouseenter(function(){
 			MessiViz.showBars();
+			MessiViz.hideTotals();
 		});
 
 		$('#carousel-messi').on('slid.bs.carousel', function (event) {
@@ -780,6 +782,14 @@ var MessiViz;
 			$('.change-lang').removeClass('hide');
 			$(this).addClass('hide');
 		});
+
+    };
+
+    MessiViz.hideTotals = function(){
+    	//pala
+    	$('h4.main-total').css('color','#ddd');
+    	if(MessiViz.groups.forceLayout)
+	    	MessiViz.groups.forceLayout.selectAll("circle.goal").attr('fill','#111');
 
     };
 
