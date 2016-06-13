@@ -99,6 +99,7 @@ body {
   stroke: #ccc;
   stroke-width: 1;
   stroke-dasharray:3,3;
+  pointer-events: none;
 }
 
 text.competition{
@@ -209,6 +210,14 @@ h4.main-total{
 
 .high{
   color:rgb(31, 119, 180)
+}
+
+#videoLabel{
+  color: #fff;
+}
+
+.pointer{
+  cursor: pointer;
 }
 
 hr{
