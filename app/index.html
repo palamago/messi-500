@@ -274,21 +274,9 @@
     <!-- endbuild -->
 
     <script type="text/javascript">
-      function onYouTubeIframeAPIReady() {
-        console.log('onYouTubeIframeAPIReady');
-        MessiViz.youTubeReady();
-      }
       window.onload = function() {
 
         MessiViz.setLang('es');
-
-        //Youtube
-        var tag = document.createElement('script');
-
-        tag.src = "https://www.youtube.com/iframe_api";
-        var firstScriptTag = document.getElementsByTagName('script')[0];
-        firstScriptTag.parentNode.insertBefore(tag, firstScriptTag);
-
 
       }
     </script>
@@ -323,23 +311,6 @@
           </div>
           <div class="modal-footer">
             <button type="button" class="btn btn-default" data-dismiss="modal" data-i18n="credits-close"></button>
-          </div>
-        </div>
-      </div>
-    </div>
-
-    <!-- Modal -->
-    <div class="modal fade" id="videoModal">
-      <div class="modal-dialog" role="document">
-        <div class="modal-content">
-          <div class="modal-header">
-            <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
-            <h4 class="modal-title" id="videoLabel"></h4>
-          </div>
-          <div class="modal-body">
-             <div id="player"></div>
-          </div>
-          <div class="modal-footer">
           </div>
         </div>
       </div>

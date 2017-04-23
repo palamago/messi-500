@@ -157,11 +157,7 @@ var MessiViz;
 
     	_.forEach(MessiViz.MATCHES,function(match){
     		if(goals_nested[match.date]){
-    			var goals = goals_nested[match.date];
-    			console.log(goals);
-    			match.details = goals.sort(function(a,b){
-    				return parseInt(a.minute)>parseInt(b.minute);
-    			});
+				match.details = goals_nested[match.date];
     		} else {
     			match.details = [];
     		}
@@ -334,15 +330,11 @@ var MessiViz;
 			
 		bars.attr("y", function(d,i) { return y(i); })
 			.attr("height", y.rangeBand())
-			.classed('pointer',function(d){return (d.details.length)})
 			.on('mouseover',function(d){
 				MessiViz.hover(d);
 			})
 			.on('mouseout',function(d){
 				MessiViz.unhover(d);
-			})
-			.on('click',function(d){
-				MessiViz.playVideo(d);
 			});
 
     };
@@ -424,15 +416,11 @@ var MessiViz;
 			
 		bars.attr("y", function(d,i) { return y(i); })
 			.attr("height", y.rangeBand())
-			.classed('pointer',function(d){return (d.details.length)})
 			.on('mouseover',function(d){
 				MessiViz.hover(d);
 			})
 			.on('mouseout',function(d){
 				MessiViz.unhover(d);
-			})
-			.on('click',function(d){
-				MessiViz.playVideo(d);
 			});
 
     };
@@ -525,15 +513,11 @@ var MessiViz;
 			
 		bars.attr("width", x.rangeBand())
 			.attr("x", function(d,i) { return x(i); })
-			.classed('pointer',function(d){return (d.details.length)})
 			.on('mouseover',function(d){
 				MessiViz.hover(d);
 			})
 			.on('mouseout',function(d){
 				MessiViz.unhover(d);
-			})
-			.on('click',function(d){
-				MessiViz.playVideo(d);
 			});
 
     };
@@ -765,15 +749,6 @@ var MessiViz;
 			MessiViz.hideTooltip();
 		});
 
-		$('#videoModal').on('hide.bs.modal', function (event) {
-			MessiViz.player.stopVideo();
-		});
-
-		$('#videoModal').on('shown.bs.modal', function () {
-			var videoWidth = $('#videoModal .modal-body').width();
-			MessiViz.player.setSize(videoWidth, (videoWidth*9)/16);
-		});
-
 		$('#carousel-messi').carousel({
 		  interval: false
 		})
@@ -811,7 +786,6 @@ var MessiViz;
     };
 
     MessiViz.hideTotals = function(){
-    	//pala
     	$('h4.main-total').css('color','#ddd');
     	if(MessiViz.groups.forceLayout){
 	    	MessiViz.groups.forceLayout.selectAll("circle.goal").attr('fill','#111');
@@ -1159,47 +1133,6 @@ var MessiViz;
 
 	MessiViz.clear = function(){
 		MessiViz.renderD3Chart(MessiViz.MATCHES);
-	};
-
-	MessiViz.playVideo = function(d){
-		console.log(d);
-		if(d.details.length){
-			$('#videoModal #videoLabel').html( MessiViz.tooltip.html());
-			$('#videoModal').modal('show');
-			MessiViz.player.loadVideoById(
-		        	{'videoId': 'Ek7DxLuQkWU',
-		               'startSeconds': d.details[0].video_start,
-		               'endSeconds': d.details[d.details.length-1].video_end,
-		               'suggestedQuality': 'large'});
-		}
-	};
-
-	MessiViz.youTubeReady = function(){
-		MessiViz.player = new YT.Player('player', {
-			playerVars: {
-				controls: 0,
-				disablekb: 1,
-				modestbranding: 1,
-				rel:0,
-				showinfo: 0,
-				fs:0,
-				theme: 'dark'
-			},
-            events: {
-              'onReady': MessiViz.onPlayerReady,
-              'onStateChange': MessiViz.onPlayerStateChange
-            }
-          });
-	};
-
-	MessiViz.onPlayerReady = function(){
-
-	};
-
-	MessiViz.onPlayerStateChange = function(state){
-		if(state.data==YT.PlayerState.ENDED){
-			$('#videoModal').modal('hide');
-		}
 	};
 
 })(window, document,jQuery, d3);
