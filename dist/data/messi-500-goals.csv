@@ -237,7 +237,7 @@ id,date,competition,home,away,result,minute,score,what,how,jersey
 236,2012-02-04,PRM,FC Barcelona,Real Sociedad,2-1,72,2-0,,Left foot,10
 237,2012-02-14,EUR,Bayer Leverkusen,FC Barcelona,1-3,88,1-3,,Left foot,10
 238,2012-02-19,PRM,FC Barcelona,Valencia,5-1,22,1-1,,Left foot,10
-239,2012-02-19,PRM,FC Barcelona,Valencia,5-1,27,2-1,,Left foot,10
+239,2012-02-19,PRM,FC Barcelona,Valencia,5-1,27,2-1,Rebound,Left foot,10
 240,2012-02-19,PRM,FC Barcelona,Valencia,5-1,76,3-1,Rebound,Left foot,10
 241,2012-02-19,PRM,FC Barcelona,Valencia,5-1,85,4-1,,Left foot,10
 242,2012-02-26,PRM,Atlético Madrid,FC Barcelona,1-2,81,1-2,Free kick,Left foot,10
@@ -274,7 +274,7 @@ id,date,competition,home,away,result,minute,score,what,how,jersey
 273,2012-05-05,PRM,FC Barcelona,Espanyol,4-0,74,3-0,,Left foot,10
 274,2012-05-05,PRM,FC Barcelona,Espanyol,4-0,79,4-0,Penalty,Left foot,10
 275,2012-05-25,CUP,Athletic de Bilbao,FC Barcelona,0-3,20,0-2,,Right foot,10
-276,2012-06-03,WCQ,Argentina,Ecuador,4-0,31,3-0,,Left foot,10
+276,2012-06-03,WCQ,Argentina,Ecuador,4-0,31,3-0,Field goal,Left foot,10
 277,2012-06-09,FRN,Argentina,Brazil,4-3,31,1-1,,Left foot,10
 278,2012-06-09,FRN,Argentina,Brazil,4-3,35,2-1,,Left foot,10
 279,2012-06-09,FRN,Argentina,Brazil,4-3,85,4-3,Solo run,Left foot,10
@@ -567,3 +567,17 @@ id,date,competition,home,away,result,minute,score,what,how,jersey
 566,2017-08-13,SUP,FC Barcelona,Real Madrid,1-3,76,1-1,Penalty,Left foot,10
 567,2017-08-26,PRM,Alavés,FC Barcelona,0-2,55,0-1,Field goal,Left foot,10
 568,2017-08-26,PRM,Alavés,FC Barcelona,0-2,66,0-2,Field goal,Left foot,10
+569,2017-09-09,PRM,FC Barcelona,Espanyol,5-0,26,1-0,Field goal,Left foot,10
+570,2017-09-09,PRM,FC Barcelona,Espanyol,5-0,35,2-0,Field goal,Right foot,10
+571,2017-09-09,PRM,FC Barcelona,Espanyol,5-0,67,3-0,Field goal,Left foot,10
+572,2017-09-12,EUR,FC Barcelona,Juventus,3-0,45,1-0,Field goal,Left foot,10
+573,2017-09-12,EUR,FC Barcelona,Juventus,3-0,69,3-0,Field goal,Left foot,10
+574,2017-09-19,PRM,FC Barcelona,Eibar,6-1,20,1-0,Penalty,Left foot,10
+575,2017-09-19,PRM,FC Barcelona,Eibar,6-1,59,4-1,Field goal,Left foot,10
+576,2017-09-19,PRM,FC Barcelona,Eibar,6-1,62,5-1,Field goal,Left foot,10
+577,2017-09-19,PRM,FC Barcelona,Eibar,6-1,87,6-1,Field goal,Left foot,10
+578,2017-10-01,PRM,FC Barcelona,Las Palmas,3-0,71,2-0,Field goal,Left foot,10
+579,2017-10-01,PRM,FC Barcelona,Las Palmas,3-0,77,3-0,Field goal,Left foot,10
+580,2017-10-10,WCQ,Ecuador,Argentina,1-3,13,1-1,Field goal,Left foot,10
+581,2017-10-10,WCQ,Ecuador,Argentina,1-3,20,1-2,Field goal,Left foot,10
+582,2017-10-10,WCQ,Ecuador,Argentina,1-3,63,1-3,Field goal,Left foot,10
