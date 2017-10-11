@@ -135,9 +135,13 @@ var MessiViz;
 
 	MessiViz.init = function() {
 		d3.csv("./data/messi-500-matches.csv", function(data) {
-			MessiViz.MATCHES = data;
+			MessiViz.MATCHES = data.sort(function(a,b){
+					return a.date>b.date ? 1:-1;
+				});
 			d3.csv("./data/messi-500-goals.csv", function(data) {
-				MessiViz.GOALS = data;
+				MessiViz.GOALS = data.sort(function(a,b){
+					return (a.date>b.date) ? 1:-1;
+				});
 				MessiViz.dataLoaded();
 			});
 		});
