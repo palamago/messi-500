@@ -143,7 +143,7 @@ id,date,competition,home,away,result,minute,score,what,how,jersey
 142,2010-08-21,SUP,FC Barcelona,Sevilla,4-0,43,3-0,,Right foot,10
 143,2010-08-21,SUP,FC Barcelona,Sevilla,4-0,90,4-0,,Left foot,10
 144,2010-08-29,PRM,Racing Santander,FC Barcelona,0-3,3,0-1,,Right foot,10
-145,2010-09-07,FRN,Argentina,Spain,4-1,10,1-0,,Left foot,10
+145,2010-09-07,FRN,Argentina,Spain,4-1,10,1-0,Field goal,Left foot,10
 146,2010-09-14,EUR,FC Barcelona,Panathinaikos,5-1,22,1-1,,Left foot,10
 147,2010-09-14,EUR,FC Barcelona,Panathinaikos,5-1,45,3-1,,Left foot,10
 148,2010-09-19,PRM,Atlético Madrid,FC Barcelona,1-2,13,0-1,,Left foot,10
@@ -195,7 +195,7 @@ id,date,competition,home,away,result,minute,score,what,how,jersey
 194,2011-04-27,EUR,Real Madrid,FC Barcelona,0-2,76,0-1,,Left foot,10
 195,2011-04-27,EUR,Real Madrid,FC Barcelona,0-2,87,0-2,Solo run,Right foot,10
 196,2011-05-28,EUR,FC Barcelona,Manchester United,3-1,54,2-1,,Left foot,10
-197,2011-06-20,FRN,Argentina,Albania,4-0,42,2-0,,Left foot,10
+197,2011-06-20,FRN,Argentina,Albania,4-0,42,2-0,Field goal,Left foot,10
 198,2011-08-14,SUP,Real Madrid,FC Barcelona,2-2,45,1-2,,Left foot,10
 199,2011-08-17,SUP,FC Barcelona,Real Madrid,3-2,45,2-1,,Right foot,10
 200,2011-08-17,SUP,FC Barcelona,Real Madrid,3-2,87,3-2,,Left foot,10
@@ -210,7 +210,7 @@ id,date,competition,home,away,result,minute,score,what,how,jersey
 209,2011-09-24,PRM,FC Barcelona,Atlético Madrid,5-0,90+1,5-0,,Left foot,10
 210,2011-09-28,EUR,BATE Borisov,FC Barcelona,0-5,38,0-3,,Head,10
 211,2011-09-28,EUR,BATE Borisov,FC Barcelona,0-5,55,0-4,,Left foot,10
-212,2011-10-08,WCQ,Argentina,Chile,4-1,26,2-0,,Left foot,10
+212,2011-10-08,WCQ,Argentina,Chile,4-1,26,2-0,Field goal,Left foot,10
 213,2011-10-15,PRM,FC Barcelona,Racing Santander,3-0,11,1-0,,Right foot,10
 214,2011-10-15,PRM,FC Barcelona,Racing Santander,3-0,68,3-0,,Right foot,10
 215,2011-10-29,PRM,FC Barcelona,Real Mallorca,5-0,13,1-0,Penalty,Left foot,10
@@ -344,9 +344,9 @@ id,date,competition,home,away,result,minute,score,what,how,jersey
 343,2013-04-27,PRM,Athletic de Bilbao,FC Barcelona,2-2,67,1-1,Solo run,Left foot,10
 344,2013-05-05,PRM,FC Barcelona,Real Betis,4-2,60,3-2,Free kick,Left foot,10
 345,2013-05-05,PRM,FC Barcelona,Real Betis,4-2,71,4-2,,Left foot,10
-346,2013-06-15,FRN,Guatemala,Argentina,0-4,15,0-1,,Left foot,10
+346,2013-06-15,FRN,Guatemala,Argentina,0-4,15,0-1,Field goal,Left foot,10
 347,2013-06-15,FRN,Guatemala,Argentina,0-4,40,0-3,Penalty,Left foot,10
-348,2013-06-15,FRN,Guatemala,Argentina,0-4,49,0-4,,Left foot,10
+348,2013-06-15,FRN,Guatemala,Argentina,0-4,49,0-4,Field goal,Left foot,10
 349,2013-08-18,PRM,FC Barcelona,Levante,7-0,12,2-0,,Left foot,10
 350,2013-08-18,PRM,FC Barcelona,Levante,7-0,42,5-0,Penalty,Left foot,10
 351,2013-09-01,PRM,Valencia,FC Barcelona,2-3,11,0-1,,Left foot,10
@@ -390,7 +390,7 @@ id,date,competition,home,away,result,minute,score,what,how,jersey
 389,2014-04-20,PRM,FC Barcelona,Athletic de Bilbao,2-1,74,2-1,Free kick,Left foot,10
 390,2014-04-27,PRM,Villarreal,FC Barcelona,2-3,83,2-3,,Right foot,10
 391,2014-05-03,PRM,FC Barcelona,Getafe,2-2,23,1-0,,Left foot,10
-392,2014-06-07,FRN,Argentina,Slovenia,2-0,75,2-0,,Left foot,10
+392,2014-06-07,FRN,Argentina,Slovenia,2-0,75,2-0,Field goal,Left foot,10
 393,2014-06-16,WCP,Argentina,Bosnia-Herzegovina,2-1,65,2-0,Solo run,Left foot,10
 394,2014-06-21,WCP,Argentina,Iran,1-0,90+1,1-0,,Left foot,10
 395,2014-06-25,WCP,Nigeria,Argentina,2-3,3,0-1,Rebound,Left foot,10
@@ -599,3 +599,6 @@ id,date,competition,home,away,result,minute,score,what,how,jersey
 598,2018-02-24,PRM,FC Barcelona,Girona,6-1,36,3-1,Free kick,Left foot,10
 599,2018-03-01,PRM,Las Palmas,FC Barcelona,1-1,21,0-1,Free kick,Left foot,10
 600,2018-03-04,PRM,FC Barcelona,Atlético Madrid,1-0,26,1-0,Free kick,Left foot,10
+601,2018-03-14,EUR,FC Barcelona,Chelsea,3-0,3,1-0,Field goal,Right foot,10
+602,2018-03-14,EUR,FC Barcelona,Chelsea,3-0,63,3-0,Field goal,Left foot,10
+603,2018-03-18,PRM,FC Barcelona,Athletic de Bilbao,2-0,30,2-0,Field goal,Left foot,10
