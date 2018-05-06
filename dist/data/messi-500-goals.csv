@@ -602,3 +602,12 @@ id,date,competition,home,away,result,minute,score,what,how,jersey
 601,2018-03-14,EUR,FC Barcelona,Chelsea,3-0,3,1-0,Field goal,Right foot,10
 602,2018-03-14,EUR,FC Barcelona,Chelsea,3-0,63,3-0,Field goal,Left foot,10
 603,2018-03-18,PRM,FC Barcelona,Athletic de Bilbao,2-0,30,2-0,Field goal,Left foot,10
+604,2018-03-31,PRM,Sevilla,FC Barcelona,2-2,89,2-2,Field goal,Left foot,10
+605,2018-04-07,PRM,FC Barcelona,Leganés,3-1,27,1-0,Free kick,Left foot,10
+606,2018-04-07,PRM,FC Barcelona,Leganés,3-1,32,2-0,Field goal,Left foot,10
+607,2018-04-07,PRM,FC Barcelona,Leganés,3-1,87,3-1,Field goal,Left foot,10
+608,2018-04-21,CUP,Sevilla,FC Barcelona,0-5,31,0-2,Field goal,Left foot,10
+609,2018-04-29,PRM,Deportivo La Coruña,FC Barcelona,2-4,38,0-2,Field goal,Left foot,10
+610,2018-04-29,PRM,Deportivo La Coruña,FC Barcelona,2-4,82,2-3,Field goal,Right foot,10
+611,2018-04-29,PRM,Deportivo La Coruña,FC Barcelona,2-4,85,2-4,Field goal,Left foot,10
+612,2018-05-06,PRM,FC Barcelona,Real Madrid,2-2,52,2-1,Field goal,Left foot,10
