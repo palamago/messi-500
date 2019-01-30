@@ -92,7 +92,7 @@ var MessiViz;
 
   MessiViz.colorMinutes = d3.scale
     .threshold()
-    .domain([0, 1, 3, 5, 7, 9, 11, 15, 40])
+    .domain([0, 1, 3, 5, 7, 9, 11, 15, 45])
     .range([
       "#ffffff",
       "#ffef9b",
