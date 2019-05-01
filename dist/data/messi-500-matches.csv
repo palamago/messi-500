@@ -9,26 +9,26 @@ id,date,competition,home,away,team,home_goals,away_goals,lineup,minutes,goals,as
 8,2005-09-03,WCQ,Paraguay,Argentina,Argentina,1,0,SU,10,0,0,0,45,1,0,18
 9,2005-10-12,WCQ,Uruguay,Argentina,Argentina,1,0,SU,11,0,0,0,56,1,0,19
 10,2006-02-18,PRM,FC Barcelona,Real Betis,FC Barcelona,5,1,SU,14,1,0,0,70,2,0,19
-11,2007-10-28,PRM,FC Barcelona,UD Almería,FC Barcelona,2,0,SU,16,1,0,0,86,3,0,19
-12,2006-06-16,WCP,Argentina,Serbia and Montenegro,Argentina,6,0,SU,16,1,1,0,102,4,1,19
-13,2009-01-21,CUP,Espanyol,FC Barcelona,FC Barcelona,0,0,SU,16,0,0,0,118,4,1,10
+11,2009-01-21,CUP,Espanyol,FC Barcelona,FC Barcelona,0,0,SU,16,0,0,0,86,2,0,10
+12,2007-10-28,PRM,FC Barcelona,UD Almería,FC Barcelona,2,0,SU,16,1,0,0,102,3,0,19
+13,2006-06-16,WCP,Argentina,Serbia and Montenegro,Argentina,6,0,SU,16,1,1,0,118,4,1,19
 14,2004-10-24,PRM,FC Barcelona,Osasuna,FC Barcelona,3,0,SU,18,0,0,0,136,4,1,30
-15,2006-01-29,PRM,Real Mallorca,FC Barcelona,FC Barcelona,0,3,SU,19,2,0,0,155,6,1,30
-16,2006-01-22,PRM,FC Barcelona,Alavés,FC Barcelona,2,0,SU,19,1,0,0,174,7,1,30
-17,2009-01-14,CUP,FC Barcelona,Atlético Madrid,FC Barcelona,2,1,SU,19,0,0,0,193,7,1,10
+15,2006-01-22,PRM,FC Barcelona,Alavés,FC Barcelona,2,0,SU,19,1,0,0,155,5,1,30
+16,2009-01-14,CUP,FC Barcelona,Atlético Madrid,FC Barcelona,2,1,SU,19,0,0,0,174,5,1,10
+17,2006-01-29,PRM,Real Mallorca,FC Barcelona,FC Barcelona,0,3,SU,19,2,0,0,193,7,1,30
 18,2013-11-10,PRM,Real Betis,FC Barcelona,FC Barcelona,1,4,ST,20,0,0,0,213,7,1,10
 19,2006-11-12,PRM,FC Barcelona,Real Zaragoza,FC Barcelona,3,1,ST,22,0,0,0,235,7,1,19
 20,2005-11-06,PRM,Getafe,FC Barcelona,FC Barcelona,1,3,SU,22,0,0,0,257,7,1,30
-21,2013-10-19,PRM,Osasuna,FC Barcelona,FC Barcelona,0,0,SU,23,0,0,0,280,7,1,10
-22,2007-02-11,PRM,FC Barcelona,Racing Santander,FC Barcelona,2,0,SU,23,0,0,0,303,7,1,19
+21,2007-02-11,PRM,FC Barcelona,Racing Santander,FC Barcelona,2,0,SU,23,0,0,0,280,7,1,19
+22,2013-10-19,PRM,Osasuna,FC Barcelona,FC Barcelona,0,0,SU,23,0,0,0,303,7,1,10
 23,2007-02-25,PRM,FC Barcelona,Athletic de Bilbao,FC Barcelona,3,0,SU,24,0,0,0,327,7,1,19
-24,2005-10-18,EUR,Panathinaikos,FC Barcelona,FC Barcelona,0,0,SU,24,0,0,0,351,7,1,30
-25,2006-03-07,EUR,FC Barcelona,Chelsea,FC Barcelona,1,1,ST,24,0,0,0,375,7,1,30
-26,2018-05-20,PRM,FC Barcelona,Real Sociedad,FC Barcelona,1,0,SU,24,0,0,0,399,7,1,10
-27,2007-07-06,CPA,Argentina,Paraguay,Argentina,1,0,SU,24,0,0,0,423,7,1,18
-28,2018-10-20,PRM,FC Barcelona,Sevilla,FC Barcelona,4,2,ST,25,1,1,0,448,8,2,10
-29,2005-10-01,PRM,FC Barcelona,Real Zaragoza,FC Barcelona,2,2,SU,25,0,0,0,473,8,2,30
-30,2008-01-20,PRM,FC Barcelona,Racing Santander,FC Barcelona,1,0,SU,25,0,0,0,498,8,2,19
+24,2007-07-06,CPA,Argentina,Paraguay,Argentina,1,0,SU,24,0,0,0,351,7,1,18
+25,2005-10-18,EUR,Panathinaikos,FC Barcelona,FC Barcelona,0,0,SU,24,0,0,0,375,7,1,30
+26,2006-03-07,EUR,FC Barcelona,Chelsea,FC Barcelona,1,1,ST,24,0,0,0,399,7,1,30
+27,2018-05-20,PRM,FC Barcelona,Real Sociedad,FC Barcelona,1,0,SU,24,0,0,0,423,7,1,10
+28,2008-01-20,PRM,FC Barcelona,Racing Santander,FC Barcelona,1,0,SU,25,0,0,0,448,7,1,19
+29,2018-10-20,PRM,FC Barcelona,Sevilla,FC Barcelona,4,2,ST,25,1,1,0,473,8,2,10
+30,2005-10-01,PRM,FC Barcelona,Real Zaragoza,FC Barcelona,2,2,SU,25,0,0,0,498,8,2,30
 31,2005-09-14,EUR,Werder Bremen,FC Barcelona,FC Barcelona,0,2,SU,25,0,0,0,523,8,2,30
 32,2008-04-12,PRM,Recreativo Huelva,FC Barcelona,FC Barcelona,2,2,SU,26,0,0,0,549,8,2,19
 33,2006-09-27,EUR,Werder Bremen,FC Barcelona,FC Barcelona,1,1,SU,26,1,0,0,575,9,2,19
@@ -38,755 +38,776 @@ id,date,competition,home,away,team,home_goals,away_goals,lineup,minutes,goals,as
 37,2015-09-04,FRN,Argentina,Bolivia,Argentina,7,0,SU,27,2,0,0,683,14,2,10
 38,2012-12-05,EUR,FC Barcelona,Benfica,FC Barcelona,0,0,SU,28,0,0,0,711,14,2,10
 39,2010-12-07,EUR,FC Barcelona,Rubin Kazan,FC Barcelona,2,0,SU,28,0,0,0,739,14,2,10
-40,2018-12-11,EUR,FC Barcelona,Tottenham Hotspur F.C.,FC Barcelona,1,1,SU,28,0,0,0,767,14,2,10
-41,2013-09-28,PRM,UD Almería,FC Barcelona,FC Barcelona,0,2,ST,28,1,0,0,795,15,2,10
-42,2005-10-26,PRM,FC Barcelona,Málaga,FC Barcelona,2,0,SU,29,0,0,0,824,15,2,30
-43,2013-03-09,PRM,FC Barcelona,Deportivo La Coruña,FC Barcelona,2,0,SU,29,1,0,0,853,16,2,10
-44,2013-04-10,EUR,FC Barcelona,Paris Saint-Germain,FC Barcelona,1,1,SU,29,0,0,0,882,16,2,10
-45,2011-09-10,PRM,Real Sociedad,FC Barcelona,FC Barcelona,2,2,SU,29,0,0,1,911,16,2,10
-46,2010-11-10,CUP,FC Barcelona,AD Ceuta,FC Barcelona,5,1,SU,30,1,0,0,941,17,2,10
-47,2010-09-29,EUR,Rubin Kazan,FC Barcelona,FC Barcelona,1,1,SU,30,0,0,0,971,17,2,10
-48,2009-11-10,CUP,FC Barcelona,Cultural Leonesa,FC Barcelona,5,0,SU,30,1,0,0,1001,18,2,10
-49,2017-12-05,EUR,FC Barcelona,Sporting Lisbon,FC Barcelona,2,0,SU,30,0,0,0,1031,18,2,10
-50,2016-06-10,CPA,Argentina,Panama,Argentina,5,0,SU,30,3,0,0,1061,21,2,10
-51,2006-08-17,SUP,Espanyol,FC Barcelona,FC Barcelona,0,1,SU,31,0,0,0,1092,21,2,19
-52,2008-11-04,EUR,FC Barcelona,FC Basel,FC Barcelona,1,1,SU,31,1,0,0,1123,22,2,10
-53,2016-09-10,PRM,FC Barcelona,Alavés,FC Barcelona,1,2,SU,31,0,0,0,1154,22,2,10
-54,2013-06-11,WCQ,Ecuador,Argentina,Argentina,1,1,SU,31,0,0,0,1185,22,2,10
-55,2018-04-17,PRM,Celta de Vigo,FC Barcelona,FC Barcelona,2,2,SU,31,0,0,0,1216,22,2,10
-56,2014-10-14,FRN,Hong Kong,Argentina,Argentina,0,7,SU,31,2,1,0,1247,24,3,10
-57,2008-10-01,EUR,Shakhtar Donetsk,FC Barcelona,FC Barcelona,1,2,SU,31,2,0,0,1278,26,3,10
-58,2015-09-12,PRM,Atlético Madrid,FC Barcelona,FC Barcelona,1,2,SU,31,1,0,0,1309,27,3,10
-59,2008-09-13,PRM,FC Barcelona,Racing Santander,FC Barcelona,1,1,SU,32,1,0,0,1341,28,3,10
-60,2009-04-04,PRM,Real Valladolid,FC Barcelona,FC Barcelona,0,1,SU,32,0,0,0,1373,28,3,10
-61,2012-09-15,PRM,Getafe,FC Barcelona,FC Barcelona,1,4,SU,32,2,0,0,1405,30,3,10
-62,2009-02-01,PRM,Racing Santander,FC Barcelona,FC Barcelona,1,2,SU,32,2,0,0,1437,32,3,10
-63,2013-04-27,PRM,Athletic de Bilbao,FC Barcelona,FC Barcelona,2,2,SU,32,1,1,0,1469,33,4,10
-64,2018-02-04,PRM,Espanyol,FC Barcelona,FC Barcelona,1,1,SU,32,0,1,0,1501,33,5,10
-65,2012-01-12,CUP,Osasuna,FC Barcelona,FC Barcelona,1,2,SU,32,0,1,0,1533,33,6,10
-66,2012-01-04,CUP,FC Barcelona,Osasuna,FC Barcelona,4,0,SU,32,2,0,0,1565,35,6,10
-67,2018-03-31,PRM,Sevilla,FC Barcelona,FC Barcelona,2,2,SU,33,1,0,0,1598,36,6,10
-68,2011-04-23,PRM,FC Barcelona,Osasuna,FC Barcelona,2,0,SU,33,1,0,0,1631,37,6,10
-69,2009-03-04,CUP,Real Mallorca,FC Barcelona,FC Barcelona,1,1,SU,33,1,0,0,1664,38,6,10
-70,2009-09-12,PRM,Getafe,FC Barcelona,FC Barcelona,0,2,SU,33,1,0,0,1697,39,6,10
-71,2004-12-21,PRM,FC Barcelona,Levante,FC Barcelona,2,1,SU,33,0,0,0,1730,39,6,30
-72,2008-03-01,PRM,Atlético Madrid,FC Barcelona,FC Barcelona,4,2,SU,34,0,0,0,1764,39,6,19
-73,2009-02-14,PRM,Real Betis,FC Barcelona,FC Barcelona,2,2,SU,34,0,0,0,1798,39,6,10
-74,2014-06-07,FRN,Argentina,Slovenia,Argentina,2,0,SU,34,1,0,0,1832,40,6,10
-75,2013-06-08,WCQ,Argentina,Colombia,Argentina,0,0,SU,34,0,0,0,1866,40,6,10
-76,2013-05-05,PRM,FC Barcelona,Real Betis,FC Barcelona,4,2,SU,35,2,0,0,1901,42,6,10
-77,2017-11-22,EUR,Juventus,FC Barcelona,FC Barcelona,0,0,SU,35,0,0,0,1936,42,6,10
-78,2015-11-21,PRM,Real Madrid,FC Barcelona,FC Barcelona,0,4,SU,35,0,0,0,1971,42,6,10
-79,2007-02-18,PRM,Valencia,FC Barcelona,FC Barcelona,2,1,SU,35,0,0,0,2006,42,6,19
-80,2016-10-15,PRM,FC Barcelona,Deportivo La Coruña,FC Barcelona,4,0,SU,36,1,0,0,2042,43,6,10
-81,2009-12-02,PRM,Xerez,FC Barcelona,FC Barcelona,0,2,SU,36,0,1,0,2078,43,7,10
-82,2009-02-05,CUP,FC Barcelona,Real Mallorca,FC Barcelona,2,0,SU,36,0,0,0,2114,43,7,10
-83,2018-09-29,PRM,FC Barcelona,Athletic de Bilbao,FC Barcelona,1,1,SU,36,0,1,1,2150,43,8,10
-84,2008-03-04,EUR,FC Barcelona,Celtic,FC Barcelona,1,0,ST,37,0,0,0,2187,43,8,19
-85,2006-06-24,WCP,Argentina,Mexico,Argentina,2,1,SU,37,0,0,0,2224,43,8,19
-86,2010-08-14,SUP,Sevilla,FC Barcelona,FC Barcelona,3,1,SU,38,0,0,0,2262,43,8,10
-87,2011-04-02,PRM,Villarreal,FC Barcelona,FC Barcelona,0,1,SU,38,0,0,0,2300,43,8,10
-88,2009-12-16,WCT,Atlante,FC Barcelona,FC Barcelona,1,3,SU,38,1,0,0,2338,44,8,10
-89,2010-12-21,CUP,FC Barcelona,Athletic de Bilbao,FC Barcelona,0,0,SU,38,0,0,0,2376,44,8,10
-90,2010-04-24,PRM,FC Barcelona,Xerez,FC Barcelona,3,1,SU,39,0,0,0,2415,44,8,10
-91,2009-11-07,PRM,FC Barcelona,Real Mallorca,FC Barcelona,4,2,SU,40,1,0,0,2455,45,8,10
-92,2010-03-27,PRM,Real Mallorca,FC Barcelona,FC Barcelona,0,1,SU,40,0,0,0,2495,45,8,10
-93,2007-12-15,PRM,Valencia,FC Barcelona,FC Barcelona,0,3,ST,44,0,2,0,2539,45,10,19
-94,2006-02-05,PRM,FC Barcelona,Atlético Madrid,FC Barcelona,1,3,ST,45,0,0,0,2584,45,10,30
-95,2008-06-09,FRN,United States,Argentina,Argentina,0,0,ST,45,0,0,0,2629,45,10,18
-96,2008-04-19,PRM,FC Barcelona,Espanyol,FC Barcelona,0,0,SU,45,0,0,1,2674,45,10,19
-97,2008-01-24,CUP,Villarreal,FC Barcelona,FC Barcelona,0,0,SU,45,0,0,1,2719,45,10,19
-98,2016-01-17,PRM,FC Barcelona,Athletic de Bilbao,FC Barcelona,6,0,ST,45,1,0,0,2764,46,10,10
-99,2015-01-04,PRM,Real Sociedad,FC Barcelona,FC Barcelona,1,0,SU,45,0,0,0,2809,46,10,10
-100,2014-01-11,PRM,Atlético Madrid,FC Barcelona,FC Barcelona,0,0,SU,45,0,0,0,2854,46,10,10
-101,2016-06-14,CPA,Argentina,Bolivia,Argentina,3,0,SU,45,0,0,0,2899,46,10,10
-102,2014-11-18,FRN,Portugal,Argentina,Argentina,1,0,ST,45,0,0,0,2944,46,10,10
-103,2013-04-02,EUR,Paris Saint-Germain,FC Barcelona,FC Barcelona,2,2,ST,45,1,0,0,2989,47,10,10
-104,2013-08-21,SUP,Atlético Madrid,FC Barcelona,FC Barcelona,1,1,ST,45,0,0,0,3034,47,10,10
-105,2007-09-29,PRM,Levante,FC Barcelona,FC Barcelona,1,4,ST,51,1,1,0,3085,48,11,19
-106,2008-11-26,EUR,Sporting Lisbon,FC Barcelona,FC Barcelona,2,5,ST,56,1,1,0,3141,49,12,10
-107,2010-08-11,FRN,Republic of Ireland,Argentina,Argentina,0,1,ST,57,0,0,0,3198,49,12,10
-108,2016-09-21,PRM,FC Barcelona,Atlético Madrid,FC Barcelona,1,1,ST,58,0,0,0,3256,49,12,10
-109,2018-01-11,CUP,FC Barcelona,Celta de Vigo,FC Barcelona,5,0,ST,58,2,1,0,3314,51,13,10
-110,2017-03-01,PRM,FC Barcelona,Sporting Gijón,FC Barcelona,6,1,ST,60,1,1,0,3374,52,14,10
-111,2008-05-11,PRM,FC Barcelona,Real Mallorca,FC Barcelona,2,3,ST,61,0,0,0,3435,52,14,19
-112,2008-04-23,EUR,FC Barcelona,Manchester United,FC Barcelona,0,0,ST,61,0,0,0,3496,52,14,19
-113,2006-10-11,FRN,Spain,Argentina,Argentina,2,1,ST,61,0,0,0,3557,52,14,19
-114,2007-08-26,PRM,Racing Santander,FC Barcelona,FC Barcelona,0,0,ST,61,0,0,0,3618,52,14,19
-115,2017-04-26,PRM,FC Barcelona,Osasuna,FC Barcelona,7,1,ST,62,2,0,0,3680,54,14,10
-116,2014-06-25,WCP,Nigeria,Argentina,Argentina,2,3,ST,62,2,0,0,3742,56,14,10
-117,2005-12-11,PRM,FC Barcelona,Sevilla,FC Barcelona,2,1,ST,62,0,0,1,3804,56,14,30
-118,2009-09-22,PRM,Racing Santander,FC Barcelona,FC Barcelona,1,4,ST,63,2,1,0,3867,58,15,10
-119,2017-02-04,PRM,FC Barcelona,Athletic de Bilbao,FC Barcelona,3,0,ST,63,1,0,0,3930,59,15,10
-120,2016-05-27,FRN,Argentina,Honduras,Argentina,1,0,ST,63,0,0,0,3993,59,15,10
-121,2006-09-17,PRM,Racing Santander,FC Barcelona,FC Barcelona,0,3,ST,64,0,0,0,4057,59,15,19
-122,2014-10-21,EUR,FC Barcelona,Ajax,FC Barcelona,3,1,ST,65,1,1,0,4122,60,16,10
-123,2005-11-27,PRM,FC Barcelona,Racing Santander,FC Barcelona,4,1,ST,66,1,0,0,4188,61,16,30
-124,2005-12-20,PRM,FC Barcelona,Celta de Vigo,FC Barcelona,2,0,ST,66,0,0,0,4254,61,16,30
-125,2013-06-15,FRN,Guatemala,Argentina,Argentina,0,4,ST,67,3,1,0,4321,64,17,10
-126,2008-02-03,PRM,FC Barcelona,Osasuna,FC Barcelona,1,0,ST,67,0,0,0,4388,64,17,19
-127,2008-10-04,PRM,FC Barcelona,Atlético Madrid,FC Barcelona,6,1,ST,69,1,0,0,4457,65,17,10
-128,2005-11-19,PRM,Real Madrid,FC Barcelona,FC Barcelona,0,3,ST,69,0,1,0,4526,65,18,30
-129,2006-02-25,PRM,Real Zaragoza,FC Barcelona,FC Barcelona,0,2,ST,69,0,0,0,4595,65,18,30
-130,2005-09-27,EUR,FC Barcelona,Udinese,FC Barcelona,4,1,ST,69,0,0,0,4664,65,18,30
-131,2006-06-21,WCP,Netherlands,Argentina,Argentina,0,0,ST,69,0,0,0,4733,65,18,19
-132,2013-08-18,PRM,FC Barcelona,Levante,FC Barcelona,7,0,ST,70,2,1,0,4803,67,19,10
-133,2007-03-03,PRM,Sevilla,FC Barcelona,FC Barcelona,2,1,ST,70,0,0,0,4873,67,19,19
-134,2013-05-12,PRM,Atlético Madrid,FC Barcelona,FC Barcelona,1,2,ST,70,0,0,0,4943,67,19,10
-135,2007-11-10,PRM,Getafe,FC Barcelona,FC Barcelona,2,0,ST,71,0,0,0,5014,67,19,19
-136,2004-10-27,CUP,Gramenet,FC Barcelona,FC Barcelona,1,0,ST,72,0,0,0,5086,67,19,30
-137,2014-02-15,PRM,FC Barcelona,Rayo Vallecano,FC Barcelona,6,0,ST,73,2,1,0,5159,69,20,10
-138,2007-05-13,PRM,FC Barcelona,Real Betis,FC Barcelona,1,1,ST,74,0,0,0,5233,69,20,19
-139,2009-11-21,PRM,Athletic de Bilbao,FC Barcelona,FC Barcelona,1,1,ST,75,0,0,0,5308,69,20,10
-140,2007-04-18,CUP,FC Barcelona,Getafe,FC Barcelona,5,2,ST,76,2,1,0,5384,71,21,19
-141,2006-01-07,PRM,Espanyol,FC Barcelona,FC Barcelona,1,2,ST,77,0,0,0,5461,71,21,30
-142,2007-06-29,CPA,Argentina,United States,Argentina,4,1,ST,78,0,1,0,5539,71,22,18
-143,2008-11-01,PRM,Málaga,FC Barcelona,FC Barcelona,1,4,ST,78,1,0,0,5617,72,22,10
-144,2008-02-16,PRM,Real Zaragoza,FC Barcelona,FC Barcelona,1,2,ST,79,0,0,0,5696,72,22,19
-145,2013-09-24,PRM,FC Barcelona,Real Sociedad,FC Barcelona,4,1,ST,80,1,1,0,5776,73,23,10
-146,2008-02-24,PRM,FC Barcelona,Levante,FC Barcelona,5,1,ST,80,1,2,0,5856,74,25,19
-147,2005-11-16,FRN,Qatar,Argentina,Argentina,0,3,ST,80,0,1,0,5936,74,26,18
-148,2005-12-04,PRM,Villarreal,FC Barcelona,FC Barcelona,0,2,ST,80,0,0,0,6016,74,26,30
-149,2009-01-06,CUP,Atlético Madrid,FC Barcelona,FC Barcelona,1,3,ST,80,3,0,0,6096,77,26,10
-150,2008-12-06,PRM,FC Barcelona,Valencia,FC Barcelona,4,0,ST,81,0,0,0,6177,77,26,10
-151,2013-01-24,CUP,Málaga,FC Barcelona,FC Barcelona,2,4,ST,81,1,0,0,6258,78,26,10
-152,2007-06-17,PRM,Gimnàstic,FC Barcelona,FC Barcelona,1,5,ST,81,2,1,0,6339,80,27,19
-153,2005-12-17,PRM,Cádiz,FC Barcelona,FC Barcelona,1,3,ST,81,0,1,0,6420,80,28,30
-154,2006-01-15,PRM,FC Barcelona,Athletic de Bilbao,FC Barcelona,2,1,ST,82,1,0,0,6502,81,28,30
-155,2007-09-26,PRM,FC Barcelona,Real Zaragoza,FC Barcelona,4,1,ST,82,2,0,0,6584,83,28,19
-156,2007-10-13,WCQ,Argentina,Chile,Argentina,2,0,ST,83,0,0,0,6667,83,28,18
-157,2009-11-14,FRN,Spain,Argentina,Argentina,2,1,ST,83,1,0,0,6750,84,28,10
-158,2007-07-03,CPA,Argentina,Colombia,Argentina,4,2,ST,83,0,0,0,6833,84,28,18
-159,2007-03-31,PRM,FC Barcelona,Deportivo La Coruña,FC Barcelona,2,1,ST,84,1,0,0,6917,85,28,19
-160,2006-09-24,PRM,FC Barcelona,Valencia,FC Barcelona,1,1,ST,84,0,0,0,7001,85,28,19
-161,2008-06-05,FRN,Mexico,Argentina,Argentina,1,4,ST,84,1,1,1,7085,86,29,18
-162,2011-01-12,CUP,FC Barcelona,Real Betis,FC Barcelona,5,0,ST,85,3,0,0,7170,89,29,10
-163,2010-03-31,EUR,Arsenal,FC Barcelona,FC Barcelona,2,2,ST,86,0,0,0,7256,89,29,10
-164,2009-10-15,WCQ,Uruguay,Argentina,Argentina,0,1,ST,86,0,0,0,7342,89,29,10
-165,2010-03-14,PRM,FC Barcelona,Valencia,FC Barcelona,3,0,ST,87,3,0,0,7429,92,29,10
-166,2007-09-19,EUR,FC Barcelona,Olympique Lyon,FC Barcelona,3,0,ST,87,1,0,0,7516,93,29,19
-167,2008-10-11,WCQ,Argentina,Uruguay,Argentina,2,1,ST,87,1,0,1,7603,94,29,18
-168,2008-11-12,CUP,FC Barcelona,Benidorm,FC Barcelona,1,0,ST,87,1,0,0,7690,95,29,10
-169,2007-06-02,FRN,Switzerland,Argentina,Argentina,1,1,ST,88,0,1,0,7778,95,30,18
-170,2007-09-22,PRM,FC Barcelona,Sevilla,FC Barcelona,2,1,ST,88,2,0,0,7866,97,30,19
-171,2007-05-26,PRM,FC Barcelona,Getafe,FC Barcelona,1,0,ST,89,0,0,0,7955,97,30,19
-172,2008-06-19,WCQ,Brazil,Argentina,Argentina,0,0,ST,89,0,0,0,8044,97,30,18
-173,2007-05-05,PRM,Real Sociedad,FC Barcelona,FC Barcelona,0,2,ST,89,0,0,0,8133,97,30,19
-174,2009-05-10,PRM,FC Barcelona,Villarreal,FC Barcelona,3,3,ST,89,0,0,0,8222,97,30,10
-175,2010-09-07,FRN,Argentina,Spain,Argentina,4,1,ST,89,1,0,0,8311,98,30,10
-176,2007-09-11,FRN,Australia,Argentina,Argentina,0,1,ST,89,0,1,0,8400,98,31,19
-177,2010-05-01,PRM,Villarreal,FC Barcelona,FC Barcelona,1,4,ST,89,2,0,0,8489,100,31,10
-178,2015-02-08,PRM,Athletic de Bilbao,FC Barcelona,FC Barcelona,2,5,ST,90,1,2,0,8579,101,33,10
-179,2015-03-18,EUR,FC Barcelona,Manchester City,FC Barcelona,1,0,ST,90,0,1,0,8669,101,34,10
-180,2015-03-14,PRM,Eibar,FC Barcelona,FC Barcelona,0,2,ST,90,2,0,0,8759,103,34,10
-181,2015-03-08,PRM,FC Barcelona,Rayo Vallecano,FC Barcelona,6,1,ST,90,3,1,0,8849,106,35,10
-182,2015-03-04,CUP,Villarreal,FC Barcelona,FC Barcelona,1,3,ST,90,0,1,0,8939,106,36,10
-183,2015-02-28,PRM,Granada,FC Barcelona,FC Barcelona,1,3,ST,90,1,0,0,9029,107,36,10
-184,2015-02-24,EUR,Manchester City,FC Barcelona,FC Barcelona,0,2,ST,90,0,0,0,9119,107,36,10
-185,2015-02-21,PRM,FC Barcelona,Málaga,FC Barcelona,0,1,ST,90,0,0,0,9209,107,36,10
-186,2015-02-15,PRM,FC Barcelona,Levante,FC Barcelona,5,0,ST,90,3,1,0,9299,110,37,10
-187,2015-02-11,CUP,FC Barcelona,Villarreal,FC Barcelona,3,1,ST,90,1,1,0,9389,111,38,10
-188,2015-02-01,PRM,FC Barcelona,Villarreal,FC Barcelona,3,2,ST,90,1,0,0,9479,112,38,10
-189,2015-01-28,CUP,Atlético Madrid,FC Barcelona,FC Barcelona,2,3,ST,90,0,0,1,9569,112,38,10
-190,2015-03-22,PRM,FC Barcelona,Real Madrid,FC Barcelona,2,1,ST,90,0,1,0,9659,112,39,10
-191,2018-06-21,WCP,Argentina,Croatia,Argentina,0,3,ST,90,0,0,0,9749,112,39,10
-192,2015-04-05,PRM,Celta de Vigo,FC Barcelona,FC Barcelona,0,1,ST,90,0,0,0,9839,112,39,10
-193,2015-09-08,FRN,Argentina,Mexico,Argentina,2,2,ST,90,1,0,0,9929,113,39,10
-194,2015-06-30,CPA,Argentina,Paraguay,Argentina,6,1,ST,90,0,3,0,10019,113,42,10
-195,2015-08-14,SUP,Athletic de Bilbao,FC Barcelona,FC Barcelona,4,0,ST,90,0,0,0,10109,113,42,10
-196,2015-08-17,SUP,FC Barcelona,Athletic de Bilbao,FC Barcelona,1,1,ST,90,1,0,0,10199,114,42,10
-197,2015-08-23,PRM,Athletic de Bilbao,FC Barcelona,FC Barcelona,0,1,ST,90,0,0,0,10289,114,42,10
-198,2015-08-29,PRM,FC Barcelona,Málaga,FC Barcelona,1,0,ST,90,0,0,0,10379,114,42,10
-199,2018-12-22,PRM,FC Barcelona,Celta de Vigo,FC Barcelona,2,0,ST,90,1,0,0,10469,115,42,10
-200,2018-12-16,PRM,Levante,FC Barcelona,FC Barcelona,0,5,ST,90,3,2,0,10559,118,44,10
-201,2015-01-24,PRM,Elche,FC Barcelona,FC Barcelona,0,6,ST,90,2,2,0,10649,120,46,10
-202,2015-09-16,EUR,AS Roma,FC Barcelona,FC Barcelona,1,1,ST,90,0,0,0,10739,120,46,10
-203,2015-09-20,PRM,FC Barcelona,Levante,FC Barcelona,4,1,ST,90,2,1,0,10829,122,47,10
-204,2015-09-23,PRM,Celta de Vigo,FC Barcelona,FC Barcelona,4,1,ST,90,0,1,0,10919,122,48,10
-205,2015-11-24,EUR,FC Barcelona,AS Roma,FC Barcelona,6,1,ST,90,2,1,1,11009,124,49,10
-206,2015-11-28,PRM,FC Barcelona,Real Sociedad,FC Barcelona,4,0,ST,90,1,0,0,11099,125,49,10
-207,2015-12-05,PRM,Valencia,FC Barcelona,FC Barcelona,1,1,ST,90,0,1,0,11189,125,50,10
-208,2015-12-09,EUR,Bayer Leverkusen,FC Barcelona,FC Barcelona,1,1,ST,90,1,0,0,11279,126,50,10
-209,2015-06-26,CPA,Argentina,Colombia,Argentina,0,0,ST,90,0,0,1,11369,126,50,10
-210,2015-06-16,CPA,Argentina,Uruguay,Argentina,1,0,ST,90,0,0,0,11459,126,50,10
-211,2015-04-08,PRM,FC Barcelona,UD Almería,FC Barcelona,4,0,ST,90,1,0,0,11549,127,50,10
-212,2015-05-02,PRM,Córdoba,FC Barcelona,FC Barcelona,0,8,ST,90,2,1,0,11639,129,51,10
-213,2015-04-11,PRM,Sevilla,FC Barcelona,FC Barcelona,2,2,ST,90,1,0,0,11729,130,51,10
-214,2015-04-15,EUR,Paris Saint-Germain,FC Barcelona,FC Barcelona,1,3,ST,90,0,1,1,11819,130,52,10
-215,2015-04-18,PRM,FC Barcelona,Valencia,FC Barcelona,2,0,ST,90,1,1,0,11909,131,53,10
-216,2015-04-21,EUR,FC Barcelona,Paris Saint-Germain,FC Barcelona,2,0,ST,90,0,0,0,11999,131,53,10
-217,2015-04-25,PRM,Espanyol,FC Barcelona,FC Barcelona,0,2,ST,90,1,0,0,12089,132,53,10
-218,2015-04-28,PRM,FC Barcelona,Getafe,FC Barcelona,6,0,ST,90,2,1,0,12179,134,54,10
-219,2019-01-06,PRM,Getafe,FC Barcelona,FC Barcelona,1,2,ST,90,1,0,0,12269,135,54,10
-220,2015-06-13,CPA,Argentina,Paraguay,Argentina,2,2,ST,90,1,0,0,12359,136,54,10
-221,2015-05-06,EUR,FC Barcelona,Bayern München,FC Barcelona,3,0,ST,90,2,1,0,12449,138,55,10
-222,2015-05-09,PRM,FC Barcelona,Real Sociedad,FC Barcelona,2,0,ST,90,0,0,0,12539,138,55,10
-223,2015-05-12,EUR,Bayern München,FC Barcelona,FC Barcelona,3,2,ST,90,0,0,0,12629,138,55,10
-224,2015-05-17,PRM,Atlético Madrid,FC Barcelona,FC Barcelona,0,1,ST,90,1,0,1,12719,139,55,10
-225,2015-05-23,PRM,FC Barcelona,Deportivo La Coruña,FC Barcelona,2,2,ST,90,2,0,0,12809,141,55,10
-226,2015-05-30,CUP,Athletic de Bilbao,FC Barcelona,FC Barcelona,1,3,ST,90,2,0,0,12899,143,55,10
-227,2015-06-06,EUR,Juventus,FC Barcelona,FC Barcelona,1,3,ST,90,0,0,0,12989,143,55,10
-228,2015-06-20,CPA,Argentina,Jamaica,Argentina,1,0,ST,90,0,0,0,13079,143,55,10
-229,2014-09-21,PRM,Levante,FC Barcelona,FC Barcelona,0,5,ST,90,1,2,0,13169,144,57,10
-230,2015-01-21,CUP,FC Barcelona,Atlético Madrid,FC Barcelona,1,0,ST,90,1,0,0,13259,145,57,10
-231,2014-03-05,FRN,Romania,Argentina,Argentina,0,0,ST,90,0,0,0,13349,145,57,10
-232,2014-02-05,CUP,FC Barcelona,Real Sociedad,FC Barcelona,2,0,ST,90,0,0,1,13439,145,57,10
-233,2014-02-09,PRM,Sevilla,FC Barcelona,FC Barcelona,1,4,ST,90,2,1,0,13529,147,58,10
-234,2014-02-12,CUP,Real Sociedad,FC Barcelona,FC Barcelona,1,1,ST,90,1,0,0,13619,148,58,10
-235,2014-02-18,EUR,Manchester City,FC Barcelona,FC Barcelona,0,2,ST,90,1,0,0,13709,149,58,10
-236,2014-02-22,PRM,Real Sociedad,FC Barcelona,FC Barcelona,3,1,ST,90,1,0,0,13799,150,58,10
-237,2014-03-02,PRM,FC Barcelona,UD Almería,FC Barcelona,4,1,ST,90,1,0,0,13889,151,58,10
-238,2014-03-08,PRM,Real Valladolid,FC Barcelona,FC Barcelona,1,0,ST,90,0,0,0,13979,151,58,10
-239,2014-01-26,PRM,FC Barcelona,Málaga,FC Barcelona,3,0,ST,90,0,1,0,14069,151,59,10
-240,2014-03-12,EUR,FC Barcelona,Manchester City,FC Barcelona,2,1,ST,90,1,0,0,14159,152,59,10
-241,2014-03-16,PRM,FC Barcelona,Osasuna,FC Barcelona,7,0,ST,90,3,1,0,14249,155,60,10
-242,2014-03-23,PRM,Real Madrid,FC Barcelona,FC Barcelona,3,4,ST,90,3,1,0,14339,158,61,10
-243,2014-03-26,PRM,FC Barcelona,Celta de Vigo,FC Barcelona,3,0,ST,90,1,0,0,14429,159,61,10
-244,2014-03-29,PRM,Espanyol,FC Barcelona,FC Barcelona,0,1,ST,90,1,0,0,14519,160,61,10
-245,2014-04-01,EUR,FC Barcelona,Atlético Madrid,FC Barcelona,1,1,ST,90,0,0,0,14609,160,61,10
-246,2014-02-01,PRM,FC Barcelona,Valencia,FC Barcelona,2,3,ST,90,1,1,0,14699,161,62,10
-247,2014-01-22,CUP,Levante,FC Barcelona,FC Barcelona,1,4,ST,90,0,3,0,14789,161,65,10
-248,2014-04-09,EUR,Atlético Madrid,FC Barcelona,FC Barcelona,1,0,ST,90,0,0,0,14879,161,65,10
-249,2013-09-21,PRM,Rayo Vallecano,FC Barcelona,FC Barcelona,0,4,ST,90,0,1,0,14969,161,66,10
-250,2019-01-27,PRM,Girona,FC Barcelona,FC Barcelona,0,2,ST,90,1,0,0,15059,162,66,10
-251,2013-08-28,SUP,FC Barcelona,Atlético Madrid,FC Barcelona,0,0,ST,90,0,0,0,15149,162,66,10
-252,2013-09-01,PRM,Valencia,FC Barcelona,FC Barcelona,2,3,ST,90,3,0,0,15239,165,66,10
-253,2013-09-11,WCQ,Paraguay,Argentina,Argentina,2,5,ST,90,2,1,0,15329,167,67,10
-254,2013-09-14,PRM,FC Barcelona,Sevilla,FC Barcelona,3,2,ST,90,1,0,0,15419,168,67,10
-255,2013-09-18,EUR,FC Barcelona,Ajax,FC Barcelona,4,0,ST,90,3,0,0,15509,171,67,10
-256,2019-01-17,CUP,FC Barcelona,Levante,FC Barcelona,3,0,ST,90,1,1,0,15599,172,68,10
-257,2014-01-19,PRM,Levante,FC Barcelona,FC Barcelona,1,1,ST,90,0,0,0,15689,172,68,10
-258,2019-01-13,PRM,FC Barcelona,Eibar,FC Barcelona,3,0,ST,90,1,0,0,15779,173,68,10
-259,2013-10-22,EUR,AC Milan,FC Barcelona,FC Barcelona,1,1,ST,90,1,0,0,15869,174,68,10
-260,2013-10-26,PRM,FC Barcelona,Real Madrid,FC Barcelona,2,1,ST,90,0,0,0,15959,174,68,10
-261,2013-10-29,PRM,Celta de Vigo,FC Barcelona,FC Barcelona,0,3,ST,90,0,1,0,16049,174,69,10
-262,2013-11-01,PRM,FC Barcelona,Espanyol,FC Barcelona,1,0,ST,90,0,0,0,16139,174,69,10
-263,2013-11-06,EUR,FC Barcelona,AC Milan,FC Barcelona,3,1,ST,90,2,0,0,16229,176,69,10
-264,2014-01-16,CUP,Getafe,FC Barcelona,FC Barcelona,0,2,ST,90,2,0,0,16319,178,69,10
-265,2014-04-05,PRM,FC Barcelona,Real Betis,FC Barcelona,3,1,ST,90,2,0,0,16409,180,69,10
-266,2014-04-12,PRM,Granada,FC Barcelona,FC Barcelona,1,0,ST,90,0,0,1,16499,180,69,10
-267,2015-01-18,PRM,Deportivo La Coruña,FC Barcelona,FC Barcelona,0,4,ST,90,3,0,0,16589,183,69,10
-268,2014-11-22,PRM,FC Barcelona,Sevilla,FC Barcelona,5,1,ST,90,3,0,0,16679,186,69,10
-269,2014-10-18,PRM,FC Barcelona,Eibar,FC Barcelona,3,0,ST,90,1,1,0,16769,187,70,10
-270,2014-10-25,PRM,Real Madrid,FC Barcelona,FC Barcelona,3,1,ST,90,0,0,1,16859,187,70,10
-271,2014-11-01,PRM,FC Barcelona,Celta de Vigo,FC Barcelona,0,1,ST,90,0,0,0,16949,187,70,10
-272,2014-11-05,EUR,Ajax,FC Barcelona,FC Barcelona,0,2,ST,90,2,0,0,17039,189,70,10
-273,2014-11-08,PRM,UD Almería,FC Barcelona,FC Barcelona,1,2,ST,90,0,0,0,17129,189,70,10
-274,2014-11-12,FRN,Argentina,Croatia,Argentina,2,1,ST,90,1,1,0,17219,190,71,10
-275,2014-11-25,EUR,APOEL FC,FC Barcelona,FC Barcelona,0,4,ST,90,3,0,0,17309,193,71,10
-276,2014-10-04,PRM,Rayo Vallecano,FC Barcelona,FC Barcelona,0,2,ST,90,1,0,0,17399,194,71,10
-277,2014-11-30,PRM,Valencia,FC Barcelona,FC Barcelona,0,1,ST,90,0,0,1,17489,194,71,10
-278,2014-12-07,PRM,FC Barcelona,Espanyol,FC Barcelona,5,1,ST,90,3,0,0,17579,197,71,10
-279,2014-12-10,EUR,FC Barcelona,Paris Saint-Germain,FC Barcelona,3,1,ST,90,1,0,0,17669,198,71,10
-280,2014-12-13,PRM,Getafe,FC Barcelona,FC Barcelona,0,0,ST,90,0,0,0,17759,198,71,10
-281,2014-12-20,PRM,FC Barcelona,Córdoba,FC Barcelona,5,0,ST,90,2,0,0,17849,200,71,10
-282,2015-01-08,CUP,FC Barcelona,Elche,FC Barcelona,5,0,ST,90,1,2,0,17939,201,73,10
-283,2015-01-11,PRM,FC Barcelona,Atlético Madrid,FC Barcelona,3,1,ST,90,1,1,1,18029,202,74,10
-284,2014-10-11,FRN,Brazil,Argentina,Argentina,2,0,ST,90,0,0,0,18119,202,74,10
-285,2014-09-30,EUR,Paris Saint-Germain,FC Barcelona,FC Barcelona,3,2,ST,90,1,0,0,18209,203,74,10
-286,2014-04-16,CUP,FC Barcelona,Real Madrid,FC Barcelona,1,2,ST,90,0,0,0,18299,203,74,10
-287,2014-06-16,WCP,Argentina,Bosnia-Herzegovina,Argentina,2,1,ST,90,1,0,0,18389,204,74,10
-288,2014-04-20,PRM,FC Barcelona,Athletic de Bilbao,FC Barcelona,2,1,ST,90,1,0,0,18479,205,74,10
-289,2014-04-27,PRM,Villarreal,FC Barcelona,FC Barcelona,2,3,ST,90,1,0,0,18569,206,74,10
-290,2014-05-03,PRM,FC Barcelona,Getafe,FC Barcelona,2,2,ST,90,1,0,0,18659,207,74,10
-291,2014-05-11,PRM,Elche,FC Barcelona,FC Barcelona,0,0,ST,90,0,0,0,18749,207,74,10
-292,2014-05-17,PRM,FC Barcelona,Atlético Madrid,FC Barcelona,1,1,ST,90,0,1,1,18839,207,75,10
-293,2014-06-05,FRN,Argentina,Trinidad & Tobago,Argentina,3,0,ST,90,0,0,0,18929,207,75,10
-294,2014-06-21,WCP,Argentina,Iran,Argentina,1,0,ST,90,1,0,0,19019,208,75,10
-295,2014-09-27,PRM,FC Barcelona,Granada,FC Barcelona,6,0,ST,90,2,2,0,19109,210,77,10
-296,2014-07-05,WCP,Argentina,Belgium,Argentina,1,0,ST,90,0,0,0,19199,210,77,10
-297,2014-08-24,PRM,FC Barcelona,Elche,FC Barcelona,3,0,ST,90,2,0,0,19289,212,77,10
-298,2014-08-31,PRM,Villarreal,FC Barcelona,FC Barcelona,0,1,ST,90,0,0,0,19379,212,77,10
-299,2014-09-13,PRM,FC Barcelona,Athletic de Bilbao,FC Barcelona,2,0,ST,90,0,2,0,19469,212,79,10
-300,2014-09-17,EUR,FC Barcelona,APOEL FC,FC Barcelona,1,0,ST,90,0,1,0,19559,212,80,10
-301,2015-12-20,WCT,CA River Plate,FC Barcelona,FC Barcelona,0,3,ST,90,1,0,0,19649,213,80,10
-302,2014-09-24,PRM,Málaga,FC Barcelona,FC Barcelona,0,0,ST,90,0,0,0,19739,213,80,10
-303,2015-12-12,PRM,FC Barcelona,Deportivo La Coruña,FC Barcelona,2,2,ST,90,1,1,0,19829,214,81,10
-304,2016-04-30,PRM,Real Betis,FC Barcelona,FC Barcelona,0,2,ST,90,0,2,1,19919,214,83,10
-305,2015-12-30,PRM,FC Barcelona,Real Betis,FC Barcelona,4,0,ST,90,1,0,0,20009,215,83,10
-306,2017-10-14,PRM,Atlético Madrid,FC Barcelona,FC Barcelona,1,1,ST,90,0,0,0,20099,215,83,10
-307,2017-09-23,PRM,Girona,FC Barcelona,FC Barcelona,0,3,ST,90,0,0,0,20189,215,83,10
-308,2017-09-27,EUR,Sporting Lisbon,FC Barcelona,FC Barcelona,0,1,ST,90,0,0,0,20279,215,83,10
-309,2017-10-01,PRM,FC Barcelona,Las Palmas,FC Barcelona,3,0,ST,90,2,1,0,20369,217,84,10
-310,2018-09-26,PRM,Leganés,FC Barcelona,FC Barcelona,2,1,ST,90,0,1,0,20459,217,85,10
-311,2017-10-05,WCQ,Argentina,Peru,Argentina,0,0,ST,90,0,0,0,20549,217,85,10
-312,2017-10-10,WCQ,Ecuador,Argentina,Argentina,1,3,ST,90,3,0,0,20639,220,85,10
-313,2017-10-18,EUR,FC Barcelona,Olympiacos,FC Barcelona,3,1,ST,90,1,1,0,20729,221,86,10
-314,2017-09-19,PRM,FC Barcelona,Eibar,FC Barcelona,6,1,ST,90,4,0,0,20819,225,86,10
-315,2017-10-21,PRM,FC Barcelona,Málaga,FC Barcelona,2,0,ST,90,0,1,0,20909,225,87,10
-316,2017-10-28,PRM,Athletic de Bilbao,FC Barcelona,FC Barcelona,0,2,ST,90,1,0,0,20999,226,87,10
-317,2018-09-23,PRM,FC Barcelona,Girona,FC Barcelona,2,2,ST,90,1,0,0,21089,227,87,10
-318,2017-10-31,EUR,Olympiacos,FC Barcelona,FC Barcelona,0,0,ST,90,0,0,0,21179,227,87,10
-319,2017-11-04,PRM,FC Barcelona,Sevilla,FC Barcelona,2,1,ST,90,0,0,1,21269,227,87,10
-320,2017-11-11,FRN,Russia,Argentina,Argentina,0,1,ST,90,0,0,0,21359,227,87,10
-321,2017-11-18,PRM,Leganés,FC Barcelona,FC Barcelona,0,3,ST,90,0,0,0,21449,227,87,10
-322,2018-10-03,EUR,Tottenham Hotspur F.C.,FC Barcelona,FC Barcelona,2,4,ST,90,2,0,0,21539,229,87,10
-323,2017-09-16,PRM,Getafe,FC Barcelona,FC Barcelona,1,2,ST,90,0,1,0,21629,229,88,10
-324,2017-12-02,PRM,FC Barcelona,Celta de Vigo,FC Barcelona,2,2,ST,90,1,0,0,21719,230,88,10
-325,2017-06-09,FRN,Brazil,Argentina,Argentina,0,1,ST,90,0,0,0,21809,230,88,10
-326,2017-04-19,EUR,FC Barcelona,Juventus,FC Barcelona,0,0,ST,90,0,0,0,21899,230,88,10
-327,2017-04-23,PRM,Real Madrid,FC Barcelona,FC Barcelona,2,3,ST,90,2,0,1,21989,232,88,10
-328,2017-04-29,PRM,Espanyol,FC Barcelona,FC Barcelona,0,3,ST,90,0,1,0,22079,232,89,10
-329,2017-05-06,PRM,FC Barcelona,Villarreal,FC Barcelona,4,1,ST,90,2,0,0,22169,234,89,10
-330,2017-05-14,PRM,Las Palmas,FC Barcelona,FC Barcelona,1,4,ST,90,0,0,0,22259,234,89,10
-331,2017-05-21,PRM,FC Barcelona,Eibar,FC Barcelona,4,2,ST,90,2,0,0,22349,236,89,10
-332,2017-05-27,CUP,FC Barcelona,Alavés,FC Barcelona,3,1,ST,90,1,1,1,22439,237,90,10
-333,2017-08-13,SUP,FC Barcelona,Real Madrid,FC Barcelona,1,3,ST,90,1,0,1,22529,238,90,10
-334,2018-10-07,PRM,Valencia,FC Barcelona,FC Barcelona,1,1,ST,90,1,0,0,22619,239,90,10
-335,2017-08-16,SUP,Real Madrid,FC Barcelona,FC Barcelona,2,0,ST,90,0,0,0,22709,239,90,10
-336,2017-08-20,PRM,FC Barcelona,Real Betis,FC Barcelona,2,0,ST,90,0,0,0,22799,239,90,10
-337,2017-08-26,PRM,Alavés,FC Barcelona,FC Barcelona,0,2,ST,90,2,0,0,22889,241,90,10
-338,2017-08-31,WCQ,Uruguay,Argentina,Argentina,0,0,ST,90,0,0,0,22979,241,90,10
-339,2017-09-05,WCQ,Argentina,Venezuela,Argentina,1,1,ST,90,0,0,0,23069,241,90,10
-340,2017-09-09,PRM,FC Barcelona,Espanyol,FC Barcelona,5,0,ST,90,3,0,0,23159,244,90,10
-341,2017-09-12,EUR,FC Barcelona,Juventus,FC Barcelona,3,0,ST,90,2,0,1,23249,246,90,10
-342,2017-11-26,PRM,Valencia,FC Barcelona,FC Barcelona,1,1,ST,90,0,1,0,23339,246,91,10
-343,2018-09-18,EUR,FC Barcelona,PSV Eindhoven,FC Barcelona,4,0,ST,90,3,0,0,23429,249,91,10
-344,2017-04-11,EUR,Juventus,FC Barcelona,FC Barcelona,3,0,ST,90,0,0,0,23519,249,91,10
-345,2018-04-14,PRM,FC Barcelona,Valencia,FC Barcelona,2,1,ST,90,0,0,0,23609,249,91,10
-346,2018-03-14,EUR,FC Barcelona,Chelsea,FC Barcelona,3,0,ST,90,2,1,0,23699,251,92,10
-347,2018-03-18,PRM,FC Barcelona,Athletic de Bilbao,FC Barcelona,2,0,ST,90,1,0,0,23789,252,92,10
-348,2018-08-12,SUP,Sevilla,FC Barcelona,FC Barcelona,1,2,ST,90,0,1,0,23879,252,93,10
-349,2018-04-04,EUR,FC Barcelona,AS Roma,FC Barcelona,4,1,ST,90,0,0,0,23969,252,93,10
-350,2018-04-07,PRM,FC Barcelona,Leganés,FC Barcelona,3,1,ST,90,3,0,0,24059,255,93,10
-351,2018-04-10,EUR,AS Roma,FC Barcelona,FC Barcelona,3,0,ST,90,0,0,1,24149,255,93,10
-352,2018-06-30,WCP,France,Argentina,Argentina,4,3,ST,90,0,2,0,24239,255,95,10
-353,2018-03-01,PRM,Las Palmas,FC Barcelona,FC Barcelona,1,1,ST,90,1,0,0,24329,256,95,10
-354,2018-04-21,CUP,Sevilla,FC Barcelona,FC Barcelona,0,5,ST,90,1,2,0,24419,257,97,10
-355,2018-04-29,PRM,Deportivo La Coruña,FC Barcelona,FC Barcelona,2,4,ST,90,3,0,0,24509,260,97,10
-356,2018-05-06,PRM,FC Barcelona,Real Madrid,FC Barcelona,2,2,ST,90,1,0,1,24599,261,97,10
-357,2018-05-09,PRM,FC Barcelona,Villarreal,FC Barcelona,5,1,ST,90,1,0,0,24689,262,97,10
-358,2018-06-26,WCP,Nigeria,Argentina,Argentina,1,2,ST,90,1,0,1,24779,263,97,10
-359,2018-05-29,FRN,Argentina,Haiti,Argentina,4,0,ST,90,3,1,0,24869,266,98,10
-360,2018-06-16,WCP,Argentina,Iceland,Argentina,1,1,ST,90,0,0,0,24959,266,98,10
-361,2018-03-04,PRM,FC Barcelona,Atlético Madrid,FC Barcelona,1,0,ST,90,1,0,1,25049,267,98,10
-362,2018-02-24,PRM,FC Barcelona,Girona,FC Barcelona,6,1,ST,90,2,1,0,25139,269,99,10
-363,2018-09-15,PRM,Real Sociedad,FC Barcelona,FC Barcelona,1,2,ST,90,0,0,0,25229,269,99,10
-364,2018-01-21,PRM,Real Betis,FC Barcelona,FC Barcelona,0,5,ST,90,2,1,0,25319,271,100,10
-365,2017-12-10,PRM,Villarreal,FC Barcelona,FC Barcelona,0,2,ST,90,1,0,0,25409,272,100,10
-366,2017-12-17,PRM,FC Barcelona,Deportivo La Coruña,FC Barcelona,4,0,ST,90,0,1,0,25499,272,101,10
-367,2017-12-23,PRM,Real Madrid,FC Barcelona,FC Barcelona,0,3,ST,90,1,1,0,25589,273,102,10
-368,2018-01-07,PRM,FC Barcelona,Levante,FC Barcelona,3,0,ST,90,1,1,0,25679,274,103,10
-369,2018-01-14,PRM,Real Sociedad,FC Barcelona,FC Barcelona,2,4,ST,90,1,1,0,25769,275,104,10
-370,2018-01-17,CUP,Espanyol,FC Barcelona,FC Barcelona,1,0,ST,90,0,0,0,25859,275,104,10
-371,2018-09-02,PRM,FC Barcelona,Huesca,FC Barcelona,8,2,ST,90,2,2,0,25949,277,106,10
-372,2018-01-25,CUP,FC Barcelona,Espanyol,FC Barcelona,2,0,ST,90,1,0,1,26039,278,106,10
-373,2018-02-20,EUR,Chelsea,FC Barcelona,FC Barcelona,1,1,ST,90,1,0,0,26129,279,106,10
-374,2018-01-28,PRM,FC Barcelona,Alavés,FC Barcelona,2,1,ST,90,1,0,0,26219,280,106,10
-375,2018-02-01,CUP,FC Barcelona,Valencia,FC Barcelona,1,0,ST,90,0,1,0,26309,280,107,10
-376,2018-08-25,PRM,Real Valladolid,FC Barcelona,FC Barcelona,0,1,ST,90,0,0,0,26399,280,107,10
-377,2018-08-18,PRM,FC Barcelona,Alavés,FC Barcelona,3,0,ST,90,2,0,0,26489,282,107,10
-378,2018-02-08,CUP,Valencia,FC Barcelona,FC Barcelona,0,2,ST,90,0,0,0,26579,282,107,10
-379,2018-02-11,PRM,FC Barcelona,Getafe,FC Barcelona,0,0,ST,90,0,0,0,26669,282,107,10
-380,2018-02-17,PRM,Eibar,FC Barcelona,FC Barcelona,0,2,ST,90,0,1,0,26759,282,108,10
-381,2017-04-15,PRM,FC Barcelona,Real Sociedad,FC Barcelona,3,2,ST,90,2,1,0,26849,284,109,10
-382,2017-04-08,PRM,Málaga,FC Barcelona,FC Barcelona,2,0,ST,90,0,0,0,26939,284,109,10
-383,2016-01-02,PRM,Espanyol,FC Barcelona,FC Barcelona,0,0,ST,90,0,0,0,27029,284,109,10
-384,2016-04-20,PRM,Deportivo La Coruña,FC Barcelona,FC Barcelona,0,8,ST,90,1,2,0,27119,285,111,10
-385,2016-04-02,PRM,FC Barcelona,Real Madrid,FC Barcelona,1,2,ST,90,0,0,0,27209,285,111,10
-386,2016-04-05,EUR,FC Barcelona,Atlético Madrid,FC Barcelona,2,1,ST,90,0,0,0,27299,285,111,10
-387,2016-04-09,PRM,Real Sociedad,FC Barcelona,FC Barcelona,1,0,ST,90,0,0,0,27389,285,111,10
-388,2016-04-13,EUR,Atlético Madrid,FC Barcelona,FC Barcelona,2,0,ST,90,0,0,0,27479,285,111,10
-389,2018-12-08,PRM,Espanyol,FC Barcelona,FC Barcelona,0,4,ST,90,2,1,0,27569,287,112,10
-390,2016-04-17,PRM,FC Barcelona,Valencia,FC Barcelona,1,2,ST,90,1,0,0,27659,288,112,10
-391,2016-04-23,PRM,FC Barcelona,Sporting Gijón,FC Barcelona,6,0,ST,90,1,1,0,27749,289,113,10
-392,2016-03-24,WCQ,Chile,Argentina,Argentina,1,2,ST,90,0,0,0,27839,289,113,10
-393,2016-05-08,PRM,FC Barcelona,Espanyol,FC Barcelona,5,0,ST,90,1,1,1,27929,290,114,10
-394,2016-05-14,PRM,Granada,FC Barcelona,FC Barcelona,0,3,ST,90,0,0,0,28019,290,114,10
-395,2018-12-02,PRM,FC Barcelona,Villarreal,FC Barcelona,2,0,ST,90,0,1,0,28109,290,115,10
-396,2016-06-18,CPA,Argentina,Venezuela,Argentina,4,1,ST,90,1,2,0,28199,291,117,10
-397,2016-06-21,CPA,United States,Argentina,Argentina,0,4,ST,90,1,2,0,28289,292,119,10
-398,2016-08-14,SUP,Sevilla,FC Barcelona,FC Barcelona,0,2,ST,90,0,1,0,28379,292,120,10
-399,2016-08-17,SUP,FC Barcelona,Sevilla,FC Barcelona,3,0,ST,90,1,1,0,28469,293,121,10
-400,2016-03-29,WCQ,Argentina,Bolivia,Argentina,2,0,ST,90,1,0,0,28559,294,121,10
-401,2016-03-20,PRM,Villarreal,FC Barcelona,FC Barcelona,2,2,ST,90,0,0,0,28649,294,121,10
-402,2016-08-28,PRM,Athletic de Bilbao,FC Barcelona,FC Barcelona,0,1,ST,90,0,0,0,28739,294,121,10
-403,2016-02-07,PRM,Levante,FC Barcelona,FC Barcelona,0,2,ST,90,0,1,0,28829,294,122,10
-404,2016-01-06,CUP,FC Barcelona,Espanyol,FC Barcelona,4,1,ST,90,2,2,1,28919,296,124,10
-405,2016-01-09,PRM,FC Barcelona,Granada,FC Barcelona,4,0,ST,90,3,0,0,29009,299,124,10
-406,2016-01-13,CUP,Espanyol,FC Barcelona,FC Barcelona,0,2,ST,90,0,1,0,29099,299,125,10
-407,2016-01-23,PRM,Málaga,FC Barcelona,FC Barcelona,1,2,ST,90,1,0,1,29189,300,125,10
-408,2016-01-27,CUP,FC Barcelona,Athletic de Bilbao,FC Barcelona,3,1,ST,90,0,1,0,29279,300,126,10
-409,2016-01-30,PRM,FC Barcelona,Atlético Madrid,FC Barcelona,2,1,ST,90,1,0,0,29369,301,126,10
-410,2016-02-03,CUP,FC Barcelona,Valencia,FC Barcelona,7,0,ST,90,3,0,0,29459,304,126,10
-411,2016-02-14,PRM,FC Barcelona,Celta de Vigo,FC Barcelona,6,1,ST,90,1,2,0,29549,305,128,10
-412,2016-03-16,EUR,FC Barcelona,Arsenal,FC Barcelona,3,1,ST,90,1,0,0,29639,306,128,10
-413,2016-02-17,PRM,Sporting Gijón,FC Barcelona,FC Barcelona,1,3,ST,90,2,0,0,29729,308,128,10
-414,2016-02-20,PRM,Las Palmas,FC Barcelona,FC Barcelona,1,2,ST,90,0,0,0,29819,308,128,10
-415,2016-02-23,EUR,Arsenal,FC Barcelona,FC Barcelona,0,2,ST,90,2,0,0,29909,310,128,10
-416,2016-02-28,PRM,FC Barcelona,Sevilla,FC Barcelona,2,1,ST,90,1,0,0,29999,311,128,10
-417,2016-03-03,PRM,Rayo Vallecano,FC Barcelona,FC Barcelona,1,5,ST,90,3,0,0,30089,314,128,10
-418,2016-03-06,PRM,Eibar,FC Barcelona,FC Barcelona,0,4,ST,90,2,0,0,30179,316,128,10
-419,2016-03-12,PRM,FC Barcelona,Getafe,FC Barcelona,6,0,ST,90,1,3,0,30269,317,131,10
-420,2016-08-20,PRM,FC Barcelona,Real Betis,FC Barcelona,6,2,ST,90,2,1,0,30359,319,132,10
-421,2016-09-01,WCQ,Argentina,Uruguay,Argentina,1,0,ST,90,1,0,0,30449,320,132,10
-422,2017-04-05,PRM,FC Barcelona,Sevilla,FC Barcelona,3,0,ST,90,2,0,0,30539,322,132,10
-423,2017-02-11,PRM,Alavés,FC Barcelona,FC Barcelona,0,6,ST,90,1,0,0,30629,323,132,10
-424,2017-01-22,PRM,Eibar,FC Barcelona,FC Barcelona,0,4,ST,90,1,0,0,30719,324,132,10
-425,2018-11-11,PRM,FC Barcelona,Real Betis,FC Barcelona,3,4,ST,90,2,0,0,30809,326,132,10
-426,2017-01-26,CUP,FC Barcelona,Real Sociedad,FC Barcelona,5,2,ST,90,1,2,0,30899,327,134,10
-427,2017-01-29,PRM,Real Betis,FC Barcelona,FC Barcelona,1,1,ST,90,0,1,0,30989,327,135,10
-428,2017-02-01,CUP,Atlético Madrid,FC Barcelona,FC Barcelona,1,2,ST,90,1,0,1,31079,328,135,10
-429,2017-02-07,CUP,FC Barcelona,Atlético Madrid,FC Barcelona,1,1,ST,90,0,0,0,31169,328,135,10
-430,2017-02-14,EUR,Paris Saint-Germain,FC Barcelona,FC Barcelona,4,0,ST,90,0,0,0,31259,328,135,10
-431,2017-01-14,PRM,FC Barcelona,Las Palmas,FC Barcelona,5,0,ST,90,1,0,0,31349,329,135,10
-432,2017-02-19,PRM,FC Barcelona,Leganés,FC Barcelona,2,1,ST,90,2,0,0,31439,331,135,10
-433,2017-02-26,PRM,Atlético Madrid,FC Barcelona,FC Barcelona,1,2,ST,90,1,0,1,31529,332,135,10
-434,2017-03-04,PRM,FC Barcelona,Celta de Vigo,FC Barcelona,5,0,ST,90,2,2,0,31619,334,137,10
-435,2017-03-08,EUR,FC Barcelona,Paris Saint-Germain,FC Barcelona,6,1,ST,90,1,0,0,31709,335,137,10
-436,2017-03-12,PRM,Deportivo La Coruña,FC Barcelona,FC Barcelona,2,1,ST,90,0,0,0,31799,335,137,10
-437,2017-03-19,PRM,FC Barcelona,Valencia,FC Barcelona,4,2,ST,90,2,0,1,31889,337,137,10
-438,2017-03-23,WCQ,Argentina,Chile,Argentina,1,0,ST,90,1,0,0,31979,338,137,10
-439,2017-01-19,CUP,Real Sociedad,FC Barcelona,FC Barcelona,0,1,ST,90,0,0,1,32069,338,137,10
-440,2017-01-11,CUP,FC Barcelona,Athletic de Bilbao,FC Barcelona,3,1,ST,90,1,0,0,32159,339,137,10
-441,2018-11-28,EUR,PSV Eindhoven,FC Barcelona,FC Barcelona,1,2,ST,90,1,1,0,32249,340,138,10
-442,2016-11-10,WCQ,Brazil,Argentina,Argentina,3,0,ST,90,0,0,0,32339,340,138,10
-443,2016-09-13,EUR,FC Barcelona,Celtic,FC Barcelona,7,0,ST,90,3,1,0,32429,343,139,10
-444,2016-09-17,PRM,Leganés,FC Barcelona,FC Barcelona,1,5,ST,90,2,1,0,32519,345,140,10
-445,2016-10-19,EUR,FC Barcelona,Manchester City,FC Barcelona,4,0,ST,90,3,1,0,32609,348,141,10
-446,2016-10-22,PRM,Valencia,FC Barcelona,FC Barcelona,2,3,ST,90,2,0,1,32699,350,141,10
-447,2016-10-29,PRM,FC Barcelona,Granada,FC Barcelona,1,0,ST,90,0,0,0,32789,350,141,10
-448,2016-11-01,EUR,Manchester City,FC Barcelona,FC Barcelona,3,1,ST,90,1,0,0,32879,351,141,10
-449,2016-11-06,PRM,Sevilla,FC Barcelona,FC Barcelona,1,2,ST,90,1,1,1,32969,352,142,10
-450,2016-11-15,WCQ,Argentina,Colombia,Argentina,3,0,ST,90,1,2,0,33059,353,144,10
-451,2017-01-08,PRM,Villarreal,FC Barcelona,FC Barcelona,1,1,ST,90,1,0,0,33149,354,144,10
-452,2016-11-23,EUR,Celtic,FC Barcelona,FC Barcelona,0,2,ST,90,2,0,0,33239,356,144,10
-453,2016-11-27,PRM,Real Sociedad,FC Barcelona,FC Barcelona,1,1,ST,90,1,0,0,33329,357,144,10
-454,2016-12-03,PRM,FC Barcelona,Real Madrid,FC Barcelona,1,1,ST,90,0,0,0,33419,357,144,10
-455,2016-12-06,EUR,FC Barcelona,Borussia Mönchengladbach,FC Barcelona,4,0,ST,90,1,0,0,33509,358,144,10
-456,2016-12-10,PRM,Osasuna,FC Barcelona,FC Barcelona,0,3,ST,90,2,0,0,33599,360,144,10
-457,2016-12-18,PRM,FC Barcelona,Espanyol,FC Barcelona,4,1,ST,90,1,0,0,33689,361,144,10
-458,2018-11-24,PRM,Atlético Madrid,FC Barcelona,FC Barcelona,1,1,ST,90,0,1,0,33779,361,145,10
-459,2017-01-05,CUP,Athletic de Bilbao,FC Barcelona,FC Barcelona,2,1,ST,90,1,0,0,33869,362,145,10
-460,2012-05-12,PRM,Real Betis,FC Barcelona,FC Barcelona,2,2,ST,90,0,0,0,33959,362,145,10
-461,2013-04-23,EUR,Bayern München,FC Barcelona,FC Barcelona,4,0,ST,90,0,0,0,34049,362,145,10
-462,2009-10-11,WCQ,Argentina,Peru,Argentina,2,1,ST,90,0,0,0,34139,362,145,10
-463,2009-09-06,WCQ,Argentina,Brazil,Argentina,1,3,ST,90,0,0,0,34229,362,145,10
-464,2009-09-10,WCQ,Paraguay,Argentina,Argentina,1,0,ST,90,0,0,0,34319,362,145,10
-465,2009-09-16,EUR,Internazionale,FC Barcelona,FC Barcelona,0,0,ST,90,0,0,0,34409,362,145,10
-466,2009-09-19,PRM,FC Barcelona,Atlético Madrid,FC Barcelona,5,2,ST,90,2,1,0,34499,364,146,10
-467,2009-09-26,PRM,Málaga,FC Barcelona,FC Barcelona,0,2,ST,90,0,1,0,34589,364,147,10
-468,2009-09-29,EUR,FC Barcelona,Dynamo Kyiv,FC Barcelona,2,0,ST,90,1,0,0,34679,365,147,10
-469,2009-10-03,PRM,FC Barcelona,UD Almería,FC Barcelona,1,0,ST,90,0,0,0,34769,365,147,10
-470,2009-10-17,PRM,Valencia,FC Barcelona,FC Barcelona,0,0,ST,90,0,0,0,34859,365,147,10
-471,2009-06-10,WCQ,Ecuador,Argentina,Argentina,2,0,ST,90,0,0,0,34949,365,147,10
-472,2009-10-20,EUR,FC Barcelona,Rubin Kazan,FC Barcelona,1,2,ST,90,0,0,0,35039,365,147,10
-473,2009-10-25,PRM,FC Barcelona,Real Zaragoza,FC Barcelona,6,1,ST,90,1,1,0,35129,366,148,10
-474,2009-10-31,PRM,Osasuna,FC Barcelona,FC Barcelona,1,1,ST,90,0,0,0,35219,366,148,10
-475,2009-11-04,EUR,Rubin Kazan,FC Barcelona,FC Barcelona,0,0,ST,90,0,0,0,35309,366,148,10
-476,2009-11-29,PRM,FC Barcelona,Real Madrid,FC Barcelona,1,0,ST,90,0,0,0,35399,366,148,10
-477,2009-12-05,PRM,Deportivo La Coruña,FC Barcelona,FC Barcelona,1,3,ST,90,2,0,0,35489,368,148,10
-478,2009-12-09,EUR,Dynamo Kyiv,FC Barcelona,FC Barcelona,1,2,ST,90,1,0,0,35579,369,148,10
-479,2009-08-23,SUP,FC Barcelona,Athletic de Bilbao,FC Barcelona,3,0,ST,90,2,0,0,35669,371,148,10
-480,2009-06-06,WCQ,Argentina,Colombia,Argentina,1,0,ST,90,0,0,0,35759,371,148,10
-481,2010-01-10,PRM,Tenerife,FC Barcelona,FC Barcelona,0,5,ST,90,3,1,0,35849,374,149,10
-482,2009-04-01,WCQ,Bolivia,Argentina,Argentina,6,1,ST,90,0,0,0,35939,374,149,10
-483,2009-02-24,EUR,Olympique Lyon,FC Barcelona,FC Barcelona,1,1,ST,90,0,0,0,36029,374,149,10
-484,2009-03-01,PRM,Atlético Madrid,FC Barcelona,FC Barcelona,4,3,ST,90,1,0,1,36119,375,149,10
-485,2009-03-07,PRM,FC Barcelona,Athletic de Bilbao,FC Barcelona,2,0,ST,90,1,0,0,36209,376,149,10
-486,2009-03-11,EUR,FC Barcelona,Olympique Lyon,FC Barcelona,5,2,ST,90,1,0,0,36299,377,149,10
-487,2009-03-15,PRM,UD Almería,FC Barcelona,FC Barcelona,0,2,ST,90,0,0,0,36389,377,149,10
-488,2009-03-22,PRM,FC Barcelona,Málaga,FC Barcelona,6,0,ST,90,1,0,0,36479,378,149,10
-489,2009-03-28,WCQ,Argentina,Venezuela,Argentina,4,0,ST,90,1,1,0,36569,379,150,10
-490,2009-04-08,EUR,FC Barcelona,Bayern München,FC Barcelona,4,0,ST,90,2,1,1,36659,381,151,10
-491,2009-05-27,EUR,FC Barcelona,Manchester United,FC Barcelona,2,0,ST,90,1,0,0,36749,382,151,10
-492,2009-04-11,PRM,FC Barcelona,Recreativo Huelva,FC Barcelona,2,0,ST,90,0,0,0,36839,382,151,10
-493,2009-04-14,EUR,Bayern München,FC Barcelona,FC Barcelona,1,1,ST,90,0,0,0,36929,382,151,10
-494,2009-04-18,PRM,Getafe,FC Barcelona,FC Barcelona,0,1,ST,90,1,0,0,37019,383,151,10
-495,2009-04-25,PRM,Valencia,FC Barcelona,FC Barcelona,2,2,ST,90,1,0,0,37109,384,151,10
-496,2009-04-28,EUR,FC Barcelona,Chelsea,FC Barcelona,0,0,ST,90,0,0,0,37199,384,151,10
-497,2009-05-02,PRM,Real Madrid,FC Barcelona,FC Barcelona,2,6,ST,90,2,1,0,37289,386,152,10
-498,2009-05-06,EUR,Chelsea,FC Barcelona,FC Barcelona,1,1,ST,90,0,1,0,37379,386,153,10
-499,2009-05-13,CUP,Athletic de Bilbao,FC Barcelona,FC Barcelona,1,4,ST,90,1,1,1,37469,387,154,10
-500,2010-01-05,CUP,FC Barcelona,Sevilla,FC Barcelona,1,2,ST,90,0,0,0,37559,387,154,10
-501,2010-01-13,CUP,Sevilla,FC Barcelona,FC Barcelona,0,1,ST,90,0,0,1,37649,387,154,10
-502,2009-02-11,FRN,France,Argentina,Argentina,0,2,ST,90,1,0,0,37739,388,154,18
-503,2010-08-29,PRM,Racing Santander,FC Barcelona,FC Barcelona,0,3,ST,90,1,0,0,37829,389,154,10
-504,2010-05-16,PRM,FC Barcelona,Real Valladolid,FC Barcelona,4,0,ST,90,2,1,0,37919,391,155,10
-505,2010-06-12,WCP,Argentina,Nigeria,Argentina,1,0,ST,90,0,0,0,38009,391,155,10
-506,2010-06-17,WCP,Argentina,Korea Republic,Argentina,4,1,ST,90,0,0,0,38099,391,155,10
-507,2010-06-22,WCP,Greece,Argentina,Argentina,0,2,ST,90,0,0,0,38189,391,155,10
-508,2010-06-27,WCP,Argentina,Mexico,Argentina,3,1,ST,90,0,1,0,38279,391,156,10
-509,2010-07-03,WCP,Argentina,Germany,Argentina,0,4,ST,90,0,0,0,38369,391,156,10
-510,2010-08-21,SUP,FC Barcelona,Sevilla,FC Barcelona,4,0,ST,90,3,0,0,38459,394,156,10
-511,2010-09-11,PRM,FC Barcelona,Hercules Alicante,FC Barcelona,0,2,ST,90,0,0,0,38549,394,156,10
-512,2010-05-04,PRM,FC Barcelona,Tenerife,FC Barcelona,4,1,ST,90,2,0,0,38639,396,156,10
-513,2010-09-14,EUR,FC Barcelona,Panathinaikos,FC Barcelona,5,1,ST,90,2,1,0,38729,398,157,10
-514,2010-09-19,PRM,Atlético Madrid,FC Barcelona,FC Barcelona,1,2,ST,90,1,1,0,38819,399,158,10
-515,2010-10-03,PRM,FC Barcelona,Real Mallorca,FC Barcelona,1,1,ST,90,1,0,0,38909,400,158,10
-516,2010-10-08,FRN,Japan,Argentina,Argentina,1,0,ST,90,0,0,0,38999,400,158,10
-517,2010-10-16,PRM,FC Barcelona,Valencia,FC Barcelona,2,1,ST,90,0,0,0,39089,400,158,10
-518,2010-10-20,EUR,FC Barcelona,FC Copenhagen,FC Barcelona,2,0,ST,90,2,0,0,39179,402,158,10
-519,2010-10-23,PRM,Real Zaragoza,FC Barcelona,FC Barcelona,0,2,ST,90,2,0,0,39269,404,158,10
-520,2010-05-08,PRM,Sevilla,FC Barcelona,FC Barcelona,2,3,ST,90,1,0,0,39359,405,158,10
-521,2010-04-28,EUR,FC Barcelona,Internazionale,FC Barcelona,1,0,ST,90,0,0,0,39449,405,158,10
-522,2010-01-16,PRM,FC Barcelona,Sevilla,FC Barcelona,4,0,ST,90,2,0,0,39539,407,158,10
-523,2010-03-03,FRN,Germany,Argentina,Argentina,0,1,ST,90,0,0,1,39629,407,158,10
-524,2010-01-23,PRM,Real Valladolid,FC Barcelona,FC Barcelona,0,3,ST,90,1,1,0,39719,408,159,10
-525,2010-01-30,PRM,Sporting Gijón,FC Barcelona,FC Barcelona,0,1,ST,90,0,0,1,39809,408,159,10
-526,2010-02-06,PRM,FC Barcelona,Getafe,FC Barcelona,2,1,ST,90,1,1,0,39899,409,160,10
-527,2010-02-14,PRM,Atlético Madrid,FC Barcelona,FC Barcelona,2,1,ST,90,0,0,0,39989,409,160,10
-528,2010-02-20,PRM,FC Barcelona,Racing Santander,FC Barcelona,4,0,ST,90,0,1,0,40079,409,161,10
-529,2010-02-23,EUR,VfB Stuttgart,FC Barcelona,FC Barcelona,1,1,ST,90,0,0,0,40169,409,161,10
-530,2010-02-27,PRM,FC Barcelona,Málaga,FC Barcelona,2,1,ST,90,1,0,0,40259,410,161,10
-531,2010-03-06,PRM,UD Almería,FC Barcelona,FC Barcelona,2,2,ST,90,2,0,0,40349,412,161,10
-532,2010-04-20,EUR,Internazionale,FC Barcelona,FC Barcelona,3,1,ST,90,0,0,0,40439,412,161,10
-533,2010-03-17,EUR,FC Barcelona,VfB Stuttgart,FC Barcelona,4,0,ST,90,2,0,0,40529,414,161,10
-534,2010-03-21,PRM,Real Zaragoza,FC Barcelona,FC Barcelona,2,4,ST,90,3,0,0,40619,417,161,10
-535,2010-03-24,PRM,FC Barcelona,Osasuna,FC Barcelona,2,0,ST,90,0,0,1,40709,417,161,10
-536,2010-04-03,PRM,FC Barcelona,Athletic de Bilbao,FC Barcelona,4,1,ST,90,1,0,0,40799,418,161,10
-537,2010-04-06,EUR,FC Barcelona,Arsenal,FC Barcelona,4,1,ST,90,4,0,0,40889,422,161,10
-538,2010-04-10,PRM,Real Madrid,FC Barcelona,FC Barcelona,0,2,ST,90,1,0,1,40979,423,161,10
-539,2010-04-14,PRM,FC Barcelona,Deportivo La Coruña,FC Barcelona,3,0,ST,90,0,0,0,41069,423,161,10
-540,2010-04-17,PRM,Espanyol,FC Barcelona,FC Barcelona,0,0,ST,90,0,0,0,41159,423,161,10
-541,2009-02-21,PRM,FC Barcelona,Espanyol,FC Barcelona,1,2,ST,90,0,0,0,41249,423,161,10
-542,2009-02-08,PRM,FC Barcelona,Sporting Gijón,FC Barcelona,3,1,ST,90,0,2,0,41339,423,163,10
-543,2010-11-02,EUR,FC Copenhagen,FC Barcelona,FC Barcelona,1,1,ST,90,1,0,0,41429,424,163,10
-544,2007-05-20,PRM,Atlético Madrid,FC Barcelona,FC Barcelona,0,6,ST,90,2,0,0,41519,426,163,19
-545,2007-03-06,EUR,Liverpool,FC Barcelona,FC Barcelona,0,1,ST,90,0,0,0,41609,426,163,19
-546,2007-03-10,PRM,FC Barcelona,Real Madrid,FC Barcelona,3,3,ST,90,3,0,0,41699,429,163,19
-547,2007-03-17,PRM,Recreativo Huelva,FC Barcelona,FC Barcelona,0,4,ST,90,1,0,0,41789,430,163,19
-548,2007-04-07,PRM,Real Zaragoza,FC Barcelona,FC Barcelona,1,0,ST,90,0,0,1,41879,430,163,19
-549,2007-04-15,PRM,FC Barcelona,Real Mallorca,FC Barcelona,1,0,ST,90,0,0,0,41969,430,163,19
-550,2007-04-22,PRM,Villarreal,FC Barcelona,FC Barcelona,2,0,ST,90,0,0,0,42059,430,163,19
-551,2007-04-29,PRM,FC Barcelona,Levante,FC Barcelona,1,0,ST,90,0,0,0,42149,430,163,19
-552,2007-06-05,FRN,Argentina,Algeria,Argentina,4,3,ST,90,2,0,0,42239,432,163,18
-553,2007-02-21,EUR,FC Barcelona,Liverpool,FC Barcelona,1,2,ST,90,0,0,0,42329,432,163,19
-554,2007-06-09,PRM,FC Barcelona,Espanyol,FC Barcelona,2,2,ST,90,2,0,0,42419,434,163,19
-555,2007-07-09,CPA,Argentina,Peru,Argentina,4,0,ST,90,1,0,0,42509,435,163,18
-556,2007-07-12,CPA,Mexico,Argentina,Argentina,0,3,ST,90,1,0,1,42599,436,163,18
-557,2007-07-15,CPA,Brazil,Argentina,Argentina,3,0,ST,90,0,0,0,42689,436,163,18
-558,2007-08-22,FRN,Norway,Argentina,Argentina,2,1,ST,90,0,0,0,42779,436,163,19
-559,2007-09-02,PRM,FC Barcelona,Athletic de Bilbao,FC Barcelona,3,1,ST,90,0,0,0,42869,436,163,19
-560,2007-10-02,EUR,VfB Stuttgart,FC Barcelona,FC Barcelona,0,2,ST,90,1,0,1,42959,437,163,19
-561,2007-02-28,CUP,Real Zaragoza,FC Barcelona,FC Barcelona,1,2,ST,90,0,0,1,43049,437,163,19
-562,2006-11-04,PRM,Deportivo La Coruña,FC Barcelona,FC Barcelona,1,1,ST,90,0,0,0,43139,437,163,19
-563,2007-10-17,WCQ,Venezuela,Argentina,Argentina,0,2,ST,90,1,0,0,43229,438,163,18
-564,2006-03-01,FRN,Croatia,Argentina,Argentina,3,2,ST,90,1,1,0,43319,439,164,19
-565,2004-12-07,EUR,Shakhtar Donetsk,FC Barcelona,FC Barcelona,2,0,ST,90,0,0,0,43409,439,164,30
-566,2005-10-10,WCQ,Argentina,Peru,Argentina,2,0,ST,90,0,0,0,43499,439,164,19
-567,2005-10-22,PRM,FC Barcelona,Osasuna,FC Barcelona,3,0,ST,90,0,0,1,43589,439,164,30
-568,2005-11-02,EUR,FC Barcelona,Panathinaikos,FC Barcelona,5,0,ST,90,1,1,0,43679,440,165,30
-569,2006-01-26,CUP,Real Zaragoza,FC Barcelona,FC Barcelona,4,2,ST,90,0,0,0,43769,440,165,30
-570,2006-02-01,CUP,FC Barcelona,Real Zaragoza,FC Barcelona,2,1,ST,90,1,0,0,43859,441,165,30
-571,2006-02-22,EUR,Chelsea,FC Barcelona,FC Barcelona,1,2,ST,90,0,0,0,43949,441,165,30
-572,2006-08-20,SUP,FC Barcelona,Espanyol,FC Barcelona,3,0,ST,90,0,0,0,44039,441,165,19
-573,2006-10-31,EUR,FC Barcelona,Chelsea,FC Barcelona,2,2,ST,90,0,0,1,44129,441,165,19
-574,2006-08-25,IUP,FC Barcelona,Sevilla,FC Barcelona,0,3,ST,90,0,0,0,44219,441,165,19
-575,2006-08-28,PRM,Celta de Vigo,FC Barcelona,FC Barcelona,2,3,ST,90,1,1,0,44309,442,166,19
-576,2006-09-03,FRN,Brazil,Argentina,Argentina,3,0,ST,90,0,0,0,44399,442,166,19
-577,2006-09-09,PRM,FC Barcelona,Osasuna,FC Barcelona,3,0,ST,90,1,0,0,44489,443,166,19
-578,2006-09-30,PRM,Athletic de Bilbao,FC Barcelona,FC Barcelona,1,3,ST,90,0,0,1,44579,443,166,19
-579,2006-10-15,PRM,FC Barcelona,Sevilla,FC Barcelona,3,1,ST,90,1,0,0,44669,444,166,19
-580,2006-10-18,EUR,Chelsea,FC Barcelona,FC Barcelona,1,0,ST,90,0,0,0,44759,444,166,19
-581,2006-10-22,PRM,Real Madrid,FC Barcelona,FC Barcelona,2,0,ST,90,0,0,0,44849,444,166,19
-582,2007-10-07,PRM,FC Barcelona,Atlético Madrid,FC Barcelona,3,0,ST,90,1,0,0,44939,445,166,19
-583,2007-10-20,PRM,Villarreal,FC Barcelona,FC Barcelona,3,1,ST,90,0,1,0,45029,445,167,19
-584,2009-01-29,CUP,FC Barcelona,Espanyol,FC Barcelona,3,2,ST,90,0,0,0,45119,445,167,10
-585,2008-10-25,PRM,FC Barcelona,UD Almería,FC Barcelona,5,0,ST,90,0,2,0,45209,445,169,10
-586,2008-09-11,WCQ,Peru,Argentina,Argentina,1,1,ST,90,0,0,0,45299,445,169,18
-587,2008-09-16,EUR,FC Barcelona,Sporting Lisbon,FC Barcelona,3,1,ST,90,0,0,0,45389,445,169,10
-588,2008-09-21,PRM,Sporting Gijón,FC Barcelona,FC Barcelona,1,6,ST,90,2,1,0,45479,447,170,10
-589,2008-09-24,PRM,FC Barcelona,Real Betis,FC Barcelona,3,2,ST,90,0,2,0,45569,447,172,10
-590,2008-09-27,PRM,Espanyol,FC Barcelona,FC Barcelona,1,2,ST,90,1,0,0,45659,448,172,10
-591,2008-10-16,WCQ,Chile,Argentina,Argentina,1,0,ST,90,0,0,0,45749,448,172,18
-592,2008-10-22,EUR,FC Basel,FC Barcelona,FC Barcelona,0,5,ST,90,1,2,0,45839,449,174,10
-593,2008-11-08,PRM,FC Barcelona,Real Valladolid,FC Barcelona,6,0,ST,90,0,1,0,45929,449,175,10
-594,2008-08-31,PRM,Numancia,FC Barcelona,FC Barcelona,1,0,ST,90,0,0,0,46019,449,175,10
-595,2008-11-16,PRM,Recreativo Huelva,FC Barcelona,FC Barcelona,0,2,ST,90,1,0,0,46109,450,175,10
-596,2008-11-29,PRM,Sevilla,FC Barcelona,FC Barcelona,0,3,ST,90,2,0,0,46199,452,175,10
-597,2008-12-13,PRM,FC Barcelona,Real Madrid,FC Barcelona,2,0,ST,90,1,0,1,46289,453,175,10
-598,2008-12-21,PRM,Villarreal,FC Barcelona,FC Barcelona,1,2,ST,90,0,0,0,46379,453,175,10
-599,2009-01-11,PRM,Osasuna,FC Barcelona,FC Barcelona,2,3,ST,90,1,1,0,46469,454,176,10
-600,2009-01-17,PRM,FC Barcelona,Deportivo La Coruña,FC Barcelona,5,0,ST,90,1,0,0,46559,455,176,10
-601,2009-01-24,PRM,FC Barcelona,Numancia,FC Barcelona,4,1,ST,90,2,1,0,46649,457,177,10
-602,2008-09-06,WCQ,Argentina,Paraguay,Argentina,1,1,ST,90,0,1,0,46739,457,178,18
-603,2008-06-15,WCQ,Argentina,Ecuador,Argentina,1,1,ST,90,0,0,0,46829,457,178,18
-604,2007-10-23,EUR,Glasgow Rangers,FC Barcelona,FC Barcelona,0,0,ST,90,0,0,0,46919,457,178,19
-605,2007-12-01,PRM,Espanyol,FC Barcelona,FC Barcelona,1,1,ST,90,0,1,0,47009,457,179,19
-606,2007-11-01,PRM,Real Valladolid,FC Barcelona,FC Barcelona,1,1,ST,90,0,0,0,47099,457,179,19
-607,2007-11-04,PRM,FC Barcelona,Real Betis,FC Barcelona,3,0,ST,90,0,0,0,47189,457,179,19
-608,2007-11-07,EUR,FC Barcelona,Glasgow Rangers,FC Barcelona,2,0,ST,90,1,1,0,47279,458,180,19
-609,2007-11-17,WCQ,Argentina,Bolivia,Argentina,3,0,ST,90,0,1,0,47369,458,181,18
-610,2007-11-21,WCQ,Colombia,Argentina,Argentina,2,1,ST,90,1,0,0,47459,459,181,18
-611,2007-11-24,PRM,FC Barcelona,Recreativo Huelva,FC Barcelona,3,0,ST,90,1,0,0,47549,460,181,19
-612,2007-11-27,EUR,Olympique Lyon,FC Barcelona,FC Barcelona,2,2,ST,90,1,0,1,47639,461,181,19
-613,2007-12-09,PRM,FC Barcelona,Deportivo La Coruña,FC Barcelona,2,1,ST,90,0,0,0,47729,461,181,19
-614,2008-05-17,PRM,Real Murcia,FC Barcelona,FC Barcelona,3,5,ST,90,0,2,0,47819,461,183,19
-615,2008-01-27,PRM,Athletic de Bilbao,FC Barcelona,FC Barcelona,1,1,ST,90,0,0,0,47909,461,183,19
-616,2008-01-31,CUP,FC Barcelona,Villarreal,FC Barcelona,1,0,ST,90,0,0,0,47999,461,183,19
-617,2008-02-09,PRM,Sevilla,FC Barcelona,FC Barcelona,1,1,ST,90,0,1,1,48089,461,184,19
-618,2008-02-20,EUR,Celtic,FC Barcelona,FC Barcelona,2,3,ST,90,2,0,0,48179,463,184,19
-619,2008-02-27,CUP,FC Barcelona,Valencia,FC Barcelona,1,1,ST,90,0,0,1,48269,463,184,19
-620,2008-04-29,EUR,Manchester United,FC Barcelona,FC Barcelona,1,0,ST,90,0,0,0,48359,463,184,19
-621,2008-05-04,PRM,FC Barcelona,Valencia,FC Barcelona,6,0,ST,90,1,1,0,48449,464,185,19
-622,2008-05-07,PRM,Real Madrid,FC Barcelona,FC Barcelona,4,1,ST,90,0,1,0,48539,464,186,19
-623,2013-03-30,PRM,Celta de Vigo,FC Barcelona,FC Barcelona,2,2,ST,90,1,1,0,48629,465,187,10
-624,2010-10-30,PRM,FC Barcelona,Sevilla,FC Barcelona,5,0,ST,90,2,1,0,48719,467,188,10
-625,2010-11-07,PRM,Getafe,FC Barcelona,FC Barcelona,1,3,ST,90,1,1,0,48809,468,189,10
-626,2012-06-03,WCQ,Argentina,Ecuador,Argentina,4,0,ST,90,1,1,0,48899,469,190,10
-627,2012-04-18,EUR,Chelsea,FC Barcelona,FC Barcelona,1,0,ST,90,0,0,0,48989,469,190,10
-628,2012-04-21,PRM,FC Barcelona,Real Madrid,FC Barcelona,1,2,ST,90,0,0,0,49079,469,190,10
-629,2012-04-24,EUR,FC Barcelona,Chelsea,FC Barcelona,2,2,ST,90,0,1,1,49169,469,191,10
-630,2012-04-29,PRM,Rayo Vallecano,FC Barcelona,FC Barcelona,0,7,ST,90,2,2,0,49259,471,193,10
-631,2012-05-02,PRM,FC Barcelona,Málaga,FC Barcelona,4,1,ST,90,3,0,0,49349,474,193,10
-632,2012-05-05,PRM,FC Barcelona,Espanyol,FC Barcelona,4,0,ST,90,4,0,0,49439,478,193,10
-633,2012-05-25,CUP,Athletic de Bilbao,FC Barcelona,FC Barcelona,0,3,ST,90,1,0,0,49529,479,193,10
-634,2012-06-09,FRN,Argentina,Brazil,Argentina,4,3,ST,90,3,0,0,49619,482,193,10
-635,2012-04-10,PRM,FC Barcelona,Getafe,FC Barcelona,4,0,ST,90,1,2,1,49709,483,195,10
-636,2012-08-15,FRN,Germany,Argentina,Argentina,1,3,ST,90,1,0,0,49799,484,195,10
-637,2012-08-19,PRM,FC Barcelona,Real Sociedad,FC Barcelona,5,1,ST,90,2,0,0,49889,486,195,10
-638,2012-08-23,SUP,FC Barcelona,Real Madrid,FC Barcelona,3,2,ST,90,1,0,0,49979,487,195,10
-639,2012-08-26,PRM,Osasuna,FC Barcelona,FC Barcelona,1,2,ST,90,2,0,0,50069,489,195,10
-640,2012-08-29,SUP,Real Madrid,FC Barcelona,FC Barcelona,2,1,ST,90,1,0,0,50159,490,195,10
-641,2012-09-02,PRM,FC Barcelona,Valencia,FC Barcelona,1,0,ST,90,0,1,0,50249,490,196,10
-642,2012-09-08,WCQ,Argentina,Paraguay,Argentina,3,1,ST,90,1,0,0,50339,491,196,10
-643,2012-04-14,PRM,Levante,FC Barcelona,FC Barcelona,1,2,ST,90,2,0,0,50429,493,196,10
-644,2012-04-07,PRM,Real Zaragoza,FC Barcelona,FC Barcelona,1,4,ST,90,2,1,0,50519,495,197,10
-645,2012-09-19,EUR,FC Barcelona,Spartak Moscow,FC Barcelona,3,2,ST,90,2,0,0,50609,497,197,10
-646,2012-02-19,PRM,FC Barcelona,Valencia,FC Barcelona,5,1,ST,90,4,0,0,50699,501,197,10
-647,2012-01-25,CUP,FC Barcelona,Real Madrid,FC Barcelona,2,2,ST,90,0,1,1,50789,501,198,10
-648,2012-01-28,PRM,Villarreal,FC Barcelona,FC Barcelona,0,0,ST,90,0,0,0,50879,501,198,10
-649,2012-02-01,CUP,Valencia,FC Barcelona,FC Barcelona,1,1,ST,90,0,0,0,50969,501,198,10
-650,2012-02-04,PRM,FC Barcelona,Real Sociedad,FC Barcelona,2,1,ST,90,1,1,0,51059,502,199,10
-651,2012-02-08,CUP,FC Barcelona,Valencia,FC Barcelona,2,0,ST,90,0,1,0,51149,502,200,10
-652,2012-02-11,PRM,Osasuna,FC Barcelona,FC Barcelona,3,2,ST,90,0,0,0,51239,502,200,10
-653,2012-02-14,EUR,Bayer Leverkusen,FC Barcelona,FC Barcelona,1,3,ST,90,1,1,0,51329,503,201,10
-654,2012-02-26,PRM,Atlético Madrid,FC Barcelona,FC Barcelona,1,2,ST,90,1,0,1,51419,504,201,10
-655,2012-04-03,EUR,FC Barcelona,AC Milan,FC Barcelona,3,1,ST,90,2,0,0,51509,506,201,10
-656,2012-02-29,FRN,Switzerland,Argentina,Argentina,1,3,ST,90,3,0,0,51599,509,201,10
-657,2012-03-07,EUR,FC Barcelona,Bayer Leverkusen,FC Barcelona,7,1,ST,90,5,0,0,51689,514,201,10
-658,2012-03-11,PRM,Racing Santander,FC Barcelona,FC Barcelona,0,2,ST,90,2,0,0,51779,516,201,10
-659,2012-03-17,PRM,Sevilla,FC Barcelona,FC Barcelona,0,2,ST,90,1,0,0,51869,517,201,10
-660,2012-03-20,PRM,FC Barcelona,Granada,FC Barcelona,5,3,ST,90,3,1,0,51959,520,202,10
-661,2012-03-24,PRM,Real Mallorca,FC Barcelona,FC Barcelona,0,2,ST,90,1,0,0,52049,521,202,10
-662,2012-03-28,EUR,AC Milan,FC Barcelona,FC Barcelona,0,0,ST,90,0,0,0,52139,521,202,10
-663,2012-03-31,PRM,FC Barcelona,Athletic de Bilbao,FC Barcelona,2,0,ST,90,1,1,0,52229,522,203,10
-664,2012-09-12,WCQ,Peru,Argentina,Argentina,1,1,ST,90,0,0,0,52319,522,203,10
-665,2012-09-22,PRM,FC Barcelona,Granada,FC Barcelona,2,0,ST,90,0,0,0,52409,522,203,10
-666,2010-11-13,PRM,FC Barcelona,Villarreal,FC Barcelona,3,1,ST,90,2,0,0,52499,524,203,10
-667,2013-02-16,PRM,Granada,FC Barcelona,FC Barcelona,1,2,ST,90,2,0,0,52589,526,203,10
-668,2013-01-16,CUP,FC Barcelona,Málaga,FC Barcelona,2,2,ST,90,1,0,1,52679,527,203,10
-669,2013-01-19,PRM,Real Sociedad,FC Barcelona,FC Barcelona,3,2,ST,90,1,0,0,52769,528,203,10
-670,2013-01-27,PRM,FC Barcelona,Osasuna,FC Barcelona,5,1,ST,90,4,0,0,52859,532,203,10
-671,2013-01-30,CUP,Real Madrid,FC Barcelona,FC Barcelona,1,1,ST,90,0,1,0,52949,532,204,10
-672,2013-02-03,PRM,Valencia,FC Barcelona,FC Barcelona,1,1,ST,90,1,0,0,53039,533,204,10
-673,2013-02-06,FRN,Sweden,Argentina,Argentina,2,3,ST,90,0,0,0,53129,533,204,10
-674,2013-02-10,PRM,FC Barcelona,Getafe,FC Barcelona,6,1,ST,90,1,1,0,53219,534,205,10
-675,2013-02-20,EUR,AC Milan,FC Barcelona,FC Barcelona,2,0,ST,90,0,0,0,53309,534,205,10
-676,2013-01-06,PRM,FC Barcelona,Espanyol,FC Barcelona,4,0,ST,90,1,1,0,53399,535,206,10
-677,2013-02-23,PRM,FC Barcelona,Sevilla,FC Barcelona,2,1,ST,90,1,0,0,53489,536,206,10
-678,2013-02-26,CUP,FC Barcelona,Real Madrid,FC Barcelona,1,3,ST,90,0,0,0,53579,536,206,10
-679,2013-03-02,PRM,Real Madrid,FC Barcelona,FC Barcelona,2,1,ST,90,1,0,0,53669,537,206,10
-680,2013-03-12,EUR,FC Barcelona,AC Milan,FC Barcelona,4,0,ST,90,2,0,0,53759,539,206,10
-681,2013-03-17,PRM,FC Barcelona,Rayo Vallecano,FC Barcelona,3,1,ST,90,2,1,0,53849,541,207,10
-682,2013-03-23,WCQ,Argentina,Venezuela,Argentina,3,0,ST,90,1,2,0,53939,542,209,10
-683,2013-03-26,WCQ,Bolivia,Argentina,Argentina,1,1,ST,90,0,0,0,54029,542,209,10
-684,2013-01-13,PRM,Málaga,FC Barcelona,FC Barcelona,1,3,ST,90,1,2,0,54119,543,211,10
-685,2012-12-22,PRM,Real Valladolid,FC Barcelona,FC Barcelona,1,3,ST,90,1,0,0,54209,544,211,10
-686,2012-09-29,PRM,Sevilla,FC Barcelona,FC Barcelona,2,3,ST,90,0,2,0,54299,544,213,10
-687,2012-11-03,PRM,FC Barcelona,Celta de Vigo,FC Barcelona,3,1,ST,90,0,0,0,54389,544,213,10
-688,2012-10-02,EUR,Benfica,FC Barcelona,FC Barcelona,0,2,ST,90,0,2,0,54479,544,215,10
-689,2012-10-07,PRM,FC Barcelona,Real Madrid,FC Barcelona,2,2,ST,90,2,0,0,54569,546,215,10
-690,2012-10-13,WCQ,Argentina,Uruguay,Argentina,3,0,ST,90,2,0,0,54659,548,215,10
-691,2012-10-17,WCQ,Chile,Argentina,Argentina,1,2,ST,90,1,0,0,54749,549,215,10
-692,2012-10-20,PRM,Deportivo La Coruña,FC Barcelona,FC Barcelona,4,5,ST,90,3,1,1,54839,552,216,10
-693,2012-10-23,EUR,FC Barcelona,Celtic,FC Barcelona,2,1,ST,90,0,0,0,54929,552,216,10
-694,2012-10-27,PRM,Rayo Vallecano,FC Barcelona,FC Barcelona,0,5,ST,90,2,0,0,55019,554,216,10
-695,2012-11-07,EUR,Celtic,FC Barcelona,FC Barcelona,2,1,ST,90,1,0,0,55109,555,216,10
-696,2012-12-16,PRM,FC Barcelona,Atlético Madrid,FC Barcelona,4,1,ST,90,2,0,0,55199,557,216,10
-697,2012-11-11,PRM,Real Mallorca,FC Barcelona,FC Barcelona,2,4,ST,90,2,0,0,55289,559,216,10
-698,2012-11-14,FRN,Saudi Arabia,Argentina,Argentina,0,0,ST,90,0,0,0,55379,559,216,10
-699,2012-11-17,PRM,FC Barcelona,Real Zaragoza,FC Barcelona,3,1,ST,90,2,1,0,55469,561,217,10
-700,2012-11-20,EUR,Spartak Moscow,FC Barcelona,FC Barcelona,0,3,ST,90,2,0,0,55559,563,217,10
-701,2012-11-25,PRM,Levante,FC Barcelona,FC Barcelona,0,4,ST,90,2,0,0,55649,565,217,10
-702,2012-12-01,PRM,FC Barcelona,Athletic de Bilbao,FC Barcelona,5,1,ST,90,2,0,0,55739,567,217,10
-703,2012-12-09,PRM,Real Betis,FC Barcelona,FC Barcelona,1,2,ST,90,2,0,0,55829,569,217,10
-704,2012-12-12,CUP,Córdoba,FC Barcelona,FC Barcelona,0,2,ST,90,2,0,0,55919,571,217,10
-705,2012-01-22,PRM,Málaga,FC Barcelona,FC Barcelona,1,4,ST,90,3,0,0,56009,574,217,10
-706,2012-01-18,CUP,Real Madrid,FC Barcelona,FC Barcelona,1,2,ST,90,0,1,0,56099,574,218,10
-707,2012-01-15,PRM,FC Barcelona,Real Betis,FC Barcelona,4,2,ST,90,2,0,1,56189,576,218,10
-708,2011-04-09,PRM,FC Barcelona,UD Almería,FC Barcelona,3,1,ST,90,2,1,0,56279,578,219,10
-709,2011-03-02,PRM,Valencia,FC Barcelona,FC Barcelona,0,1,ST,90,1,0,1,56369,579,219,10
-710,2011-03-05,PRM,FC Barcelona,Real Zaragoza,FC Barcelona,1,0,ST,90,0,0,0,56459,579,219,10
-711,2011-03-08,EUR,FC Barcelona,Arsenal,FC Barcelona,3,1,ST,90,2,0,0,56549,581,219,10
-712,2011-03-13,PRM,Sevilla,FC Barcelona,FC Barcelona,1,1,ST,90,0,0,0,56639,581,219,10
-713,2011-03-19,PRM,FC Barcelona,Getafe,FC Barcelona,2,1,ST,90,0,1,0,56729,581,220,10
-714,2011-03-27,FRN,United States,Argentina,Argentina,1,1,ST,90,0,0,0,56819,581,220,10
-715,2011-04-06,EUR,FC Barcelona,Shakhtar Donetsk,FC Barcelona,5,1,ST,90,0,1,0,56909,581,221,10
-716,2011-04-12,EUR,Shakhtar Donetsk,FC Barcelona,FC Barcelona,0,1,ST,90,1,0,0,56999,582,221,10
-717,2011-02-20,PRM,FC Barcelona,Athletic de Bilbao,FC Barcelona,2,1,ST,90,1,0,0,57089,583,221,10
-718,2011-04-16,PRM,Real Madrid,FC Barcelona,FC Barcelona,1,1,ST,90,1,0,0,57179,584,221,10
-719,2011-04-27,EUR,Real Madrid,FC Barcelona,FC Barcelona,0,2,ST,90,2,0,0,57269,586,221,10
-720,2011-04-30,PRM,Real Sociedad,FC Barcelona,FC Barcelona,2,1,ST,90,0,1,0,57359,586,222,10
-721,2011-05-03,EUR,FC Barcelona,Real Madrid,FC Barcelona,1,1,ST,90,0,0,0,57449,586,222,10
-722,2011-05-08,PRM,FC Barcelona,Espanyol,FC Barcelona,2,0,ST,90,0,0,0,57539,586,222,10
-723,2011-05-11,PRM,Levante,FC Barcelona,FC Barcelona,1,1,ST,90,0,0,0,57629,586,222,10
-724,2011-05-28,EUR,FC Barcelona,Manchester United,FC Barcelona,3,1,ST,90,1,0,0,57719,587,222,10
-725,2011-02-26,PRM,Real Mallorca,FC Barcelona,FC Barcelona,0,3,ST,90,1,0,0,57809,588,222,10
-726,2011-02-16,EUR,Arsenal,FC Barcelona,FC Barcelona,2,1,ST,90,0,1,0,57899,588,223,10
-727,2011-07-02,CPA,Argentina,Bolivia,Argentina,1,1,ST,90,0,0,0,57989,588,223,10
-728,2011-01-05,CUP,Athletic de Bilbao,FC Barcelona,FC Barcelona,1,1,ST,90,0,1,0,58079,588,224,10
-729,2010-11-17,FRN,Argentina,Brazil,Argentina,1,0,ST,90,1,0,1,58169,589,224,10
-730,2010-11-20,PRM,UD Almería,FC Barcelona,FC Barcelona,0,8,ST,90,3,2,0,58259,592,226,10
-731,2010-11-24,EUR,Panathinaikos,FC Barcelona,FC Barcelona,0,3,ST,90,1,0,0,58349,593,226,10
-732,2010-11-29,PRM,FC Barcelona,Real Madrid,FC Barcelona,5,0,ST,90,0,2,1,58439,593,228,10
-733,2010-12-04,PRM,Osasuna,FC Barcelona,FC Barcelona,0,3,ST,90,2,1,0,58529,595,229,10
-734,2010-12-12,PRM,FC Barcelona,Real Sociedad,FC Barcelona,5,0,ST,90,2,0,0,58619,597,229,10
-735,2010-12-18,PRM,Espanyol,FC Barcelona,FC Barcelona,1,5,ST,90,0,2,0,58709,597,231,10
-736,2011-01-08,PRM,Deportivo La Coruña,FC Barcelona,FC Barcelona,0,4,ST,90,1,2,0,58799,598,233,10
-737,2011-02-12,PRM,Sporting Gijón,FC Barcelona,FC Barcelona,1,1,ST,90,0,1,0,58889,598,234,10
-738,2011-01-16,PRM,FC Barcelona,Málaga,FC Barcelona,4,1,ST,90,0,1,0,58979,598,235,10
-739,2011-01-19,CUP,Real Betis,FC Barcelona,FC Barcelona,3,1,ST,90,1,0,0,59069,599,235,10
-740,2011-01-22,PRM,FC Barcelona,Racing Santander,FC Barcelona,3,0,ST,90,1,1,1,59159,600,236,10
-741,2011-01-26,CUP,FC Barcelona,UD Almería,FC Barcelona,5,0,ST,90,2,1,0,59249,602,237,10
-742,2011-01-29,PRM,Hercules Alicante,FC Barcelona,FC Barcelona,0,3,ST,90,2,0,0,59339,604,237,10
-743,2011-02-05,PRM,FC Barcelona,Atlético Madrid,FC Barcelona,3,0,ST,90,3,0,1,59429,607,237,10
-744,2011-02-09,FRN,Argentina,Portugal,Argentina,2,1,ST,90,1,1,0,59519,608,238,10
-745,2012-01-08,PRM,Espanyol,FC Barcelona,FC Barcelona,1,1,ST,90,0,0,1,59609,608,238,10
-746,2011-06-20,FRN,Argentina,Albania,Argentina,4,0,ST,90,1,2,0,59699,609,240,10
-747,2019-01-30,CUP,FC Barcelona,Sevilla,FC Barcelona,6,1,ST,90,1,1,0,59789,610,241,10
-748,2011-11-11,WCQ,Argentina,Bolivia,Argentina,1,1,ST,90,0,0,0,59879,610,241,10
-749,2011-10-15,PRM,FC Barcelona,Racing Santander,FC Barcelona,3,0,ST,90,2,0,0,59969,612,241,10
-750,2011-10-19,EUR,FC Barcelona,Viktoria Plzen,FC Barcelona,2,0,ST,90,0,1,0,60059,612,242,10
-751,2011-10-22,PRM,FC Barcelona,Sevilla,FC Barcelona,0,0,ST,90,0,0,0,60149,612,242,10
-752,2011-10-25,PRM,Granada,FC Barcelona,FC Barcelona,0,1,ST,90,0,0,0,60239,612,242,10
-753,2011-10-29,PRM,FC Barcelona,Real Mallorca,FC Barcelona,5,0,ST,90,3,1,0,60329,615,243,10
-754,2011-11-01,EUR,Viktoria Plzen,FC Barcelona,FC Barcelona,0,4,ST,90,3,0,0,60419,618,243,10
-755,2011-11-06,PRM,Athletic de Bilbao,FC Barcelona,FC Barcelona,2,2,ST,90,1,0,0,60509,619,243,10
-756,2011-11-15,WCQ,Colombia,Argentina,Argentina,1,2,ST,90,1,0,0,60599,620,243,10
-757,2011-07-07,CPA,Argentina,Colombia,Argentina,0,0,ST,90,0,0,0,60689,620,243,10
-758,2011-11-19,PRM,FC Barcelona,Real Zaragoza,FC Barcelona,4,0,ST,90,1,0,0,60779,621,243,10
-759,2011-11-23,EUR,AC Milan,FC Barcelona,FC Barcelona,2,3,ST,90,1,1,1,60869,622,244,10
-760,2011-11-26,PRM,Getafe,FC Barcelona,FC Barcelona,1,0,ST,90,0,0,0,60959,622,244,10
-761,2011-11-29,PRM,FC Barcelona,Rayo Vallecano,FC Barcelona,4,0,ST,90,1,0,0,61049,623,244,10
-762,2011-12-03,PRM,FC Barcelona,Levante,FC Barcelona,5,0,ST,90,1,1,0,61139,624,245,10
-763,2011-12-10,PRM,Real Madrid,FC Barcelona,FC Barcelona,1,3,ST,90,0,1,1,61229,624,246,10
-764,2011-12-15,WCT,Al-Sadd,FC Barcelona,FC Barcelona,0,4,ST,90,0,1,0,61319,624,247,10
-765,2011-12-18,WCT,Santos,FC Barcelona,FC Barcelona,0,4,ST,90,2,0,0,61409,626,247,10
-766,2011-10-12,WCQ,Venezuela,Argentina,Argentina,1,0,ST,90,0,0,0,61499,626,247,10
-767,2011-10-08,WCQ,Argentina,Chile,Argentina,4,1,ST,90,1,1,0,61589,627,248,10
-768,2011-10-02,PRM,Sporting Gijón,FC Barcelona,FC Barcelona,0,1,ST,90,0,0,0,61679,627,248,10
-769,2011-08-26,IUP,FC Barcelona,FC Porto,FC Barcelona,2,0,ST,90,1,1,0,61769,628,249,10
-770,2011-07-12,CPA,Argentina,Costa Rica,Argentina,3,0,ST,90,0,2,0,61859,628,251,10
-771,2011-09-24,PRM,FC Barcelona,Atlético Madrid,FC Barcelona,5,0,ST,90,3,0,0,61949,631,251,10
-772,2011-09-21,PRM,Valencia,FC Barcelona,FC Barcelona,2,2,ST,90,0,2,0,62039,631,253,10
-773,2011-09-17,PRM,FC Barcelona,Osasuna,FC Barcelona,8,0,ST,90,3,2,0,62129,634,255,10
-774,2011-09-13,EUR,FC Barcelona,AC Milan,FC Barcelona,2,2,ST,90,0,1,0,62219,634,256,10
-775,2011-09-06,FRN,Argentina,Nigeria,Argentina,3,1,ST,90,0,1,0,62309,634,257,10
-776,2011-08-14,SUP,Real Madrid,FC Barcelona,FC Barcelona,2,2,ST,90,1,1,0,62399,635,258,10
-777,2011-09-28,EUR,BATE Borisov,FC Barcelona,FC Barcelona,0,5,ST,90,2,0,0,62489,637,258,10
-778,2011-08-17,SUP,FC Barcelona,Real Madrid,FC Barcelona,3,2,ST,90,2,1,0,62579,639,259,10
-779,2011-09-02,FRN,Venezuela,Argentina,Argentina,0,1,ST,90,0,1,0,62669,639,260,10
-780,2011-08-29,PRM,FC Barcelona,Villarreal,FC Barcelona,5,0,ST,90,2,1,0,62759,641,261,10
-781,2011-07-16,CPA,Argentina,Uruguay,Argentina,1,1,ST,120,0,1,0,62879,641,262,10
-782,2015-07-04,CPA,Chile,Argentina,Argentina,0,0,ST,120,0,0,0,62999,641,262,10
-783,2015-08-11,IUP,FC Barcelona,Sevilla,FC Barcelona,5,4,ST,120,2,0,0,63119,643,262,10
-784,2014-07-01,WCP,Argentina,Switzerland,Argentina,1,0,ST,120,0,1,0,63239,643,263,10
-785,2011-04-20,CUP,FC Barcelona,Real Madrid,FC Barcelona,0,1,ST,120,0,0,1,63359,643,263,10
-786,2016-05-22,CUP,FC Barcelona,Sevilla,FC Barcelona,2,0,ST,120,0,2,0,63479,643,265,10
-787,2014-07-09,WCP,Netherlands,Argentina,Argentina,0,0,ST,120,0,0,0,63599,643,265,10
-788,2014-07-13,WCP,Germany,Argentina,Argentina,1,0,ST,120,0,0,0,63719,643,265,10
-789,2016-06-26,CPA,Argentina,Chile,Argentina,0,0,ST,120,0,0,1,63839,643,265,10
-790,2009-08-28,IUP,FC Barcelona,Shakhtar Donetsk,FC Barcelona,1,0,ST,120,0,1,1,63959,643,266,10
-791,2009-12-19,WCT,Estudiantes La Plata,FC Barcelona,FC Barcelona,1,2,ST,120,1,0,1,64079,644,266,10
+40,2013-09-28,PRM,UD Almería,FC Barcelona,FC Barcelona,0,2,ST,28,1,0,0,767,15,2,10
+41,2019-02-06,CUP,FC Barcelona,Real Madrid,FC Barcelona,1,1,SU,28,0,0,0,795,15,2,10
+42,2018-12-11,EUR,FC Barcelona,Tottenham Hotspur F.C.,FC Barcelona,1,1,SU,28,0,0,0,823,15,2,10
+43,2013-04-10,EUR,FC Barcelona,Paris Saint-Germain,FC Barcelona,1,1,SU,29,0,0,0,852,15,2,10
+44,2011-09-10,PRM,Real Sociedad,FC Barcelona,FC Barcelona,2,2,SU,29,0,0,1,881,15,2,10
+45,2005-10-26,PRM,FC Barcelona,Málaga,FC Barcelona,2,0,SU,29,0,0,0,910,15,2,30
+46,2013-03-09,PRM,FC Barcelona,Deportivo La Coruña,FC Barcelona,2,0,SU,29,1,0,0,939,16,2,10
+47,2019-04-23,PRM,Alavés,FC Barcelona,FC Barcelona,0,2,SU,30,0,0,0,969,16,2,10
+48,2009-11-10,CUP,FC Barcelona,Cultural Leonesa,FC Barcelona,5,0,SU,30,1,0,0,999,17,2,10
+49,2010-09-29,EUR,Rubin Kazan,FC Barcelona,FC Barcelona,1,1,SU,30,0,0,0,1029,17,2,10
+50,2010-11-10,CUP,FC Barcelona,AD Ceuta,FC Barcelona,5,1,SU,30,1,0,0,1059,18,2,10
+51,2019-04-02,PRM,Villarreal,FC Barcelona,FC Barcelona,4,4,SU,30,1,0,1,1089,19,2,10
+52,2016-06-10,CPA,Argentina,Panama,Argentina,5,0,SU,30,3,0,0,1119,22,2,10
+53,2017-12-05,EUR,FC Barcelona,Sporting Lisbon,FC Barcelona,2,0,SU,30,0,0,0,1149,22,2,10
+54,2015-09-12,PRM,Atlético Madrid,FC Barcelona,FC Barcelona,1,2,SU,31,1,0,0,1180,23,2,10
+55,2008-10-01,EUR,Shakhtar Donetsk,FC Barcelona,FC Barcelona,1,2,SU,31,2,0,0,1211,25,2,10
+56,2006-08-17,SUP,Espanyol,FC Barcelona,FC Barcelona,0,1,SU,31,0,0,0,1242,25,2,19
+57,2013-06-11,WCQ,Ecuador,Argentina,Argentina,1,1,SU,31,0,0,0,1273,25,2,10
+58,2008-11-04,EUR,FC Barcelona,FC Basel,FC Barcelona,1,1,SU,31,1,0,0,1304,26,2,10
+59,2014-10-14,FRN,Hong Kong,Argentina,Argentina,0,7,SU,31,2,1,0,1335,28,3,10
+60,2018-04-17,PRM,Celta de Vigo,FC Barcelona,FC Barcelona,2,2,SU,31,0,0,0,1366,28,3,10
+61,2016-09-10,PRM,FC Barcelona,Alavés,FC Barcelona,1,2,SU,31,0,0,0,1397,28,3,10
+62,2009-04-04,PRM,Real Valladolid,FC Barcelona,FC Barcelona,0,1,SU,32,0,0,0,1429,28,3,10
+63,2012-09-15,PRM,Getafe,FC Barcelona,FC Barcelona,1,4,SU,32,2,0,0,1461,30,3,10
+64,2012-01-12,CUP,Osasuna,FC Barcelona,FC Barcelona,1,2,SU,32,0,1,0,1493,30,4,10
+65,2013-04-27,PRM,Athletic de Bilbao,FC Barcelona,FC Barcelona,2,2,SU,32,1,1,0,1525,31,5,10
+66,2008-09-13,PRM,FC Barcelona,Racing Santander,FC Barcelona,1,1,SU,32,1,0,0,1557,32,5,10
+67,2009-02-01,PRM,Racing Santander,FC Barcelona,FC Barcelona,1,2,SU,32,2,0,0,1589,34,5,10
+68,2018-02-04,PRM,Espanyol,FC Barcelona,FC Barcelona,1,1,SU,32,0,1,0,1621,34,6,10
+69,2012-01-04,CUP,FC Barcelona,Osasuna,FC Barcelona,4,0,SU,32,2,0,0,1653,36,6,10
+70,2004-12-21,PRM,FC Barcelona,Levante,FC Barcelona,2,1,SU,33,0,0,0,1686,36,6,30
+71,2011-04-23,PRM,FC Barcelona,Osasuna,FC Barcelona,2,0,SU,33,1,0,0,1719,37,6,10
+72,2009-03-04,CUP,Real Mallorca,FC Barcelona,FC Barcelona,1,1,SU,33,1,0,0,1752,38,6,10
+73,2018-03-31,PRM,Sevilla,FC Barcelona,FC Barcelona,2,2,SU,33,1,0,0,1785,39,6,10
+74,2009-09-12,PRM,Getafe,FC Barcelona,FC Barcelona,0,2,SU,33,1,0,0,1818,40,6,10
+75,2008-03-01,PRM,Atlético Madrid,FC Barcelona,FC Barcelona,4,2,SU,34,0,0,0,1852,40,6,19
+76,2014-06-07,FRN,Argentina,Slovenia,Argentina,2,0,SU,34,1,0,0,1886,41,6,10
+77,2013-06-08,WCQ,Argentina,Colombia,Argentina,0,0,SU,34,0,0,0,1920,41,6,10
+78,2009-02-14,PRM,Real Betis,FC Barcelona,FC Barcelona,2,2,SU,34,0,0,0,1954,41,6,10
+79,2015-11-21,PRM,Real Madrid,FC Barcelona,FC Barcelona,0,4,SU,35,0,0,0,1989,41,6,10
+80,2007-02-18,PRM,Valencia,FC Barcelona,FC Barcelona,2,1,SU,35,0,0,0,2024,41,6,19
+81,2017-11-22,EUR,Juventus,FC Barcelona,FC Barcelona,0,0,SU,35,0,0,0,2059,41,6,10
+82,2013-05-05,PRM,FC Barcelona,Real Betis,FC Barcelona,4,2,SU,35,2,0,0,2094,43,6,10
+83,2009-02-05,CUP,FC Barcelona,Real Mallorca,FC Barcelona,2,0,SU,36,0,0,0,2130,43,6,10
+84,2016-10-15,PRM,FC Barcelona,Deportivo La Coruña,FC Barcelona,4,0,SU,36,1,0,0,2166,44,6,10
+85,2018-09-29,PRM,FC Barcelona,Athletic de Bilbao,FC Barcelona,1,1,SU,36,0,1,1,2202,44,7,10
+86,2009-12-02,PRM,Xerez,FC Barcelona,FC Barcelona,0,2,SU,36,0,1,0,2238,44,8,10
+87,2006-06-24,WCP,Argentina,Mexico,Argentina,2,1,SU,37,0,0,0,2275,44,8,19
+88,2008-03-04,EUR,FC Barcelona,Celtic,FC Barcelona,1,0,ST,37,0,0,0,2312,44,8,19
+89,2010-08-14,SUP,Sevilla,FC Barcelona,FC Barcelona,3,1,SU,38,0,0,0,2350,44,8,10
+90,2010-12-21,CUP,FC Barcelona,Athletic de Bilbao,FC Barcelona,0,0,SU,38,0,0,0,2388,44,8,10
+91,2009-12-16,WCT,Atlante,FC Barcelona,FC Barcelona,1,3,SU,38,1,0,0,2426,45,8,10
+92,2011-04-02,PRM,Villarreal,FC Barcelona,FC Barcelona,0,1,SU,38,0,0,0,2464,45,8,10
+93,2010-04-24,PRM,FC Barcelona,Xerez,FC Barcelona,3,1,SU,39,0,0,0,2503,45,8,10
+94,2009-11-07,PRM,FC Barcelona,Real Mallorca,FC Barcelona,4,2,SU,40,1,0,0,2543,46,8,10
+95,2010-03-27,PRM,Real Mallorca,FC Barcelona,FC Barcelona,0,1,SU,40,0,0,0,2583,46,8,10
+96,2007-12-15,PRM,Valencia,FC Barcelona,FC Barcelona,0,3,ST,44,0,2,0,2627,46,10,19
+97,2008-01-24,CUP,Villarreal,FC Barcelona,FC Barcelona,0,0,SU,45,0,0,1,2672,46,10,19
+98,2013-04-02,EUR,Paris Saint-Germain,FC Barcelona,FC Barcelona,2,2,ST,45,1,0,0,2717,47,10,10
+99,2014-11-18,FRN,Portugal,Argentina,Argentina,1,0,ST,45,0,0,0,2762,47,10,10
+100,2015-01-04,PRM,Real Sociedad,FC Barcelona,FC Barcelona,1,0,SU,45,0,0,0,2807,47,10,10
+101,2008-06-09,FRN,United States,Argentina,Argentina,0,0,ST,45,0,0,0,2852,47,10,18
+102,2013-08-21,SUP,Atlético Madrid,FC Barcelona,FC Barcelona,1,1,ST,45,0,0,0,2897,47,10,10
+103,2016-06-14,CPA,Argentina,Bolivia,Argentina,3,0,SU,45,0,0,0,2942,47,10,10
+104,2014-01-11,PRM,Atlético Madrid,FC Barcelona,FC Barcelona,0,0,SU,45,0,0,0,2987,47,10,10
+105,2006-02-05,PRM,FC Barcelona,Atlético Madrid,FC Barcelona,1,3,ST,45,0,0,0,3032,47,10,30
+106,2016-01-17,PRM,FC Barcelona,Athletic de Bilbao,FC Barcelona,6,0,ST,45,1,0,0,3077,48,10,10
+107,2019-04-27,PRM,FC Barcelona,Levante,FC Barcelona,1,0,SU,45,1,0,0,3122,49,10,10
+108,2008-04-19,PRM,FC Barcelona,Espanyol,FC Barcelona,0,0,SU,45,0,0,1,3167,49,10,19
+109,2007-09-29,PRM,Levante,FC Barcelona,FC Barcelona,1,4,ST,51,1,1,0,3218,50,11,19
+110,2008-11-26,EUR,Sporting Lisbon,FC Barcelona,FC Barcelona,2,5,ST,56,1,1,0,3274,51,12,10
+111,2010-08-11,FRN,Republic of Ireland,Argentina,Argentina,0,1,ST,57,0,0,0,3331,51,12,10
+112,2018-01-11,CUP,FC Barcelona,Celta de Vigo,FC Barcelona,5,0,ST,58,2,1,0,3389,53,13,10
+113,2016-09-21,PRM,FC Barcelona,Atlético Madrid,FC Barcelona,1,1,ST,58,0,0,0,3447,53,13,10
+114,2017-03-01,PRM,FC Barcelona,Sporting Gijón,FC Barcelona,6,1,ST,60,1,1,0,3507,54,14,10
+115,2008-04-23,EUR,FC Barcelona,Manchester United,FC Barcelona,0,0,ST,61,0,0,0,3568,54,14,19
+116,2007-08-26,PRM,Racing Santander,FC Barcelona,FC Barcelona,0,0,ST,61,0,0,0,3629,54,14,19
+117,2006-10-11,FRN,Spain,Argentina,Argentina,2,1,ST,61,0,0,0,3690,54,14,19
+118,2008-05-11,PRM,FC Barcelona,Real Mallorca,FC Barcelona,2,3,ST,61,0,0,0,3751,54,14,19
+119,2014-06-25,WCP,Nigeria,Argentina,Argentina,2,3,ST,62,2,0,0,3813,56,14,10
+120,2005-12-11,PRM,FC Barcelona,Sevilla,FC Barcelona,2,1,ST,62,0,0,1,3875,56,14,30
+121,2017-04-26,PRM,FC Barcelona,Osasuna,FC Barcelona,7,1,ST,62,2,0,0,3937,58,14,10
+122,2017-02-04,PRM,FC Barcelona,Athletic de Bilbao,FC Barcelona,3,0,ST,63,1,0,0,4000,59,14,10
+123,2009-09-22,PRM,Racing Santander,FC Barcelona,FC Barcelona,1,4,ST,63,2,1,0,4063,61,15,10
+124,2016-05-27,FRN,Argentina,Honduras,Argentina,1,0,ST,63,0,0,0,4126,61,15,10
+125,2006-09-17,PRM,Racing Santander,FC Barcelona,FC Barcelona,0,3,ST,64,0,0,0,4190,61,15,19
+126,2014-10-21,EUR,FC Barcelona,Ajax,FC Barcelona,3,1,ST,65,1,1,0,4255,62,16,10
+127,2005-11-27,PRM,FC Barcelona,Racing Santander,FC Barcelona,4,1,ST,66,1,0,0,4321,63,16,30
+128,2005-12-20,PRM,FC Barcelona,Celta de Vigo,FC Barcelona,2,0,ST,66,0,0,0,4387,63,16,30
+129,2008-02-03,PRM,FC Barcelona,Osasuna,FC Barcelona,1,0,ST,67,0,0,0,4454,63,16,19
+130,2013-06-15,FRN,Guatemala,Argentina,Argentina,0,4,ST,67,3,1,0,4521,66,17,10
+131,2005-09-27,EUR,FC Barcelona,Udinese,FC Barcelona,4,1,ST,69,0,0,0,4590,66,17,30
+132,2005-11-19,PRM,Real Madrid,FC Barcelona,FC Barcelona,0,3,ST,69,0,1,0,4659,66,18,30
+133,2006-02-25,PRM,Real Zaragoza,FC Barcelona,FC Barcelona,0,2,ST,69,0,0,0,4728,66,18,30
+134,2006-06-21,WCP,Netherlands,Argentina,Argentina,0,0,ST,69,0,0,0,4797,66,18,19
+135,2008-10-04,PRM,FC Barcelona,Atlético Madrid,FC Barcelona,6,1,ST,69,1,0,0,4866,67,18,10
+136,2013-05-12,PRM,Atlético Madrid,FC Barcelona,FC Barcelona,1,2,ST,70,0,0,0,4936,67,18,10
+137,2007-03-03,PRM,Sevilla,FC Barcelona,FC Barcelona,2,1,ST,70,0,0,0,5006,67,18,19
+138,2013-08-18,PRM,FC Barcelona,Levante,FC Barcelona,7,0,ST,70,2,1,0,5076,69,19,10
+139,2007-11-10,PRM,Getafe,FC Barcelona,FC Barcelona,2,0,ST,71,0,0,0,5147,69,19,19
+140,2004-10-27,CUP,Gramenet,FC Barcelona,FC Barcelona,1,0,ST,72,0,0,0,5219,69,19,30
+141,2014-02-15,PRM,FC Barcelona,Rayo Vallecano,FC Barcelona,6,0,ST,73,2,1,0,5292,71,20,10
+142,2007-05-13,PRM,FC Barcelona,Real Betis,FC Barcelona,1,1,ST,74,0,0,0,5366,71,20,19
+143,2009-11-21,PRM,Athletic de Bilbao,FC Barcelona,FC Barcelona,1,1,ST,75,0,0,0,5441,71,20,10
+144,2007-04-18,CUP,FC Barcelona,Getafe,FC Barcelona,5,2,ST,76,2,1,0,5517,73,21,19
+145,2006-01-07,PRM,Espanyol,FC Barcelona,FC Barcelona,1,2,ST,77,0,0,0,5594,73,21,30
+146,2007-06-29,CPA,Argentina,United States,Argentina,4,1,ST,78,0,1,0,5672,73,22,18
+147,2008-11-01,PRM,Málaga,FC Barcelona,FC Barcelona,1,4,ST,78,1,0,0,5750,74,22,10
+148,2008-02-16,PRM,Real Zaragoza,FC Barcelona,FC Barcelona,1,2,ST,79,0,0,0,5829,74,22,19
+149,2009-01-06,CUP,Atlético Madrid,FC Barcelona,FC Barcelona,1,3,ST,80,3,0,0,5909,77,22,10
+150,2005-12-04,PRM,Villarreal,FC Barcelona,FC Barcelona,0,2,ST,80,0,0,0,5989,77,22,30
+151,2008-02-24,PRM,FC Barcelona,Levante,FC Barcelona,5,1,ST,80,1,2,0,6069,78,24,19
+152,2013-09-24,PRM,FC Barcelona,Real Sociedad,FC Barcelona,4,1,ST,80,1,1,0,6149,79,25,10
+153,2005-11-16,FRN,Qatar,Argentina,Argentina,0,3,ST,80,0,1,0,6229,79,26,18
+154,2008-12-06,PRM,FC Barcelona,Valencia,FC Barcelona,4,0,ST,81,0,0,0,6310,79,26,10
+155,2007-06-17,PRM,Gimnàstic,FC Barcelona,FC Barcelona,1,5,ST,81,2,1,0,6391,81,27,19
+156,2005-12-17,PRM,Cádiz,FC Barcelona,FC Barcelona,1,3,ST,81,0,1,0,6472,81,28,30
+157,2013-01-24,CUP,Málaga,FC Barcelona,FC Barcelona,2,4,ST,81,1,0,0,6553,82,28,10
+158,2006-01-15,PRM,FC Barcelona,Athletic de Bilbao,FC Barcelona,2,1,ST,82,1,0,0,6635,83,28,30
+159,2007-09-26,PRM,FC Barcelona,Real Zaragoza,FC Barcelona,4,1,ST,82,2,0,0,6717,85,28,19
+160,2007-10-13,WCQ,Argentina,Chile,Argentina,2,0,ST,83,0,0,0,6800,85,28,18
+161,2007-07-03,CPA,Argentina,Colombia,Argentina,4,2,ST,83,0,0,0,6883,85,28,18
+162,2009-11-14,FRN,Spain,Argentina,Argentina,2,1,ST,83,1,0,0,6966,86,28,10
+163,2007-03-31,PRM,FC Barcelona,Deportivo La Coruña,FC Barcelona,2,1,ST,84,1,0,0,7050,87,28,19
+164,2008-06-05,FRN,Mexico,Argentina,Argentina,1,4,ST,84,1,1,1,7134,88,29,18
+165,2006-09-24,PRM,FC Barcelona,Valencia,FC Barcelona,1,1,ST,84,0,0,0,7218,88,29,19
+166,2011-01-12,CUP,FC Barcelona,Real Betis,FC Barcelona,5,0,ST,85,3,0,0,7303,91,29,10
+167,2009-10-15,WCQ,Uruguay,Argentina,Argentina,0,1,ST,86,0,0,0,7389,91,29,10
+168,2010-03-31,EUR,Arsenal,FC Barcelona,FC Barcelona,2,2,ST,86,0,0,0,7475,91,29,10
+169,2010-03-14,PRM,FC Barcelona,Valencia,FC Barcelona,3,0,ST,87,3,0,0,7562,94,29,10
+170,2008-11-12,CUP,FC Barcelona,Benidorm,FC Barcelona,1,0,ST,87,1,0,0,7649,95,29,10
+171,2007-09-19,EUR,FC Barcelona,Olympique Lyon,FC Barcelona,3,0,ST,87,1,0,0,7736,96,29,19
+172,2008-10-11,WCQ,Argentina,Uruguay,Argentina,2,1,ST,87,1,0,1,7823,97,29,18
+173,2007-06-02,FRN,Switzerland,Argentina,Argentina,1,1,ST,88,0,1,0,7911,97,30,18
+174,2007-09-22,PRM,FC Barcelona,Sevilla,FC Barcelona,2,1,ST,88,2,0,0,7999,99,30,19
+175,2010-05-01,PRM,Villarreal,FC Barcelona,FC Barcelona,1,4,ST,89,2,0,0,8088,101,30,10
+176,2008-06-19,WCQ,Brazil,Argentina,Argentina,0,0,ST,89,0,0,0,8177,101,30,18
+177,2007-09-11,FRN,Australia,Argentina,Argentina,0,1,ST,89,0,1,0,8266,101,31,19
+178,2007-05-26,PRM,FC Barcelona,Getafe,FC Barcelona,1,0,ST,89,0,0,0,8355,101,31,19
+179,2007-05-05,PRM,Real Sociedad,FC Barcelona,FC Barcelona,0,2,ST,89,0,0,0,8444,101,31,19
+180,2009-05-10,PRM,FC Barcelona,Villarreal,FC Barcelona,3,3,ST,89,0,0,0,8533,101,31,10
+181,2010-09-07,FRN,Argentina,Spain,Argentina,4,1,ST,89,1,0,0,8622,102,31,10
+182,2015-08-17,SUP,FC Barcelona,Athletic de Bilbao,FC Barcelona,1,1,ST,90,1,0,0,8712,103,31,10
+183,2015-08-14,SUP,Athletic de Bilbao,FC Barcelona,FC Barcelona,4,0,ST,90,0,0,0,8802,103,31,10
+184,2015-08-23,PRM,Athletic de Bilbao,FC Barcelona,FC Barcelona,0,1,ST,90,0,0,0,8892,103,31,10
+185,2015-06-30,CPA,Argentina,Paraguay,Argentina,6,1,ST,90,0,3,0,8982,103,34,10
+186,2014-08-24,PRM,FC Barcelona,Elche,FC Barcelona,3,0,ST,90,2,0,0,9072,105,34,10
+187,2015-06-26,CPA,Argentina,Colombia,Argentina,0,0,ST,90,0,0,1,9162,105,34,10
+188,2015-06-20,CPA,Argentina,Jamaica,Argentina,1,0,ST,90,0,0,0,9252,105,34,10
+189,2015-06-16,CPA,Argentina,Uruguay,Argentina,1,0,ST,90,0,0,0,9342,105,34,10
+190,2015-06-13,CPA,Argentina,Paraguay,Argentina,2,2,ST,90,1,0,0,9432,106,34,10
+191,2015-06-06,EUR,Juventus,FC Barcelona,FC Barcelona,1,3,ST,90,0,0,0,9522,106,34,10
+192,2014-02-12,CUP,Real Sociedad,FC Barcelona,FC Barcelona,1,1,ST,90,1,0,0,9612,107,34,10
+193,2014-02-18,EUR,Manchester City,FC Barcelona,FC Barcelona,0,2,ST,90,1,0,0,9702,108,34,10
+194,2015-05-30,CUP,Athletic de Bilbao,FC Barcelona,FC Barcelona,1,3,ST,90,2,0,0,9792,110,34,10
+195,2015-05-23,PRM,FC Barcelona,Deportivo La Coruña,FC Barcelona,2,2,ST,90,2,0,0,9882,112,34,10
+196,2014-02-22,PRM,Real Sociedad,FC Barcelona,FC Barcelona,3,1,ST,90,1,0,0,9972,113,34,10
+197,2015-05-17,PRM,Atlético Madrid,FC Barcelona,FC Barcelona,0,1,ST,90,1,0,1,10062,114,34,10
+198,2015-05-12,EUR,Bayern München,FC Barcelona,FC Barcelona,3,2,ST,90,0,0,0,10152,114,34,10
+199,2015-05-09,PRM,FC Barcelona,Real Sociedad,FC Barcelona,2,0,ST,90,0,0,0,10242,114,34,10
+200,2015-05-06,EUR,FC Barcelona,Bayern München,FC Barcelona,3,0,ST,90,2,1,0,10332,116,35,10
+201,2015-08-29,PRM,FC Barcelona,Málaga,FC Barcelona,1,0,ST,90,0,0,0,10422,116,35,10
+202,2015-09-23,PRM,Celta de Vigo,FC Barcelona,FC Barcelona,4,1,ST,90,0,1,0,10512,116,36,10
+203,2015-09-08,FRN,Argentina,Mexico,Argentina,2,2,ST,90,1,0,0,10602,117,36,10
+204,2016-01-06,CUP,FC Barcelona,Espanyol,FC Barcelona,4,1,ST,90,2,2,1,10692,119,38,10
+205,2016-02-23,EUR,Arsenal,FC Barcelona,FC Barcelona,0,2,ST,90,2,0,0,10782,121,38,10
+206,2016-02-20,PRM,Las Palmas,FC Barcelona,FC Barcelona,1,2,ST,90,0,0,0,10872,121,38,10
+207,2016-02-17,PRM,Sporting Gijón,FC Barcelona,FC Barcelona,1,3,ST,90,2,0,0,10962,123,38,10
+208,2016-02-14,PRM,FC Barcelona,Celta de Vigo,FC Barcelona,6,1,ST,90,1,2,0,11052,124,40,10
+209,2016-02-07,PRM,Levante,FC Barcelona,FC Barcelona,0,2,ST,90,0,1,0,11142,124,41,10
+210,2016-02-03,CUP,FC Barcelona,Valencia,FC Barcelona,7,0,ST,90,3,0,0,11232,127,41,10
+211,2016-01-30,PRM,FC Barcelona,Atlético Madrid,FC Barcelona,2,1,ST,90,1,0,0,11322,128,41,10
+212,2016-01-27,CUP,FC Barcelona,Athletic de Bilbao,FC Barcelona,3,1,ST,90,0,1,0,11412,128,42,10
+213,2016-01-23,PRM,Málaga,FC Barcelona,FC Barcelona,1,2,ST,90,1,0,1,11502,129,42,10
+214,2016-01-13,CUP,Espanyol,FC Barcelona,FC Barcelona,0,2,ST,90,0,1,0,11592,129,43,10
+215,2016-01-09,PRM,FC Barcelona,Granada,FC Barcelona,4,0,ST,90,3,0,0,11682,132,43,10
+216,2013-11-01,PRM,FC Barcelona,Espanyol,FC Barcelona,1,0,ST,90,0,0,0,11772,132,43,10
+217,2013-11-06,EUR,FC Barcelona,AC Milan,FC Barcelona,3,1,ST,90,2,0,0,11862,134,43,10
+218,2014-01-16,CUP,Getafe,FC Barcelona,FC Barcelona,0,2,ST,90,2,0,0,11952,136,43,10
+219,2016-01-02,PRM,Espanyol,FC Barcelona,FC Barcelona,0,0,ST,90,0,0,0,12042,136,43,10
+220,2014-02-09,PRM,Sevilla,FC Barcelona,FC Barcelona,1,4,ST,90,2,1,0,12132,138,44,10
+221,2015-12-30,PRM,FC Barcelona,Real Betis,FC Barcelona,4,0,ST,90,1,0,0,12222,139,44,10
+222,2015-12-20,WCT,CA River Plate,FC Barcelona,FC Barcelona,0,3,ST,90,1,0,0,12312,140,44,10
+223,2015-12-12,PRM,FC Barcelona,Deportivo La Coruña,FC Barcelona,2,2,ST,90,1,1,0,12402,141,45,10
+224,2015-12-09,EUR,Bayer Leverkusen,FC Barcelona,FC Barcelona,1,1,ST,90,1,0,0,12492,142,45,10
+225,2015-12-05,PRM,Valencia,FC Barcelona,FC Barcelona,1,1,ST,90,0,1,0,12582,142,46,10
+226,2014-01-19,PRM,Levante,FC Barcelona,FC Barcelona,1,1,ST,90,0,0,0,12672,142,46,10
+227,2015-11-28,PRM,FC Barcelona,Real Sociedad,FC Barcelona,4,0,ST,90,1,0,0,12762,143,46,10
+228,2015-11-24,EUR,FC Barcelona,AS Roma,FC Barcelona,6,1,ST,90,2,1,1,12852,145,47,10
+229,2014-01-22,CUP,Levante,FC Barcelona,FC Barcelona,1,4,ST,90,0,3,0,12942,145,50,10
+230,2014-01-26,PRM,FC Barcelona,Málaga,FC Barcelona,3,0,ST,90,0,1,0,13032,145,51,10
+231,2014-02-01,PRM,FC Barcelona,Valencia,FC Barcelona,2,3,ST,90,1,1,0,13122,146,52,10
+232,2014-02-05,CUP,FC Barcelona,Real Sociedad,FC Barcelona,2,0,ST,90,0,0,1,13212,146,52,10
+233,2015-09-20,PRM,FC Barcelona,Levante,FC Barcelona,4,1,ST,90,2,1,0,13302,148,53,10
+234,2015-09-16,EUR,AS Roma,FC Barcelona,FC Barcelona,1,1,ST,90,0,0,0,13392,148,53,10
+235,2015-05-02,PRM,Córdoba,FC Barcelona,FC Barcelona,0,8,ST,90,2,1,0,13482,150,54,10
+236,2015-04-15,EUR,Paris Saint-Germain,FC Barcelona,FC Barcelona,1,3,ST,90,0,1,1,13572,150,55,10
+237,2015-04-28,PRM,FC Barcelona,Getafe,FC Barcelona,6,0,ST,90,2,1,0,13662,152,56,10
+238,2014-10-25,PRM,Real Madrid,FC Barcelona,FC Barcelona,3,1,ST,90,0,0,1,13752,152,56,10
+239,2014-04-20,PRM,FC Barcelona,Athletic de Bilbao,FC Barcelona,2,1,ST,90,1,0,0,13842,153,56,10
+240,2014-04-16,CUP,FC Barcelona,Real Madrid,FC Barcelona,1,2,ST,90,0,0,0,13932,153,56,10
+241,2014-10-18,PRM,FC Barcelona,Eibar,FC Barcelona,3,0,ST,90,1,1,0,14022,154,57,10
+242,2014-04-12,PRM,Granada,FC Barcelona,FC Barcelona,1,0,ST,90,0,0,1,14112,154,57,10
+243,2014-04-09,EUR,Atlético Madrid,FC Barcelona,FC Barcelona,1,0,ST,90,0,0,0,14202,154,57,10
+244,2014-04-05,PRM,FC Barcelona,Real Betis,FC Barcelona,3,1,ST,90,2,0,0,14292,156,57,10
+245,2014-11-01,PRM,FC Barcelona,Celta de Vigo,FC Barcelona,0,1,ST,90,0,0,0,14382,156,57,10
+246,2014-04-27,PRM,Villarreal,FC Barcelona,FC Barcelona,2,3,ST,90,1,0,0,14472,157,57,10
+247,2014-04-01,EUR,FC Barcelona,Atlético Madrid,FC Barcelona,1,1,ST,90,0,0,0,14562,157,57,10
+248,2014-11-05,EUR,Ajax,FC Barcelona,FC Barcelona,0,2,ST,90,2,0,0,14652,159,57,10
+249,2014-11-08,PRM,UD Almería,FC Barcelona,FC Barcelona,1,2,ST,90,0,0,0,14742,159,57,10
+250,2014-11-12,FRN,Argentina,Croatia,Argentina,2,1,ST,90,1,1,0,14832,160,58,10
+251,2014-03-29,PRM,Espanyol,FC Barcelona,FC Barcelona,0,1,ST,90,1,0,0,14922,161,58,10
+252,2014-03-26,PRM,FC Barcelona,Celta de Vigo,FC Barcelona,3,0,ST,90,1,0,0,15012,162,58,10
+253,2014-10-11,FRN,Brazil,Argentina,Argentina,2,0,ST,90,0,0,0,15102,162,58,10
+254,2014-05-03,PRM,FC Barcelona,Getafe,FC Barcelona,2,2,ST,90,1,0,0,15192,163,58,10
+255,2014-11-25,EUR,APOEL FC,FC Barcelona,FC Barcelona,0,4,ST,90,3,0,0,15282,166,58,10
+256,2014-06-16,WCP,Argentina,Bosnia-Herzegovina,Argentina,2,1,ST,90,1,0,0,15372,167,58,10
+257,2014-08-31,PRM,Villarreal,FC Barcelona,FC Barcelona,0,1,ST,90,0,0,0,15462,167,58,10
+258,2014-09-13,PRM,FC Barcelona,Athletic de Bilbao,FC Barcelona,2,0,ST,90,0,2,0,15552,167,60,10
+259,2014-09-17,EUR,FC Barcelona,APOEL FC,FC Barcelona,1,0,ST,90,0,1,0,15642,167,61,10
+260,2014-07-05,WCP,Argentina,Belgium,Argentina,1,0,ST,90,0,0,0,15732,167,61,10
+261,2014-06-21,WCP,Argentina,Iran,Argentina,1,0,ST,90,1,0,0,15822,168,61,10
+262,2014-09-21,PRM,Levante,FC Barcelona,FC Barcelona,0,5,ST,90,1,2,0,15912,169,63,10
+263,2014-09-24,PRM,Málaga,FC Barcelona,FC Barcelona,0,0,ST,90,0,0,0,16002,169,63,10
+264,2014-10-04,PRM,Rayo Vallecano,FC Barcelona,FC Barcelona,0,2,ST,90,1,0,0,16092,170,63,10
+265,2014-09-27,PRM,FC Barcelona,Granada,FC Barcelona,6,0,ST,90,2,2,0,16182,172,65,10
+266,2014-09-30,EUR,Paris Saint-Germain,FC Barcelona,FC Barcelona,3,2,ST,90,1,0,0,16272,173,65,10
+267,2016-03-03,PRM,Rayo Vallecano,FC Barcelona,FC Barcelona,1,5,ST,90,3,0,0,16362,176,65,10
+268,2014-06-05,FRN,Argentina,Trinidad & Tobago,Argentina,3,0,ST,90,0,0,0,16452,176,65,10
+269,2014-05-17,PRM,FC Barcelona,Atlético Madrid,FC Barcelona,1,1,ST,90,0,1,1,16542,176,66,10
+270,2014-05-11,PRM,Elche,FC Barcelona,FC Barcelona,0,0,ST,90,0,0,0,16632,176,66,10
+271,2014-11-22,PRM,FC Barcelona,Sevilla,FC Barcelona,5,1,ST,90,3,0,0,16722,179,66,10
+272,2014-11-30,PRM,Valencia,FC Barcelona,FC Barcelona,0,1,ST,90,0,0,1,16812,179,66,10
+273,2015-04-25,PRM,Espanyol,FC Barcelona,FC Barcelona,0,2,ST,90,1,0,0,16902,180,66,10
+274,2014-03-05,FRN,Romania,Argentina,Argentina,0,0,ST,90,0,0,0,16992,180,66,10
+275,2015-03-04,CUP,Villarreal,FC Barcelona,FC Barcelona,1,3,ST,90,0,1,0,17082,180,67,10
+276,2015-03-08,PRM,FC Barcelona,Rayo Vallecano,FC Barcelona,6,1,ST,90,3,1,0,17172,183,68,10
+277,2015-03-14,PRM,Eibar,FC Barcelona,FC Barcelona,0,2,ST,90,2,0,0,17262,185,68,10
+278,2015-03-18,EUR,FC Barcelona,Manchester City,FC Barcelona,1,0,ST,90,0,1,0,17352,185,69,10
+279,2014-03-12,EUR,FC Barcelona,Manchester City,FC Barcelona,2,1,ST,90,1,0,0,17442,186,69,10
+280,2014-03-08,PRM,Real Valladolid,FC Barcelona,FC Barcelona,1,0,ST,90,0,0,0,17532,186,69,10
+281,2015-03-22,PRM,FC Barcelona,Real Madrid,FC Barcelona,2,1,ST,90,0,1,0,17622,186,70,10
+282,2015-02-24,EUR,Manchester City,FC Barcelona,FC Barcelona,0,2,ST,90,0,0,0,17712,186,70,10
+283,2014-03-02,PRM,FC Barcelona,UD Almería,FC Barcelona,4,1,ST,90,1,0,0,17802,187,70,10
+284,2015-04-05,PRM,Celta de Vigo,FC Barcelona,FC Barcelona,0,1,ST,90,0,0,0,17892,187,70,10
+285,2015-04-08,PRM,FC Barcelona,UD Almería,FC Barcelona,4,0,ST,90,1,0,0,17982,188,70,10
+286,2015-04-11,PRM,Sevilla,FC Barcelona,FC Barcelona,2,2,ST,90,1,0,0,18072,189,70,10
+287,2015-04-18,PRM,FC Barcelona,Valencia,FC Barcelona,2,0,ST,90,1,1,0,18162,190,71,10
+288,2015-04-21,EUR,FC Barcelona,Paris Saint-Germain,FC Barcelona,2,0,ST,90,0,0,0,18252,190,71,10
+289,2015-02-28,PRM,Granada,FC Barcelona,FC Barcelona,1,3,ST,90,1,0,0,18342,191,71,10
+290,2015-02-21,PRM,FC Barcelona,Málaga,FC Barcelona,0,1,ST,90,0,0,0,18432,191,71,10
+291,2014-12-07,PRM,FC Barcelona,Espanyol,FC Barcelona,5,1,ST,90,3,0,0,18522,194,71,10
+292,2015-01-21,CUP,FC Barcelona,Atlético Madrid,FC Barcelona,1,0,ST,90,1,0,0,18612,195,71,10
+293,2014-12-10,EUR,FC Barcelona,Paris Saint-Germain,FC Barcelona,3,1,ST,90,1,0,0,18702,196,71,10
+294,2014-12-13,PRM,Getafe,FC Barcelona,FC Barcelona,0,0,ST,90,0,0,0,18792,196,71,10
+295,2014-12-20,PRM,FC Barcelona,Córdoba,FC Barcelona,5,0,ST,90,2,0,0,18882,198,71,10
+296,2015-01-08,CUP,FC Barcelona,Elche,FC Barcelona,5,0,ST,90,1,2,0,18972,199,73,10
+297,2015-01-11,PRM,FC Barcelona,Atlético Madrid,FC Barcelona,3,1,ST,90,1,1,1,19062,200,74,10
+298,2015-01-18,PRM,Deportivo La Coruña,FC Barcelona,FC Barcelona,0,4,ST,90,3,0,0,19152,203,74,10
+299,2015-01-24,PRM,Elche,FC Barcelona,FC Barcelona,0,6,ST,90,2,2,0,19242,205,76,10
+300,2015-02-15,PRM,FC Barcelona,Levante,FC Barcelona,5,0,ST,90,3,1,0,19332,208,77,10
+301,2015-01-28,CUP,Atlético Madrid,FC Barcelona,FC Barcelona,2,3,ST,90,0,0,1,19422,208,77,10
+302,2015-02-01,PRM,FC Barcelona,Villarreal,FC Barcelona,3,2,ST,90,1,0,0,19512,209,77,10
+303,2014-03-23,PRM,Real Madrid,FC Barcelona,FC Barcelona,3,4,ST,90,3,1,0,19602,212,78,10
+304,2015-02-08,PRM,Athletic de Bilbao,FC Barcelona,FC Barcelona,2,5,ST,90,1,2,0,19692,213,80,10
+305,2015-02-11,CUP,FC Barcelona,Villarreal,FC Barcelona,3,1,ST,90,1,1,0,19782,214,81,10
+306,2014-03-16,PRM,FC Barcelona,Osasuna,FC Barcelona,7,0,ST,90,3,1,0,19872,217,82,10
+307,2016-02-28,PRM,FC Barcelona,Sevilla,FC Barcelona,2,1,ST,90,1,0,0,19962,218,82,10
+308,2017-01-26,CUP,FC Barcelona,Real Sociedad,FC Barcelona,5,2,ST,90,1,2,0,20052,219,84,10
+309,2016-03-06,PRM,Eibar,FC Barcelona,FC Barcelona,0,4,ST,90,2,0,0,20142,221,84,10
+310,2018-04-07,PRM,FC Barcelona,Leganés,FC Barcelona,3,1,ST,90,3,0,0,20232,224,84,10
+311,2018-02-20,EUR,Chelsea,FC Barcelona,FC Barcelona,1,1,ST,90,1,0,0,20322,225,84,10
+312,2018-02-24,PRM,FC Barcelona,Girona,FC Barcelona,6,1,ST,90,2,1,0,20412,227,85,10
+313,2018-03-01,PRM,Las Palmas,FC Barcelona,FC Barcelona,1,1,ST,90,1,0,0,20502,228,85,10
+314,2018-03-04,PRM,FC Barcelona,Atlético Madrid,FC Barcelona,1,0,ST,90,1,0,1,20592,229,85,10
+315,2018-03-14,EUR,FC Barcelona,Chelsea,FC Barcelona,3,0,ST,90,2,1,0,20682,231,86,10
+316,2018-03-18,PRM,FC Barcelona,Athletic de Bilbao,FC Barcelona,2,0,ST,90,1,0,0,20772,232,86,10
+317,2018-04-04,EUR,FC Barcelona,AS Roma,FC Barcelona,4,1,ST,90,0,0,0,20862,232,86,10
+318,2018-04-10,EUR,AS Roma,FC Barcelona,FC Barcelona,3,0,ST,90,0,0,1,20952,232,86,10
+319,2018-02-11,PRM,FC Barcelona,Getafe,FC Barcelona,0,0,ST,90,0,0,0,21042,232,86,10
+320,2018-04-14,PRM,FC Barcelona,Valencia,FC Barcelona,2,1,ST,90,0,0,0,21132,232,86,10
+321,2018-04-21,CUP,Sevilla,FC Barcelona,FC Barcelona,0,5,ST,90,1,2,0,21222,233,88,10
+322,2018-04-29,PRM,Deportivo La Coruña,FC Barcelona,FC Barcelona,2,4,ST,90,3,0,0,21312,236,88,10
+323,2018-05-06,PRM,FC Barcelona,Real Madrid,FC Barcelona,2,2,ST,90,1,0,1,21402,237,88,10
+324,2018-05-09,PRM,FC Barcelona,Villarreal,FC Barcelona,5,1,ST,90,1,0,0,21492,238,88,10
+325,2018-05-29,FRN,Argentina,Haiti,Argentina,4,0,ST,90,3,1,0,21582,241,89,10
+326,2018-06-16,WCP,Argentina,Iceland,Argentina,1,1,ST,90,0,0,0,21672,241,89,10
+327,2018-02-17,PRM,Eibar,FC Barcelona,FC Barcelona,0,2,ST,90,0,1,0,21762,241,90,10
+328,2018-02-08,CUP,Valencia,FC Barcelona,FC Barcelona,0,2,ST,90,0,0,0,21852,241,90,10
+329,2018-06-26,WCP,Nigeria,Argentina,Argentina,1,2,ST,90,1,0,1,21942,242,90,10
+330,2017-12-02,PRM,FC Barcelona,Celta de Vigo,FC Barcelona,2,2,ST,90,1,0,0,22032,243,90,10
+331,2017-10-21,PRM,FC Barcelona,Málaga,FC Barcelona,2,0,ST,90,0,1,0,22122,243,91,10
+332,2017-10-28,PRM,Athletic de Bilbao,FC Barcelona,FC Barcelona,0,2,ST,90,1,0,0,22212,244,91,10
+333,2017-10-31,EUR,Olympiacos,FC Barcelona,FC Barcelona,0,0,ST,90,0,0,0,22302,244,91,10
+334,2017-11-04,PRM,FC Barcelona,Sevilla,FC Barcelona,2,1,ST,90,0,0,1,22392,244,91,10
+335,2017-11-11,FRN,Russia,Argentina,Argentina,0,1,ST,90,0,0,0,22482,244,91,10
+336,2017-11-18,PRM,Leganés,FC Barcelona,FC Barcelona,0,3,ST,90,0,0,0,22572,244,91,10
+337,2017-11-26,PRM,Valencia,FC Barcelona,FC Barcelona,1,1,ST,90,0,1,0,22662,244,92,10
+338,2017-12-10,PRM,Villarreal,FC Barcelona,FC Barcelona,0,2,ST,90,1,0,0,22752,245,92,10
+339,2018-02-01,CUP,FC Barcelona,Valencia,FC Barcelona,1,0,ST,90,0,1,0,22842,245,93,10
+340,2017-12-17,PRM,FC Barcelona,Deportivo La Coruña,FC Barcelona,4,0,ST,90,0,1,0,22932,245,94,10
+341,2017-12-23,PRM,Real Madrid,FC Barcelona,FC Barcelona,0,3,ST,90,1,1,0,23022,246,95,10
+342,2018-01-07,PRM,FC Barcelona,Levante,FC Barcelona,3,0,ST,90,1,1,0,23112,247,96,10
+343,2018-01-14,PRM,Real Sociedad,FC Barcelona,FC Barcelona,2,4,ST,90,1,1,0,23202,248,97,10
+344,2018-01-17,CUP,Espanyol,FC Barcelona,FC Barcelona,1,0,ST,90,0,0,0,23292,248,97,10
+345,2018-01-21,PRM,Real Betis,FC Barcelona,FC Barcelona,0,5,ST,90,2,1,0,23382,250,98,10
+346,2018-01-25,CUP,FC Barcelona,Espanyol,FC Barcelona,2,0,ST,90,1,0,1,23472,251,98,10
+347,2018-01-28,PRM,FC Barcelona,Alavés,FC Barcelona,2,1,ST,90,1,0,0,23562,252,98,10
+348,2018-06-21,WCP,Argentina,Croatia,Argentina,0,3,ST,90,0,0,0,23652,252,98,10
+349,2018-06-30,WCP,France,Argentina,Argentina,4,3,ST,90,0,2,0,23742,252,100,10
+350,2017-10-14,PRM,Atlético Madrid,FC Barcelona,FC Barcelona,1,1,ST,90,0,0,0,23832,252,100,10
+351,2019-03-09,PRM,FC Barcelona,Rayo Vallecano,FC Barcelona,3,1,ST,90,1,1,0,23922,253,101,10
+352,2019-02-02,PRM,FC Barcelona,Valencia,FC Barcelona,2,2,ST,90,2,0,0,24012,255,101,10
+353,2019-02-10,PRM,Athletic de Bilbao,FC Barcelona,FC Barcelona,0,0,ST,90,0,0,0,24102,255,101,10
+354,2019-02-16,PRM,FC Barcelona,Real Valladolid,FC Barcelona,1,0,ST,90,1,0,1,24192,256,101,10
+355,2019-02-19,EUR,Olympique Lyon,FC Barcelona,FC Barcelona,0,0,ST,90,0,0,0,24282,256,101,10
+356,2019-02-23,PRM,Sevilla,FC Barcelona,FC Barcelona,2,4,ST,90,3,1,0,24372,259,102,10
+357,2019-02-27,CUP,Real Madrid,FC Barcelona,FC Barcelona,0,3,ST,90,0,0,0,24462,259,102,10
+358,2019-03-02,PRM,Real Madrid,FC Barcelona,FC Barcelona,0,1,ST,90,0,0,0,24552,259,102,10
+359,2019-03-13,EUR,FC Barcelona,Olympique Lyon,FC Barcelona,5,1,ST,90,2,2,0,24642,261,104,10
+360,2019-01-27,PRM,Girona,FC Barcelona,FC Barcelona,0,2,ST,90,1,0,0,24732,262,104,10
+361,2019-03-17,PRM,Real Betis,FC Barcelona,FC Barcelona,1,4,ST,90,3,0,0,24822,265,104,10
+362,2019-03-22,FRN,Argentina,Venezuela,Argentina,1,3,ST,90,0,0,0,24912,265,104,10
+363,2019-04-20,PRM,FC Barcelona,Real Sociedad,FC Barcelona,2,1,ST,90,0,1,0,25002,265,105,10
+364,2019-03-30,PRM,FC Barcelona,Espanyol,FC Barcelona,2,0,ST,90,2,0,0,25092,267,105,10
+365,2019-04-06,PRM,FC Barcelona,Atlético Madrid,FC Barcelona,2,0,ST,90,1,0,0,25182,268,105,10
+366,2019-04-16,EUR,FC Barcelona,Manchester United,FC Barcelona,3,0,ST,90,2,0,0,25272,270,105,10
+367,2019-04-10,EUR,Manchester United,FC Barcelona,FC Barcelona,0,1,ST,90,0,0,0,25362,270,105,10
+368,2019-01-30,CUP,FC Barcelona,Sevilla,FC Barcelona,6,1,ST,90,1,1,0,25452,271,106,10
+369,2019-01-17,CUP,FC Barcelona,Levante,FC Barcelona,3,0,ST,90,1,1,0,25542,272,107,10
+370,2018-08-12,SUP,Sevilla,FC Barcelona,FC Barcelona,1,2,ST,90,0,1,0,25632,272,108,10
+371,2018-10-03,EUR,Tottenham Hotspur F.C.,FC Barcelona,FC Barcelona,2,4,ST,90,2,0,0,25722,274,108,10
+372,2018-08-18,PRM,FC Barcelona,Alavés,FC Barcelona,3,0,ST,90,2,0,0,25812,276,108,10
+373,2018-08-25,PRM,Real Valladolid,FC Barcelona,FC Barcelona,0,1,ST,90,0,0,0,25902,276,108,10
+374,2018-09-02,PRM,FC Barcelona,Huesca,FC Barcelona,8,2,ST,90,2,2,0,25992,278,110,10
+375,2018-09-15,PRM,Real Sociedad,FC Barcelona,FC Barcelona,1,2,ST,90,0,0,0,26082,278,110,10
+376,2018-09-18,EUR,FC Barcelona,PSV Eindhoven,FC Barcelona,4,0,ST,90,3,0,0,26172,281,110,10
+377,2018-09-23,PRM,FC Barcelona,Girona,FC Barcelona,2,2,ST,90,1,0,0,26262,282,110,10
+378,2018-09-26,PRM,Leganés,FC Barcelona,FC Barcelona,2,1,ST,90,0,1,0,26352,282,111,10
+379,2018-10-07,PRM,Valencia,FC Barcelona,FC Barcelona,1,1,ST,90,1,0,0,26442,283,111,10
+380,2019-01-13,PRM,FC Barcelona,Eibar,FC Barcelona,3,0,ST,90,1,0,0,26532,284,111,10
+381,2018-11-11,PRM,FC Barcelona,Real Betis,FC Barcelona,3,4,ST,90,2,0,0,26622,286,111,10
+382,2018-11-24,PRM,Atlético Madrid,FC Barcelona,FC Barcelona,1,1,ST,90,0,1,0,26712,286,112,10
+383,2018-11-28,EUR,PSV Eindhoven,FC Barcelona,FC Barcelona,1,2,ST,90,1,1,0,26802,287,113,10
+384,2018-12-02,PRM,FC Barcelona,Villarreal,FC Barcelona,2,0,ST,90,0,1,0,26892,287,114,10
+385,2018-12-08,PRM,Espanyol,FC Barcelona,FC Barcelona,0,4,ST,90,2,1,0,26982,289,115,10
+386,2018-12-16,PRM,Levante,FC Barcelona,FC Barcelona,0,5,ST,90,3,2,0,27072,292,117,10
+387,2018-12-22,PRM,FC Barcelona,Celta de Vigo,FC Barcelona,2,0,ST,90,1,0,0,27162,293,117,10
+388,2019-01-06,PRM,Getafe,FC Barcelona,FC Barcelona,1,2,ST,90,1,0,0,27252,294,117,10
+389,2017-10-18,EUR,FC Barcelona,Olympiacos,FC Barcelona,3,1,ST,90,1,1,0,27342,295,118,10
+390,2017-10-10,WCQ,Ecuador,Argentina,Argentina,1,3,ST,90,3,0,0,27432,298,118,10
+391,2016-03-12,PRM,FC Barcelona,Getafe,FC Barcelona,6,0,ST,90,1,3,0,27522,299,121,10
+392,2016-11-10,WCQ,Brazil,Argentina,Argentina,3,0,ST,90,0,0,0,27612,299,121,10
+393,2016-09-13,EUR,FC Barcelona,Celtic,FC Barcelona,7,0,ST,90,3,1,0,27702,302,122,10
+394,2016-09-17,PRM,Leganés,FC Barcelona,FC Barcelona,1,5,ST,90,2,1,0,27792,304,123,10
+395,2016-10-19,EUR,FC Barcelona,Manchester City,FC Barcelona,4,0,ST,90,3,1,0,27882,307,124,10
+396,2016-10-22,PRM,Valencia,FC Barcelona,FC Barcelona,2,3,ST,90,2,0,1,27972,309,124,10
+397,2016-10-29,PRM,FC Barcelona,Granada,FC Barcelona,1,0,ST,90,0,0,0,28062,309,124,10
+398,2016-11-01,EUR,Manchester City,FC Barcelona,FC Barcelona,3,1,ST,90,1,0,0,28152,310,124,10
+399,2016-11-06,PRM,Sevilla,FC Barcelona,FC Barcelona,1,2,ST,90,1,1,1,28242,311,125,10
+400,2016-11-15,WCQ,Argentina,Colombia,Argentina,3,0,ST,90,1,2,0,28332,312,127,10
+401,2016-08-28,PRM,Athletic de Bilbao,FC Barcelona,FC Barcelona,0,1,ST,90,0,0,0,28422,312,127,10
+402,2016-11-23,EUR,Celtic,FC Barcelona,FC Barcelona,0,2,ST,90,2,0,0,28512,314,127,10
+403,2016-11-27,PRM,Real Sociedad,FC Barcelona,FC Barcelona,1,1,ST,90,1,0,0,28602,315,127,10
+404,2016-12-03,PRM,FC Barcelona,Real Madrid,FC Barcelona,1,1,ST,90,0,0,0,28692,315,127,10
+405,2016-12-06,EUR,FC Barcelona,Borussia Mönchengladbach,FC Barcelona,4,0,ST,90,1,0,0,28782,316,127,10
+406,2016-12-10,PRM,Osasuna,FC Barcelona,FC Barcelona,0,3,ST,90,2,0,0,28872,318,127,10
+407,2016-12-18,PRM,FC Barcelona,Espanyol,FC Barcelona,4,1,ST,90,1,0,0,28962,319,127,10
+408,2017-01-05,CUP,Athletic de Bilbao,FC Barcelona,FC Barcelona,2,1,ST,90,1,0,0,29052,320,127,10
+409,2016-09-01,WCQ,Argentina,Uruguay,Argentina,1,0,ST,90,1,0,0,29142,321,127,10
+410,2016-08-20,PRM,FC Barcelona,Real Betis,FC Barcelona,6,2,ST,90,2,1,0,29232,323,128,10
+411,2017-01-11,CUP,FC Barcelona,Athletic de Bilbao,FC Barcelona,3,1,ST,90,1,0,0,29322,324,128,10
+412,2016-04-13,EUR,Atlético Madrid,FC Barcelona,FC Barcelona,2,0,ST,90,0,0,0,29412,324,128,10
+413,2016-03-16,EUR,FC Barcelona,Arsenal,FC Barcelona,3,1,ST,90,1,0,0,29502,325,128,10
+414,2016-03-20,PRM,Villarreal,FC Barcelona,FC Barcelona,2,2,ST,90,0,0,0,29592,325,128,10
+415,2016-03-24,WCQ,Chile,Argentina,Argentina,1,2,ST,90,0,0,0,29682,325,128,10
+416,2016-03-29,WCQ,Argentina,Bolivia,Argentina,2,0,ST,90,1,0,0,29772,326,128,10
+417,2016-04-02,PRM,FC Barcelona,Real Madrid,FC Barcelona,1,2,ST,90,0,0,0,29862,326,128,10
+418,2016-04-05,EUR,FC Barcelona,Atlético Madrid,FC Barcelona,2,1,ST,90,0,0,0,29952,326,128,10
+419,2016-04-09,PRM,Real Sociedad,FC Barcelona,FC Barcelona,1,0,ST,90,0,0,0,30042,326,128,10
+420,2016-04-17,PRM,FC Barcelona,Valencia,FC Barcelona,1,2,ST,90,1,0,0,30132,327,128,10
+421,2016-08-17,SUP,FC Barcelona,Sevilla,FC Barcelona,3,0,ST,90,1,1,0,30222,328,129,10
+422,2016-04-20,PRM,Deportivo La Coruña,FC Barcelona,FC Barcelona,0,8,ST,90,1,2,0,30312,329,131,10
+423,2016-04-23,PRM,FC Barcelona,Sporting Gijón,FC Barcelona,6,0,ST,90,1,1,0,30402,330,132,10
+424,2016-04-30,PRM,Real Betis,FC Barcelona,FC Barcelona,0,2,ST,90,0,2,1,30492,330,134,10
+425,2016-05-08,PRM,FC Barcelona,Espanyol,FC Barcelona,5,0,ST,90,1,1,1,30582,331,135,10
+426,2016-05-14,PRM,Granada,FC Barcelona,FC Barcelona,0,3,ST,90,0,0,0,30672,331,135,10
+427,2016-06-18,CPA,Argentina,Venezuela,Argentina,4,1,ST,90,1,2,0,30762,332,137,10
+428,2016-06-21,CPA,United States,Argentina,Argentina,0,4,ST,90,1,2,0,30852,333,139,10
+429,2016-08-14,SUP,Sevilla,FC Barcelona,FC Barcelona,0,2,ST,90,0,1,0,30942,333,140,10
+430,2017-01-08,PRM,Villarreal,FC Barcelona,FC Barcelona,1,1,ST,90,1,0,0,31032,334,140,10
+431,2017-01-14,PRM,FC Barcelona,Las Palmas,FC Barcelona,5,0,ST,90,1,0,0,31122,335,140,10
+432,2017-10-05,WCQ,Argentina,Peru,Argentina,0,0,ST,90,0,0,0,31212,335,140,10
+433,2017-08-26,PRM,Alavés,FC Barcelona,FC Barcelona,0,2,ST,90,2,0,0,31302,337,140,10
+434,2017-05-14,PRM,Las Palmas,FC Barcelona,FC Barcelona,1,4,ST,90,0,0,0,31392,337,140,10
+435,2017-05-21,PRM,FC Barcelona,Eibar,FC Barcelona,4,2,ST,90,2,0,0,31482,339,140,10
+436,2017-05-27,CUP,FC Barcelona,Alavés,FC Barcelona,3,1,ST,90,1,1,1,31572,340,141,10
+437,2017-06-09,FRN,Brazil,Argentina,Argentina,0,1,ST,90,0,0,0,31662,340,141,10
+438,2017-08-13,SUP,FC Barcelona,Real Madrid,FC Barcelona,1,3,ST,90,1,0,1,31752,341,141,10
+439,2017-08-16,SUP,Real Madrid,FC Barcelona,FC Barcelona,2,0,ST,90,0,0,0,31842,341,141,10
+440,2017-08-20,PRM,FC Barcelona,Real Betis,FC Barcelona,2,0,ST,90,0,0,0,31932,341,141,10
+441,2017-08-31,WCQ,Uruguay,Argentina,Argentina,0,0,ST,90,0,0,0,32022,341,141,10
+442,2017-04-29,PRM,Espanyol,FC Barcelona,FC Barcelona,0,3,ST,90,0,1,0,32112,341,142,10
+443,2017-09-05,WCQ,Argentina,Venezuela,Argentina,1,1,ST,90,0,0,0,32202,341,142,10
+444,2017-09-09,PRM,FC Barcelona,Espanyol,FC Barcelona,5,0,ST,90,3,0,0,32292,344,142,10
+445,2017-09-12,EUR,FC Barcelona,Juventus,FC Barcelona,3,0,ST,90,2,0,1,32382,346,142,10
+446,2017-09-16,PRM,Getafe,FC Barcelona,FC Barcelona,1,2,ST,90,0,1,0,32472,346,143,10
+447,2017-09-19,PRM,FC Barcelona,Eibar,FC Barcelona,6,1,ST,90,4,0,0,32562,350,143,10
+448,2017-09-23,PRM,Girona,FC Barcelona,FC Barcelona,0,3,ST,90,0,0,0,32652,350,143,10
+449,2017-09-27,EUR,Sporting Lisbon,FC Barcelona,FC Barcelona,0,1,ST,90,0,0,0,32742,350,143,10
+450,2017-10-01,PRM,FC Barcelona,Las Palmas,FC Barcelona,3,0,ST,90,2,1,0,32832,352,144,10
+451,2017-05-06,PRM,FC Barcelona,Villarreal,FC Barcelona,4,1,ST,90,2,0,0,32922,354,144,10
+452,2017-04-23,PRM,Real Madrid,FC Barcelona,FC Barcelona,2,3,ST,90,2,0,1,33012,356,144,10
+453,2017-01-19,CUP,Real Sociedad,FC Barcelona,FC Barcelona,0,1,ST,90,0,0,1,33102,356,144,10
+454,2013-10-29,PRM,Celta de Vigo,FC Barcelona,FC Barcelona,0,3,ST,90,0,1,0,33192,356,145,10
+455,2017-01-22,PRM,Eibar,FC Barcelona,FC Barcelona,0,4,ST,90,1,0,0,33282,357,145,10
+456,2017-01-29,PRM,Real Betis,FC Barcelona,FC Barcelona,1,1,ST,90,0,1,0,33372,357,146,10
+457,2017-02-01,CUP,Atlético Madrid,FC Barcelona,FC Barcelona,1,2,ST,90,1,0,1,33462,358,146,10
+458,2017-02-07,CUP,FC Barcelona,Atlético Madrid,FC Barcelona,1,1,ST,90,0,0,0,33552,358,146,10
+459,2017-02-11,PRM,Alavés,FC Barcelona,FC Barcelona,0,6,ST,90,1,0,0,33642,359,146,10
+460,2017-02-14,EUR,Paris Saint-Germain,FC Barcelona,FC Barcelona,4,0,ST,90,0,0,0,33732,359,146,10
+461,2017-02-19,PRM,FC Barcelona,Leganés,FC Barcelona,2,1,ST,90,2,0,0,33822,361,146,10
+462,2017-03-04,PRM,FC Barcelona,Celta de Vigo,FC Barcelona,5,0,ST,90,2,2,0,33912,363,148,10
+463,2017-04-19,EUR,FC Barcelona,Juventus,FC Barcelona,0,0,ST,90,0,0,0,34002,363,148,10
+464,2017-03-08,EUR,FC Barcelona,Paris Saint-Germain,FC Barcelona,6,1,ST,90,1,0,0,34092,364,148,10
+465,2017-03-12,PRM,Deportivo La Coruña,FC Barcelona,FC Barcelona,2,1,ST,90,0,0,0,34182,364,148,10
+466,2017-03-19,PRM,FC Barcelona,Valencia,FC Barcelona,4,2,ST,90,2,0,1,34272,366,148,10
+467,2017-03-23,WCQ,Argentina,Chile,Argentina,1,0,ST,90,1,0,0,34362,367,148,10
+468,2017-04-05,PRM,FC Barcelona,Sevilla,FC Barcelona,3,0,ST,90,2,0,0,34452,369,148,10
+469,2017-04-08,PRM,Málaga,FC Barcelona,FC Barcelona,2,0,ST,90,0,0,0,34542,369,148,10
+470,2017-04-11,EUR,Juventus,FC Barcelona,FC Barcelona,3,0,ST,90,0,0,0,34632,369,148,10
+471,2017-04-15,PRM,FC Barcelona,Real Sociedad,FC Barcelona,3,2,ST,90,2,1,0,34722,371,149,10
+472,2017-02-26,PRM,Atlético Madrid,FC Barcelona,FC Barcelona,1,2,ST,90,1,0,1,34812,372,149,10
+473,2012-09-12,WCQ,Peru,Argentina,Argentina,1,1,ST,90,0,0,0,34902,372,149,10
+474,2013-10-26,PRM,FC Barcelona,Real Madrid,FC Barcelona,2,1,ST,90,0,0,0,34992,372,149,10
+475,2009-10-20,EUR,FC Barcelona,Rubin Kazan,FC Barcelona,1,2,ST,90,0,0,0,35082,372,149,10
+476,2009-09-16,EUR,Internazionale,FC Barcelona,FC Barcelona,0,0,ST,90,0,0,0,35172,372,149,10
+477,2009-09-19,PRM,FC Barcelona,Atlético Madrid,FC Barcelona,5,2,ST,90,2,1,0,35262,374,150,10
+478,2009-09-26,PRM,Málaga,FC Barcelona,FC Barcelona,0,2,ST,90,0,1,0,35352,374,151,10
+479,2009-09-29,EUR,FC Barcelona,Dynamo Kyiv,FC Barcelona,2,0,ST,90,1,0,0,35442,375,151,10
+480,2009-10-03,PRM,FC Barcelona,UD Almería,FC Barcelona,1,0,ST,90,0,0,0,35532,375,151,10
+481,2009-10-11,WCQ,Argentina,Peru,Argentina,2,1,ST,90,0,0,0,35622,375,151,10
+482,2009-10-17,PRM,Valencia,FC Barcelona,FC Barcelona,0,0,ST,90,0,0,0,35712,375,151,10
+483,2009-10-25,PRM,FC Barcelona,Real Zaragoza,FC Barcelona,6,1,ST,90,1,1,0,35802,376,152,10
+484,2009-09-06,WCQ,Argentina,Brazil,Argentina,1,3,ST,90,0,0,0,35892,376,152,10
+485,2009-10-31,PRM,Osasuna,FC Barcelona,FC Barcelona,1,1,ST,90,0,0,0,35982,376,152,10
+486,2009-11-04,EUR,Rubin Kazan,FC Barcelona,FC Barcelona,0,0,ST,90,0,0,0,36072,376,152,10
+487,2009-11-29,PRM,FC Barcelona,Real Madrid,FC Barcelona,1,0,ST,90,0,0,0,36162,376,152,10
+488,2009-12-05,PRM,Deportivo La Coruña,FC Barcelona,FC Barcelona,1,3,ST,90,2,0,0,36252,378,152,10
+489,2009-12-09,EUR,Dynamo Kyiv,FC Barcelona,FC Barcelona,1,2,ST,90,1,0,0,36342,379,152,10
+490,2010-01-05,CUP,FC Barcelona,Sevilla,FC Barcelona,1,2,ST,90,0,0,0,36432,379,152,10
+491,2010-01-10,PRM,Tenerife,FC Barcelona,FC Barcelona,0,5,ST,90,3,1,0,36522,382,153,10
+492,2010-01-13,CUP,Sevilla,FC Barcelona,FC Barcelona,0,1,ST,90,0,0,1,36612,382,153,10
+493,2009-09-10,WCQ,Paraguay,Argentina,Argentina,1,0,ST,90,0,0,0,36702,382,153,10
+494,2009-08-23,SUP,FC Barcelona,Athletic de Bilbao,FC Barcelona,3,0,ST,90,2,0,0,36792,384,153,10
+495,2010-01-23,PRM,Real Valladolid,FC Barcelona,FC Barcelona,0,3,ST,90,1,1,0,36882,385,154,10
+496,2009-04-11,PRM,FC Barcelona,Recreativo Huelva,FC Barcelona,2,0,ST,90,0,0,0,36972,385,154,10
+497,2009-03-07,PRM,FC Barcelona,Athletic de Bilbao,FC Barcelona,2,0,ST,90,1,0,0,37062,386,154,10
+498,2009-03-11,EUR,FC Barcelona,Olympique Lyon,FC Barcelona,5,2,ST,90,1,0,0,37152,387,154,10
+499,2009-03-15,PRM,UD Almería,FC Barcelona,FC Barcelona,0,2,ST,90,0,0,0,37242,387,154,10
+500,2009-03-22,PRM,FC Barcelona,Málaga,FC Barcelona,6,0,ST,90,1,0,0,37332,388,154,10
+501,2009-03-28,WCQ,Argentina,Venezuela,Argentina,4,0,ST,90,1,1,0,37422,389,155,10
+502,2009-04-01,WCQ,Bolivia,Argentina,Argentina,6,1,ST,90,0,0,0,37512,389,155,10
+503,2009-04-08,EUR,FC Barcelona,Bayern München,FC Barcelona,4,0,ST,90,2,1,1,37602,391,156,10
+504,2009-04-14,EUR,Bayern München,FC Barcelona,FC Barcelona,1,1,ST,90,0,0,0,37692,391,156,10
+505,2009-06-10,WCQ,Ecuador,Argentina,Argentina,2,0,ST,90,0,0,0,37782,391,156,10
+506,2009-04-18,PRM,Getafe,FC Barcelona,FC Barcelona,0,1,ST,90,1,0,0,37872,392,156,10
+507,2009-04-25,PRM,Valencia,FC Barcelona,FC Barcelona,2,2,ST,90,1,0,0,37962,393,156,10
+508,2009-04-28,EUR,FC Barcelona,Chelsea,FC Barcelona,0,0,ST,90,0,0,0,38052,393,156,10
+509,2009-05-02,PRM,Real Madrid,FC Barcelona,FC Barcelona,2,6,ST,90,2,1,0,38142,395,157,10
+510,2009-05-06,EUR,Chelsea,FC Barcelona,FC Barcelona,1,1,ST,90,0,1,0,38232,395,158,10
+511,2009-05-13,CUP,Athletic de Bilbao,FC Barcelona,FC Barcelona,1,4,ST,90,1,1,1,38322,396,159,10
+512,2009-05-27,EUR,FC Barcelona,Manchester United,FC Barcelona,2,0,ST,90,1,0,0,38412,397,159,10
+513,2009-06-06,WCQ,Argentina,Colombia,Argentina,1,0,ST,90,0,0,0,38502,397,159,10
+514,2010-01-16,PRM,FC Barcelona,Sevilla,FC Barcelona,4,0,ST,90,2,0,0,38592,399,159,10
+515,2010-01-30,PRM,Sporting Gijón,FC Barcelona,FC Barcelona,0,1,ST,90,0,0,1,38682,399,159,10
+516,2009-02-24,EUR,Olympique Lyon,FC Barcelona,FC Barcelona,1,1,ST,90,0,0,0,38772,399,159,10
+517,2010-09-19,PRM,Atlético Madrid,FC Barcelona,FC Barcelona,1,2,ST,90,1,1,0,38862,400,160,10
+518,2010-06-22,WCP,Greece,Argentina,Argentina,0,2,ST,90,0,0,0,38952,400,160,10
+519,2010-06-27,WCP,Argentina,Mexico,Argentina,3,1,ST,90,0,1,0,39042,400,161,10
+520,2010-07-03,WCP,Argentina,Germany,Argentina,0,4,ST,90,0,0,0,39132,400,161,10
+521,2010-08-21,SUP,FC Barcelona,Sevilla,FC Barcelona,4,0,ST,90,3,0,0,39222,403,161,10
+522,2010-08-29,PRM,Racing Santander,FC Barcelona,FC Barcelona,0,3,ST,90,1,0,0,39312,404,161,10
+523,2010-09-11,PRM,FC Barcelona,Hercules Alicante,FC Barcelona,0,2,ST,90,0,0,0,39402,404,161,10
+524,2010-09-14,EUR,FC Barcelona,Panathinaikos,FC Barcelona,5,1,ST,90,2,1,0,39492,406,162,10
+525,2010-10-03,PRM,FC Barcelona,Real Mallorca,FC Barcelona,1,1,ST,90,1,0,0,39582,407,162,10
+526,2010-06-12,WCP,Argentina,Nigeria,Argentina,1,0,ST,90,0,0,0,39672,407,162,10
+527,2010-10-08,FRN,Japan,Argentina,Argentina,1,0,ST,90,0,0,0,39762,407,162,10
+528,2010-10-16,PRM,FC Barcelona,Valencia,FC Barcelona,2,1,ST,90,0,0,0,39852,407,162,10
+529,2010-10-20,EUR,FC Barcelona,FC Copenhagen,FC Barcelona,2,0,ST,90,2,0,0,39942,409,162,10
+530,2010-10-23,PRM,Real Zaragoza,FC Barcelona,FC Barcelona,0,2,ST,90,2,0,0,40032,411,162,10
+531,2010-10-30,PRM,FC Barcelona,Sevilla,FC Barcelona,5,0,ST,90,2,1,0,40122,413,163,10
+532,2010-11-02,EUR,FC Copenhagen,FC Barcelona,FC Barcelona,1,1,ST,90,1,0,0,40212,414,163,10
+533,2010-11-07,PRM,Getafe,FC Barcelona,FC Barcelona,1,3,ST,90,1,1,0,40302,415,164,10
+534,2010-11-13,PRM,FC Barcelona,Villarreal,FC Barcelona,3,1,ST,90,2,0,0,40392,417,164,10
+535,2010-06-17,WCP,Argentina,Korea Republic,Argentina,4,1,ST,90,0,0,0,40482,417,164,10
+536,2010-05-16,PRM,FC Barcelona,Real Valladolid,FC Barcelona,4,0,ST,90,2,1,0,40572,419,165,10
+537,2010-02-06,PRM,FC Barcelona,Getafe,FC Barcelona,2,1,ST,90,1,1,0,40662,420,166,10
+538,2010-03-21,PRM,Real Zaragoza,FC Barcelona,FC Barcelona,2,4,ST,90,3,0,0,40752,423,166,10
+539,2010-02-14,PRM,Atlético Madrid,FC Barcelona,FC Barcelona,2,1,ST,90,0,0,0,40842,423,166,10
+540,2010-02-20,PRM,FC Barcelona,Racing Santander,FC Barcelona,4,0,ST,90,0,1,0,40932,423,167,10
+541,2010-02-23,EUR,VfB Stuttgart,FC Barcelona,FC Barcelona,1,1,ST,90,0,0,0,41022,423,167,10
+542,2010-02-27,PRM,FC Barcelona,Málaga,FC Barcelona,2,1,ST,90,1,0,0,41112,424,167,10
+543,2010-03-03,FRN,Germany,Argentina,Argentina,0,1,ST,90,0,0,1,41202,424,167,10
+544,2010-03-06,PRM,UD Almería,FC Barcelona,FC Barcelona,2,2,ST,90,2,0,0,41292,426,167,10
+545,2010-03-17,EUR,FC Barcelona,VfB Stuttgart,FC Barcelona,4,0,ST,90,2,0,0,41382,428,167,10
+546,2010-03-24,PRM,FC Barcelona,Osasuna,FC Barcelona,2,0,ST,90,0,0,1,41472,428,167,10
+547,2010-05-08,PRM,Sevilla,FC Barcelona,FC Barcelona,2,3,ST,90,1,0,0,41562,429,167,10
+548,2010-04-03,PRM,FC Barcelona,Athletic de Bilbao,FC Barcelona,4,1,ST,90,1,0,0,41652,430,167,10
+549,2010-04-06,EUR,FC Barcelona,Arsenal,FC Barcelona,4,1,ST,90,4,0,0,41742,434,167,10
+550,2010-04-10,PRM,Real Madrid,FC Barcelona,FC Barcelona,0,2,ST,90,1,0,1,41832,435,167,10
+551,2010-04-14,PRM,FC Barcelona,Deportivo La Coruña,FC Barcelona,3,0,ST,90,0,0,0,41922,435,167,10
+552,2010-04-17,PRM,Espanyol,FC Barcelona,FC Barcelona,0,0,ST,90,0,0,0,42012,435,167,10
+553,2010-04-20,EUR,Internazionale,FC Barcelona,FC Barcelona,3,1,ST,90,0,0,0,42102,435,167,10
+554,2010-04-28,EUR,FC Barcelona,Internazionale,FC Barcelona,1,0,ST,90,0,0,0,42192,435,167,10
+555,2010-05-04,PRM,FC Barcelona,Tenerife,FC Barcelona,4,1,ST,90,2,0,0,42282,437,167,10
+556,2009-03-01,PRM,Atlético Madrid,FC Barcelona,FC Barcelona,4,3,ST,90,1,0,1,42372,438,167,10
+557,2009-02-21,PRM,FC Barcelona,Espanyol,FC Barcelona,1,2,ST,90,0,0,0,42462,438,167,10
+558,2013-10-22,EUR,AC Milan,FC Barcelona,FC Barcelona,1,1,ST,90,1,0,0,42552,439,167,10
+559,2007-05-20,PRM,Atlético Madrid,FC Barcelona,FC Barcelona,0,6,ST,90,2,0,0,42642,441,167,19
+560,2007-03-06,EUR,Liverpool,FC Barcelona,FC Barcelona,0,1,ST,90,0,0,0,42732,441,167,19
+561,2007-03-10,PRM,FC Barcelona,Real Madrid,FC Barcelona,3,3,ST,90,3,0,0,42822,444,167,19
+562,2007-03-17,PRM,Recreativo Huelva,FC Barcelona,FC Barcelona,0,4,ST,90,1,0,0,42912,445,167,19
+563,2007-04-07,PRM,Real Zaragoza,FC Barcelona,FC Barcelona,1,0,ST,90,0,0,1,43002,445,167,19
+564,2007-04-15,PRM,FC Barcelona,Real Mallorca,FC Barcelona,1,0,ST,90,0,0,0,43092,445,167,19
+565,2007-04-22,PRM,Villarreal,FC Barcelona,FC Barcelona,2,0,ST,90,0,0,0,43182,445,167,19
+566,2007-04-29,PRM,FC Barcelona,Levante,FC Barcelona,1,0,ST,90,0,0,0,43272,445,167,19
+567,2007-06-05,FRN,Argentina,Algeria,Argentina,4,3,ST,90,2,0,0,43362,447,167,18
+568,2007-02-21,EUR,FC Barcelona,Liverpool,FC Barcelona,1,2,ST,90,0,0,0,43452,447,167,19
+569,2007-06-09,PRM,FC Barcelona,Espanyol,FC Barcelona,2,2,ST,90,2,0,0,43542,449,167,19
+570,2007-07-09,CPA,Argentina,Peru,Argentina,4,0,ST,90,1,0,0,43632,450,167,18
+571,2007-07-12,CPA,Mexico,Argentina,Argentina,0,3,ST,90,1,0,1,43722,451,167,18
+572,2007-07-15,CPA,Brazil,Argentina,Argentina,3,0,ST,90,0,0,0,43812,451,167,18
+573,2007-08-22,FRN,Norway,Argentina,Argentina,2,1,ST,90,0,0,0,43902,451,167,19
+574,2007-09-02,PRM,FC Barcelona,Athletic de Bilbao,FC Barcelona,3,1,ST,90,0,0,0,43992,451,167,19
+575,2007-10-02,EUR,VfB Stuttgart,FC Barcelona,FC Barcelona,0,2,ST,90,1,0,1,44082,452,167,19
+576,2007-10-07,PRM,FC Barcelona,Atlético Madrid,FC Barcelona,3,0,ST,90,1,0,0,44172,453,167,19
+577,2007-02-28,CUP,Real Zaragoza,FC Barcelona,FC Barcelona,1,2,ST,90,0,0,1,44262,453,167,19
+578,2006-11-04,PRM,Deportivo La Coruña,FC Barcelona,FC Barcelona,1,1,ST,90,0,0,0,44352,453,167,19
+579,2007-10-20,PRM,Villarreal,FC Barcelona,FC Barcelona,3,1,ST,90,0,1,0,44442,453,168,19
+580,2006-03-01,FRN,Croatia,Argentina,Argentina,3,2,ST,90,1,1,0,44532,454,169,19
+581,2004-12-07,EUR,Shakhtar Donetsk,FC Barcelona,FC Barcelona,2,0,ST,90,0,0,0,44622,454,169,30
+582,2005-10-10,WCQ,Argentina,Peru,Argentina,2,0,ST,90,0,0,0,44712,454,169,19
+583,2005-10-22,PRM,FC Barcelona,Osasuna,FC Barcelona,3,0,ST,90,0,0,1,44802,454,169,30
+584,2005-11-02,EUR,FC Barcelona,Panathinaikos,FC Barcelona,5,0,ST,90,1,1,0,44892,455,170,30
+585,2006-01-26,CUP,Real Zaragoza,FC Barcelona,FC Barcelona,4,2,ST,90,0,0,0,44982,455,170,30
+586,2006-02-01,CUP,FC Barcelona,Real Zaragoza,FC Barcelona,2,1,ST,90,1,0,0,45072,456,170,30
+587,2006-02-22,EUR,Chelsea,FC Barcelona,FC Barcelona,1,2,ST,90,0,0,0,45162,456,170,30
+588,2006-08-20,SUP,FC Barcelona,Espanyol,FC Barcelona,3,0,ST,90,0,0,0,45252,456,170,19
+589,2006-10-31,EUR,FC Barcelona,Chelsea,FC Barcelona,2,2,ST,90,0,0,1,45342,456,170,19
+590,2006-08-25,IUP,FC Barcelona,Sevilla,FC Barcelona,0,3,ST,90,0,0,0,45432,456,170,19
+591,2006-08-28,PRM,Celta de Vigo,FC Barcelona,FC Barcelona,2,3,ST,90,1,1,0,45522,457,171,19
+592,2006-09-03,FRN,Brazil,Argentina,Argentina,3,0,ST,90,0,0,0,45612,457,171,19
+593,2006-09-09,PRM,FC Barcelona,Osasuna,FC Barcelona,3,0,ST,90,1,0,0,45702,458,171,19
+594,2006-09-30,PRM,Athletic de Bilbao,FC Barcelona,FC Barcelona,1,3,ST,90,0,0,1,45792,458,171,19
+595,2006-10-15,PRM,FC Barcelona,Sevilla,FC Barcelona,3,1,ST,90,1,0,0,45882,459,171,19
+596,2006-10-18,EUR,Chelsea,FC Barcelona,FC Barcelona,1,0,ST,90,0,0,0,45972,459,171,19
+597,2006-10-22,PRM,Real Madrid,FC Barcelona,FC Barcelona,2,0,ST,90,0,0,0,46062,459,171,19
+598,2007-10-17,WCQ,Venezuela,Argentina,Argentina,0,2,ST,90,1,0,0,46152,460,171,18
+599,2007-10-23,EUR,Glasgow Rangers,FC Barcelona,FC Barcelona,0,0,ST,90,0,0,0,46242,460,171,19
+600,2009-02-11,FRN,France,Argentina,Argentina,0,2,ST,90,1,0,0,46332,461,171,18
+601,2008-11-08,PRM,FC Barcelona,Real Valladolid,FC Barcelona,6,0,ST,90,0,1,0,46422,461,172,10
+602,2008-09-16,EUR,FC Barcelona,Sporting Lisbon,FC Barcelona,3,1,ST,90,0,0,0,46512,461,172,10
+603,2008-09-21,PRM,Sporting Gijón,FC Barcelona,FC Barcelona,1,6,ST,90,2,1,0,46602,463,173,10
+604,2008-09-24,PRM,FC Barcelona,Real Betis,FC Barcelona,3,2,ST,90,0,2,0,46692,463,175,10
+605,2008-09-27,PRM,Espanyol,FC Barcelona,FC Barcelona,1,2,ST,90,1,0,0,46782,464,175,10
+606,2008-10-16,WCQ,Chile,Argentina,Argentina,1,0,ST,90,0,0,0,46872,464,175,18
+607,2008-10-22,EUR,FC Basel,FC Barcelona,FC Barcelona,0,5,ST,90,1,2,0,46962,465,177,10
+608,2008-10-25,PRM,FC Barcelona,UD Almería,FC Barcelona,5,0,ST,90,0,2,0,47052,465,179,10
+609,2008-11-16,PRM,Recreativo Huelva,FC Barcelona,FC Barcelona,0,2,ST,90,1,0,0,47142,466,179,10
+610,2008-09-06,WCQ,Argentina,Paraguay,Argentina,1,1,ST,90,0,1,0,47232,466,180,18
+611,2008-11-29,PRM,Sevilla,FC Barcelona,FC Barcelona,0,3,ST,90,2,0,0,47322,468,180,10
+612,2008-12-13,PRM,FC Barcelona,Real Madrid,FC Barcelona,2,0,ST,90,1,0,1,47412,469,180,10
+613,2008-12-21,PRM,Villarreal,FC Barcelona,FC Barcelona,1,2,ST,90,0,0,0,47502,469,180,10
+614,2009-01-11,PRM,Osasuna,FC Barcelona,FC Barcelona,2,3,ST,90,1,1,0,47592,470,181,10
+615,2009-01-17,PRM,FC Barcelona,Deportivo La Coruña,FC Barcelona,5,0,ST,90,1,0,0,47682,471,181,10
+616,2009-01-24,PRM,FC Barcelona,Numancia,FC Barcelona,4,1,ST,90,2,1,0,47772,473,182,10
+617,2009-01-29,CUP,FC Barcelona,Espanyol,FC Barcelona,3,2,ST,90,0,0,0,47862,473,182,10
+618,2009-02-08,PRM,FC Barcelona,Sporting Gijón,FC Barcelona,3,1,ST,90,0,2,0,47952,473,184,10
+619,2008-09-11,WCQ,Peru,Argentina,Argentina,1,1,ST,90,0,0,0,48042,473,184,18
+620,2008-08-31,PRM,Numancia,FC Barcelona,FC Barcelona,1,0,ST,90,0,0,0,48132,473,184,10
+621,2007-11-01,PRM,Real Valladolid,FC Barcelona,FC Barcelona,1,1,ST,90,0,0,0,48222,473,184,19
+622,2007-12-09,PRM,FC Barcelona,Deportivo La Coruña,FC Barcelona,2,1,ST,90,0,0,0,48312,473,184,19
+623,2007-11-04,PRM,FC Barcelona,Real Betis,FC Barcelona,3,0,ST,90,0,0,0,48402,473,184,19
+624,2007-11-07,EUR,FC Barcelona,Glasgow Rangers,FC Barcelona,2,0,ST,90,1,1,0,48492,474,185,19
+625,2007-11-17,WCQ,Argentina,Bolivia,Argentina,3,0,ST,90,0,1,0,48582,474,186,18
+626,2007-11-21,WCQ,Colombia,Argentina,Argentina,2,1,ST,90,1,0,0,48672,475,186,18
+627,2007-11-24,PRM,FC Barcelona,Recreativo Huelva,FC Barcelona,3,0,ST,90,1,0,0,48762,476,186,19
+628,2007-11-27,EUR,Olympique Lyon,FC Barcelona,FC Barcelona,2,2,ST,90,1,0,1,48852,477,186,19
+629,2007-12-01,PRM,Espanyol,FC Barcelona,FC Barcelona,1,1,ST,90,0,1,0,48942,477,187,19
+630,2008-01-27,PRM,Athletic de Bilbao,FC Barcelona,FC Barcelona,1,1,ST,90,0,0,0,49032,477,187,19
+631,2008-06-15,WCQ,Argentina,Ecuador,Argentina,1,1,ST,90,0,0,0,49122,477,187,18
+632,2008-01-31,CUP,FC Barcelona,Villarreal,FC Barcelona,1,0,ST,90,0,0,0,49212,477,187,19
+633,2008-02-09,PRM,Sevilla,FC Barcelona,FC Barcelona,1,1,ST,90,0,1,1,49302,477,188,19
+634,2008-02-20,EUR,Celtic,FC Barcelona,FC Barcelona,2,3,ST,90,2,0,0,49392,479,188,19
+635,2008-02-27,CUP,FC Barcelona,Valencia,FC Barcelona,1,1,ST,90,0,0,1,49482,479,188,19
+636,2008-04-29,EUR,Manchester United,FC Barcelona,FC Barcelona,1,0,ST,90,0,0,0,49572,479,188,19
+637,2008-05-04,PRM,FC Barcelona,Valencia,FC Barcelona,6,0,ST,90,1,1,0,49662,480,189,19
+638,2008-05-07,PRM,Real Madrid,FC Barcelona,FC Barcelona,4,1,ST,90,0,1,0,49752,480,190,19
+639,2008-05-17,PRM,Real Murcia,FC Barcelona,FC Barcelona,3,5,ST,90,0,2,0,49842,480,192,19
+640,2010-11-17,FRN,Argentina,Brazil,Argentina,1,0,ST,90,1,0,1,49932,481,192,10
+641,2010-11-20,PRM,UD Almería,FC Barcelona,FC Barcelona,0,8,ST,90,3,2,0,50022,484,194,10
+642,2010-11-24,EUR,Panathinaikos,FC Barcelona,FC Barcelona,0,3,ST,90,1,0,0,50112,485,194,10
+643,2012-08-26,PRM,Osasuna,FC Barcelona,FC Barcelona,1,2,ST,90,2,0,0,50202,487,194,10
+644,2012-05-12,PRM,Real Betis,FC Barcelona,FC Barcelona,2,2,ST,90,0,0,0,50292,487,194,10
+645,2012-05-25,CUP,Athletic de Bilbao,FC Barcelona,FC Barcelona,0,3,ST,90,1,0,0,50382,488,194,10
+646,2012-06-03,WCQ,Argentina,Ecuador,Argentina,4,0,ST,90,1,1,0,50472,489,195,10
+647,2012-06-09,FRN,Argentina,Brazil,Argentina,4,3,ST,90,3,0,0,50562,492,195,10
+648,2012-08-15,FRN,Germany,Argentina,Argentina,1,3,ST,90,1,0,0,50652,493,195,10
+649,2012-08-19,PRM,FC Barcelona,Real Sociedad,FC Barcelona,5,1,ST,90,2,0,0,50742,495,195,10
+650,2012-08-23,SUP,FC Barcelona,Real Madrid,FC Barcelona,3,2,ST,90,1,0,0,50832,496,195,10
+651,2012-08-29,SUP,Real Madrid,FC Barcelona,FC Barcelona,2,1,ST,90,1,0,0,50922,497,195,10
+652,2012-05-02,PRM,FC Barcelona,Málaga,FC Barcelona,4,1,ST,90,3,0,0,51012,500,195,10
+653,2012-09-02,PRM,FC Barcelona,Valencia,FC Barcelona,1,0,ST,90,0,1,0,51102,500,196,10
+654,2012-09-08,WCQ,Argentina,Paraguay,Argentina,3,1,ST,90,1,0,0,51192,501,196,10
+655,2012-09-19,EUR,FC Barcelona,Spartak Moscow,FC Barcelona,3,2,ST,90,2,0,0,51282,503,196,10
+656,2012-09-22,PRM,FC Barcelona,Granada,FC Barcelona,2,0,ST,90,0,0,0,51372,503,196,10
+657,2012-09-29,PRM,Sevilla,FC Barcelona,FC Barcelona,2,3,ST,90,0,2,0,51462,503,198,10
+658,2012-10-02,EUR,Benfica,FC Barcelona,FC Barcelona,0,2,ST,90,0,2,0,51552,503,200,10
+659,2012-10-07,PRM,FC Barcelona,Real Madrid,FC Barcelona,2,2,ST,90,2,0,0,51642,505,200,10
+660,2012-10-13,WCQ,Argentina,Uruguay,Argentina,3,0,ST,90,2,0,0,51732,507,200,10
+661,2012-05-05,PRM,FC Barcelona,Espanyol,FC Barcelona,4,0,ST,90,4,0,0,51822,511,200,10
+662,2012-04-29,PRM,Rayo Vallecano,FC Barcelona,FC Barcelona,0,7,ST,90,2,2,0,51912,513,202,10
+663,2012-10-20,PRM,Deportivo La Coruña,FC Barcelona,FC Barcelona,4,5,ST,90,3,1,1,52002,516,203,10
+664,2012-03-20,PRM,FC Barcelona,Granada,FC Barcelona,5,3,ST,90,3,1,0,52092,519,204,10
+665,2012-02-14,EUR,Bayer Leverkusen,FC Barcelona,FC Barcelona,1,3,ST,90,1,1,0,52182,520,205,10
+666,2012-02-19,PRM,FC Barcelona,Valencia,FC Barcelona,5,1,ST,90,4,0,0,52272,524,205,10
+667,2012-02-26,PRM,Atlético Madrid,FC Barcelona,FC Barcelona,1,2,ST,90,1,0,1,52362,525,205,10
+668,2012-02-29,FRN,Switzerland,Argentina,Argentina,1,3,ST,90,3,0,0,52452,528,205,10
+669,2012-03-07,EUR,FC Barcelona,Bayer Leverkusen,FC Barcelona,7,1,ST,90,5,0,0,52542,533,205,10
+670,2012-03-11,PRM,Racing Santander,FC Barcelona,FC Barcelona,0,2,ST,90,2,0,0,52632,535,205,10
+671,2012-03-17,PRM,Sevilla,FC Barcelona,FC Barcelona,0,2,ST,90,1,0,0,52722,536,205,10
+672,2012-03-24,PRM,Real Mallorca,FC Barcelona,FC Barcelona,0,2,ST,90,1,0,0,52812,537,205,10
+673,2012-04-24,EUR,FC Barcelona,Chelsea,FC Barcelona,2,2,ST,90,0,1,1,52902,537,206,10
+674,2012-03-28,EUR,AC Milan,FC Barcelona,FC Barcelona,0,0,ST,90,0,0,0,52992,537,206,10
+675,2012-03-31,PRM,FC Barcelona,Athletic de Bilbao,FC Barcelona,2,0,ST,90,1,1,0,53082,538,207,10
+676,2012-04-03,EUR,FC Barcelona,AC Milan,FC Barcelona,3,1,ST,90,2,0,0,53172,540,207,10
+677,2012-04-07,PRM,Real Zaragoza,FC Barcelona,FC Barcelona,1,4,ST,90,2,1,0,53262,542,208,10
+678,2012-04-10,PRM,FC Barcelona,Getafe,FC Barcelona,4,0,ST,90,1,2,1,53352,543,210,10
+679,2012-04-14,PRM,Levante,FC Barcelona,FC Barcelona,1,2,ST,90,2,0,0,53442,545,210,10
+680,2012-04-18,EUR,Chelsea,FC Barcelona,FC Barcelona,1,0,ST,90,0,0,0,53532,545,210,10
+681,2012-04-21,PRM,FC Barcelona,Real Madrid,FC Barcelona,1,2,ST,90,0,0,0,53622,545,210,10
+682,2012-10-17,WCQ,Chile,Argentina,Argentina,1,2,ST,90,1,0,0,53712,546,210,10
+683,2012-10-23,EUR,FC Barcelona,Celtic,FC Barcelona,2,1,ST,90,0,0,0,53802,546,210,10
+684,2010-11-29,PRM,FC Barcelona,Real Madrid,FC Barcelona,5,0,ST,90,0,2,1,53892,546,212,10
+685,2013-03-23,WCQ,Argentina,Venezuela,Argentina,3,0,ST,90,1,2,0,53982,547,214,10
+686,2013-02-16,PRM,Granada,FC Barcelona,FC Barcelona,1,2,ST,90,2,0,0,54072,549,214,10
+687,2013-02-20,EUR,AC Milan,FC Barcelona,FC Barcelona,2,0,ST,90,0,0,0,54162,549,214,10
+688,2013-02-23,PRM,FC Barcelona,Sevilla,FC Barcelona,2,1,ST,90,1,0,0,54252,550,214,10
+689,2013-02-26,CUP,FC Barcelona,Real Madrid,FC Barcelona,1,3,ST,90,0,0,0,54342,550,214,10
+690,2013-03-02,PRM,Real Madrid,FC Barcelona,FC Barcelona,2,1,ST,90,1,0,0,54432,551,214,10
+691,2013-03-12,EUR,FC Barcelona,AC Milan,FC Barcelona,4,0,ST,90,2,0,0,54522,553,214,10
+692,2013-03-17,PRM,FC Barcelona,Rayo Vallecano,FC Barcelona,3,1,ST,90,2,1,0,54612,555,215,10
+693,2013-03-26,WCQ,Bolivia,Argentina,Argentina,1,1,ST,90,0,0,0,54702,555,215,10
+694,2013-02-06,FRN,Sweden,Argentina,Argentina,2,3,ST,90,0,0,0,54792,555,215,10
+695,2013-03-30,PRM,Celta de Vigo,FC Barcelona,FC Barcelona,2,2,ST,90,1,1,0,54882,556,216,10
+696,2013-04-23,EUR,Bayern München,FC Barcelona,FC Barcelona,4,0,ST,90,0,0,0,54972,556,216,10
+697,2013-08-28,SUP,FC Barcelona,Atlético Madrid,FC Barcelona,0,0,ST,90,0,0,0,55062,556,216,10
+698,2013-09-01,PRM,Valencia,FC Barcelona,FC Barcelona,2,3,ST,90,3,0,0,55152,559,216,10
+699,2013-09-11,WCQ,Paraguay,Argentina,Argentina,2,5,ST,90,2,1,0,55242,561,217,10
+700,2013-09-14,PRM,FC Barcelona,Sevilla,FC Barcelona,3,2,ST,90,1,0,0,55332,562,217,10
+701,2013-09-18,EUR,FC Barcelona,Ajax,FC Barcelona,4,0,ST,90,3,0,0,55422,565,217,10
+702,2013-09-21,PRM,Rayo Vallecano,FC Barcelona,FC Barcelona,0,4,ST,90,0,1,0,55512,565,218,10
+703,2013-02-10,PRM,FC Barcelona,Getafe,FC Barcelona,6,1,ST,90,1,1,0,55602,566,219,10
+704,2013-02-03,PRM,Valencia,FC Barcelona,FC Barcelona,1,1,ST,90,1,0,0,55692,567,219,10
+705,2012-10-27,PRM,Rayo Vallecano,FC Barcelona,FC Barcelona,0,5,ST,90,2,0,0,55782,569,219,10
+706,2012-12-01,PRM,FC Barcelona,Athletic de Bilbao,FC Barcelona,5,1,ST,90,2,0,0,55872,571,219,10
+707,2012-11-03,PRM,FC Barcelona,Celta de Vigo,FC Barcelona,3,1,ST,90,0,0,0,55962,571,219,10
+708,2012-11-07,EUR,Celtic,FC Barcelona,FC Barcelona,2,1,ST,90,1,0,0,56052,572,219,10
+709,2012-11-11,PRM,Real Mallorca,FC Barcelona,FC Barcelona,2,4,ST,90,2,0,0,56142,574,219,10
+710,2012-11-14,FRN,Saudi Arabia,Argentina,Argentina,0,0,ST,90,0,0,0,56232,574,219,10
+711,2012-11-17,PRM,FC Barcelona,Real Zaragoza,FC Barcelona,3,1,ST,90,2,1,0,56322,576,220,10
+712,2012-11-20,EUR,Spartak Moscow,FC Barcelona,FC Barcelona,0,3,ST,90,2,0,0,56412,578,220,10
+713,2012-11-25,PRM,Levante,FC Barcelona,FC Barcelona,0,4,ST,90,2,0,0,56502,580,220,10
+714,2012-12-09,PRM,Real Betis,FC Barcelona,FC Barcelona,1,2,ST,90,2,0,0,56592,582,220,10
+715,2013-01-30,CUP,Real Madrid,FC Barcelona,FC Barcelona,1,1,ST,90,0,1,0,56682,582,221,10
+716,2012-12-12,CUP,Córdoba,FC Barcelona,FC Barcelona,0,2,ST,90,2,0,0,56772,584,221,10
+717,2012-12-16,PRM,FC Barcelona,Atlético Madrid,FC Barcelona,4,1,ST,90,2,0,0,56862,586,221,10
+718,2012-12-22,PRM,Real Valladolid,FC Barcelona,FC Barcelona,1,3,ST,90,1,0,0,56952,587,221,10
+719,2013-01-06,PRM,FC Barcelona,Espanyol,FC Barcelona,4,0,ST,90,1,1,0,57042,588,222,10
+720,2013-01-13,PRM,Málaga,FC Barcelona,FC Barcelona,1,3,ST,90,1,2,0,57132,589,224,10
+721,2013-01-16,CUP,FC Barcelona,Málaga,FC Barcelona,2,2,ST,90,1,0,1,57222,590,224,10
+722,2013-01-19,PRM,Real Sociedad,FC Barcelona,FC Barcelona,3,2,ST,90,1,0,0,57312,591,224,10
+723,2013-01-27,PRM,FC Barcelona,Osasuna,FC Barcelona,5,1,ST,90,4,0,0,57402,595,224,10
+724,2012-02-11,PRM,Osasuna,FC Barcelona,FC Barcelona,3,2,ST,90,0,0,0,57492,595,224,10
+725,2012-02-08,CUP,FC Barcelona,Valencia,FC Barcelona,2,0,ST,90,0,1,0,57582,595,225,10
+726,2012-02-04,PRM,FC Barcelona,Real Sociedad,FC Barcelona,2,1,ST,90,1,1,0,57672,596,226,10
+727,2011-05-03,EUR,FC Barcelona,Real Madrid,FC Barcelona,1,1,ST,90,0,0,0,57762,596,226,10
+728,2011-03-27,FRN,United States,Argentina,Argentina,1,1,ST,90,0,0,0,57852,596,226,10
+729,2011-04-06,EUR,FC Barcelona,Shakhtar Donetsk,FC Barcelona,5,1,ST,90,0,1,0,57942,596,227,10
+730,2011-04-09,PRM,FC Barcelona,UD Almería,FC Barcelona,3,1,ST,90,2,1,0,58032,598,228,10
+731,2011-04-12,EUR,Shakhtar Donetsk,FC Barcelona,FC Barcelona,0,1,ST,90,1,0,0,58122,599,228,10
+732,2011-04-16,PRM,Real Madrid,FC Barcelona,FC Barcelona,1,1,ST,90,1,0,0,58212,600,228,10
+733,2011-04-27,EUR,Real Madrid,FC Barcelona,FC Barcelona,0,2,ST,90,2,0,0,58302,602,228,10
+734,2011-04-30,PRM,Real Sociedad,FC Barcelona,FC Barcelona,2,1,ST,90,0,1,0,58392,602,229,10
+735,2011-05-08,PRM,FC Barcelona,Espanyol,FC Barcelona,2,0,ST,90,0,0,0,58482,602,229,10
+736,2011-03-13,PRM,Sevilla,FC Barcelona,FC Barcelona,1,1,ST,90,0,0,0,58572,602,229,10
+737,2011-05-11,PRM,Levante,FC Barcelona,FC Barcelona,1,1,ST,90,0,0,0,58662,602,229,10
+738,2011-05-28,EUR,FC Barcelona,Manchester United,FC Barcelona,3,1,ST,90,1,0,0,58752,603,229,10
+739,2011-06-20,FRN,Argentina,Albania,Argentina,4,0,ST,90,1,2,0,58842,604,231,10
+740,2011-07-02,CPA,Argentina,Bolivia,Argentina,1,1,ST,90,0,0,0,58932,604,231,10
+741,2011-07-07,CPA,Argentina,Colombia,Argentina,0,0,ST,90,0,0,0,59022,604,231,10
+742,2011-07-12,CPA,Argentina,Costa Rica,Argentina,3,0,ST,90,0,2,0,59112,604,233,10
+743,2012-02-01,CUP,Valencia,FC Barcelona,FC Barcelona,1,1,ST,90,0,0,0,59202,604,233,10
+744,2011-03-19,PRM,FC Barcelona,Getafe,FC Barcelona,2,1,ST,90,0,1,0,59292,604,234,10
+745,2011-03-08,EUR,FC Barcelona,Arsenal,FC Barcelona,3,1,ST,90,2,0,0,59382,606,234,10
+746,2011-08-17,SUP,FC Barcelona,Real Madrid,FC Barcelona,3,2,ST,90,2,1,0,59472,608,235,10
+747,2011-01-22,PRM,FC Barcelona,Racing Santander,FC Barcelona,3,0,ST,90,1,1,1,59562,609,236,10
+748,2010-12-04,PRM,Osasuna,FC Barcelona,FC Barcelona,0,3,ST,90,2,1,0,59652,611,237,10
+749,2010-12-12,PRM,FC Barcelona,Real Sociedad,FC Barcelona,5,0,ST,90,2,0,0,59742,613,237,10
+750,2010-12-18,PRM,Espanyol,FC Barcelona,FC Barcelona,1,5,ST,90,0,2,0,59832,613,239,10
+751,2011-01-05,CUP,Athletic de Bilbao,FC Barcelona,FC Barcelona,1,1,ST,90,0,1,0,59922,613,240,10
+752,2011-01-08,PRM,Deportivo La Coruña,FC Barcelona,FC Barcelona,0,4,ST,90,1,2,0,60012,614,242,10
+753,2011-01-16,PRM,FC Barcelona,Málaga,FC Barcelona,4,1,ST,90,0,1,0,60102,614,243,10
+754,2011-01-19,CUP,Real Betis,FC Barcelona,FC Barcelona,3,1,ST,90,1,0,0,60192,615,243,10
+755,2011-01-26,CUP,FC Barcelona,UD Almería,FC Barcelona,5,0,ST,90,2,1,0,60282,617,244,10
+756,2011-03-05,PRM,FC Barcelona,Real Zaragoza,FC Barcelona,1,0,ST,90,0,0,0,60372,617,244,10
+757,2011-01-29,PRM,Hercules Alicante,FC Barcelona,FC Barcelona,0,3,ST,90,2,0,0,60462,619,244,10
+758,2011-02-05,PRM,FC Barcelona,Atlético Madrid,FC Barcelona,3,0,ST,90,3,0,1,60552,622,244,10
+759,2011-02-09,FRN,Argentina,Portugal,Argentina,2,1,ST,90,1,1,0,60642,623,245,10
+760,2011-02-12,PRM,Sporting Gijón,FC Barcelona,FC Barcelona,1,1,ST,90,0,1,0,60732,623,246,10
+761,2011-02-16,EUR,Arsenal,FC Barcelona,FC Barcelona,2,1,ST,90,0,1,0,60822,623,247,10
+762,2011-02-20,PRM,FC Barcelona,Athletic de Bilbao,FC Barcelona,2,1,ST,90,1,0,0,60912,624,247,10
+763,2011-02-26,PRM,Real Mallorca,FC Barcelona,FC Barcelona,0,3,ST,90,1,0,0,61002,625,247,10
+764,2011-03-02,PRM,Valencia,FC Barcelona,FC Barcelona,0,1,ST,90,1,0,1,61092,626,247,10
+765,2011-08-14,SUP,Real Madrid,FC Barcelona,FC Barcelona,2,2,ST,90,1,1,0,61182,627,248,10
+766,2019-05-01,EUR,FC Barcelona,Liverpool,FC Barcelona,3,0,ST,90,2,0,0,61272,629,248,10
+767,2011-08-26,IUP,FC Barcelona,FC Porto,FC Barcelona,2,0,ST,90,1,1,0,61362,630,249,10
+768,2011-12-03,PRM,FC Barcelona,Levante,FC Barcelona,5,0,ST,90,1,1,0,61452,631,250,10
+769,2011-11-01,EUR,Viktoria Plzen,FC Barcelona,FC Barcelona,0,4,ST,90,3,0,0,61542,634,250,10
+770,2011-11-06,PRM,Athletic de Bilbao,FC Barcelona,FC Barcelona,2,2,ST,90,1,0,0,61632,635,250,10
+771,2011-11-11,WCQ,Argentina,Bolivia,Argentina,1,1,ST,90,0,0,0,61722,635,250,10
+772,2011-11-15,WCQ,Colombia,Argentina,Argentina,1,2,ST,90,1,0,0,61812,636,250,10
+773,2011-11-19,PRM,FC Barcelona,Real Zaragoza,FC Barcelona,4,0,ST,90,1,0,0,61902,637,250,10
+774,2011-11-23,EUR,AC Milan,FC Barcelona,FC Barcelona,2,3,ST,90,1,1,1,61992,638,251,10
+775,2011-11-26,PRM,Getafe,FC Barcelona,FC Barcelona,1,0,ST,90,0,0,0,62082,638,251,10
+776,2011-11-29,PRM,FC Barcelona,Rayo Vallecano,FC Barcelona,4,0,ST,90,1,0,0,62172,639,251,10
+777,2011-12-10,PRM,Real Madrid,FC Barcelona,FC Barcelona,1,3,ST,90,0,1,1,62262,639,252,10
+778,2011-10-25,PRM,Granada,FC Barcelona,FC Barcelona,0,1,ST,90,0,0,0,62352,639,252,10
+779,2011-12-15,WCT,Al-Sadd,FC Barcelona,FC Barcelona,0,4,ST,90,0,1,0,62442,639,253,10
+780,2011-12-18,WCT,Santos,FC Barcelona,FC Barcelona,0,4,ST,90,2,0,0,62532,641,253,10
+781,2012-01-08,PRM,Espanyol,FC Barcelona,FC Barcelona,1,1,ST,90,0,0,1,62622,641,253,10
+782,2012-01-15,PRM,FC Barcelona,Real Betis,FC Barcelona,4,2,ST,90,2,0,1,62712,643,253,10
+783,2012-01-18,CUP,Real Madrid,FC Barcelona,FC Barcelona,1,2,ST,90,0,1,0,62802,643,254,10
+784,2012-01-22,PRM,Málaga,FC Barcelona,FC Barcelona,1,4,ST,90,3,0,0,62892,646,254,10
+785,2012-01-25,CUP,FC Barcelona,Real Madrid,FC Barcelona,2,2,ST,90,0,1,1,62982,646,255,10
+786,2012-01-28,PRM,Villarreal,FC Barcelona,FC Barcelona,0,0,ST,90,0,0,0,63072,646,255,10
+787,2011-08-29,PRM,FC Barcelona,Villarreal,FC Barcelona,5,0,ST,90,2,1,0,63162,648,256,10
+788,2011-10-29,PRM,FC Barcelona,Real Mallorca,FC Barcelona,5,0,ST,90,3,1,0,63252,651,257,10
+789,2011-10-22,PRM,FC Barcelona,Sevilla,FC Barcelona,0,0,ST,90,0,0,0,63342,651,257,10
+790,2011-09-28,EUR,BATE Borisov,FC Barcelona,FC Barcelona,0,5,ST,90,2,0,0,63432,653,257,10
+791,2011-09-02,FRN,Venezuela,Argentina,Argentina,0,1,ST,90,0,1,0,63522,653,258,10
+792,2011-09-06,FRN,Argentina,Nigeria,Argentina,3,1,ST,90,0,1,0,63612,653,259,10
+793,2011-09-13,EUR,FC Barcelona,AC Milan,FC Barcelona,2,2,ST,90,0,1,0,63702,653,260,10
+794,2011-09-17,PRM,FC Barcelona,Osasuna,FC Barcelona,8,0,ST,90,3,2,0,63792,656,262,10
+795,2011-10-19,EUR,FC Barcelona,Viktoria Plzen,FC Barcelona,2,0,ST,90,0,1,0,63882,656,263,10
+796,2011-09-24,PRM,FC Barcelona,Atlético Madrid,FC Barcelona,5,0,ST,90,3,0,0,63972,659,263,10
+797,2011-09-21,PRM,Valencia,FC Barcelona,FC Barcelona,2,2,ST,90,0,2,0,64062,659,265,10
+798,2011-10-02,PRM,Sporting Gijón,FC Barcelona,FC Barcelona,0,1,ST,90,0,0,0,64152,659,265,10
+799,2011-10-08,WCQ,Argentina,Chile,Argentina,4,1,ST,90,1,1,0,64242,660,266,10
+800,2011-10-12,WCQ,Venezuela,Argentina,Argentina,1,0,ST,90,0,0,0,64332,660,266,10
+801,2011-10-15,PRM,FC Barcelona,Racing Santander,FC Barcelona,3,0,ST,90,2,0,0,64422,662,266,10
+802,2011-04-20,CUP,FC Barcelona,Real Madrid,FC Barcelona,0,1,ST,120,0,0,1,64542,662,266,10
+803,2009-12-19,WCT,Estudiantes La Plata,FC Barcelona,FC Barcelona,1,2,ST,120,1,0,1,64662,663,266,10
+804,2009-08-28,IUP,FC Barcelona,Shakhtar Donetsk,FC Barcelona,1,0,ST,120,0,1,1,64782,663,267,10
+805,2015-08-11,IUP,FC Barcelona,Sevilla,FC Barcelona,5,4,ST,120,2,0,0,64902,665,267,10
+806,2014-07-01,WCP,Argentina,Switzerland,Argentina,1,0,ST,120,0,1,0,65022,665,268,10
+807,2011-07-16,CPA,Argentina,Uruguay,Argentina,1,1,ST,120,0,1,0,65142,665,269,10
+808,2016-05-22,CUP,FC Barcelona,Sevilla,FC Barcelona,2,0,ST,120,0,2,0,65262,665,271,10
+809,2014-07-09,WCP,Netherlands,Argentina,Argentina,0,0,ST,120,0,0,0,65382,665,271,10
+810,2015-07-04,CPA,Chile,Argentina,Argentina,0,0,ST,120,0,0,0,65502,665,271,10
+811,2016-06-26,CPA,Argentina,Chile,Argentina,0,0,ST,120,0,0,1,65622,665,271,10
+812,2014-07-13,WCP,Germany,Argentina,Argentina,1,0,ST,120,0,0,0,65742,665,271,10
